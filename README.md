@@ -192,7 +192,7 @@ added.
 
 ## Contact
 
-Charlie Harrison — <charlie.t.harrison@lse.ac.uk>
+Charlie Harrison — <c.t.harrison@lse.ac.uk>
 
 ## Licence
 
