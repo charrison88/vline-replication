@@ -1,0 +1,111 @@
+domain,country,variable,period,category,proportion,first_period,last_period
+Life Satisfaction,Germany,lfsato,First,0,0.012167868962152729,1984,2019
+Life Satisfaction,Germany,lfsato,First,1,0.0055987786420365554,1984,2019
+Life Satisfaction,Germany,lfsato,First,2,0.013472671365024422,1984,2019
+Life Satisfaction,Germany,lfsato,First,3,0.0200776956605732,1984,2019
+Life Satisfaction,Germany,lfsato,First,4,0.025370806375631928,1984,2019
+Life Satisfaction,Germany,lfsato,First,5,0.11920292920690562,1984,2019
+Life Satisfaction,Germany,lfsato,First,6,0.08237507411801866,1984,2019
+Life Satisfaction,Germany,lfsato,First,7,0.15604932823175094,1984,2019
+Life Satisfaction,Germany,lfsato,First,8,0.24779838256549325,1984,2019
+Life Satisfaction,Germany,lfsato,First,9,0.12162124743571248,1984,2019
+Life Satisfaction,Germany,lfsato,First,10,0.19626521743670022,1984,2019
+Life Satisfaction,Germany,lfsato,Last,0,0.0028468409524468894,1984,2019
+Life Satisfaction,Germany,lfsato,Last,1,0.0038956887368249375,1984,2019
+Life Satisfaction,Germany,lfsato,Last,2,0.01002735171019648,1984,2019
+Life Satisfaction,Germany,lfsato,Last,3,0.020515081009128248,1984,2019
+Life Satisfaction,Germany,lfsato,Last,4,0.020339793443462418,1984,2019
+Life Satisfaction,Germany,lfsato,Last,5,0.0770063873914377,1984,2019
+Life Satisfaction,Germany,lfsato,Last,6,0.07893518433282343,1984,2019
+Life Satisfaction,Germany,lfsato,Last,7,0.19934223472628268,1984,2019
+Life Satisfaction,Germany,lfsato,Last,8,0.34443006062151577,1984,2019
+Life Satisfaction,Germany,lfsato,Last,9,0.17858999719580823,1984,2019
+Life Satisfaction,Germany,lfsato,Last,10,0.06407137988007325,1984,2019
+Life Satisfaction,Australia,lfsato,First,0,0.0028407437494851135,2001,2019
+Life Satisfaction,Australia,lfsato,First,1,0.002096871059053687,2001,2019
+Life Satisfaction,Australia,lfsato,First,2,0.005858069480745174,2001,2019
+Life Satisfaction,Australia,lfsato,First,3,0.009167328045858179,2001,2019
+Life Satisfaction,Australia,lfsato,First,4,0.014445551793613943,2001,2019
+Life Satisfaction,Australia,lfsato,First,5,0.05509210906547228,2001,2019
+Life Satisfaction,Australia,lfsato,First,6,0.0626894009029578,2001,2019
+Life Satisfaction,Australia,lfsato,First,7,0.17700524615331975,2001,2019
+Life Satisfaction,Australia,lfsato,First,8,0.29551116669791533,2001,2019
+Life Satisfaction,Australia,lfsato,First,9,0.18469601298271954,2001,2019
+Life Satisfaction,Australia,lfsato,First,10,0.19059750006885923,2001,2019
+Life Satisfaction,Australia,lfsato,Last,0,0.001218550377984476,2001,2019
+Life Satisfaction,Australia,lfsato,Last,1,0.0012216349497477157,2001,2019
+Life Satisfaction,Australia,lfsato,Last,2,0.0031816191806997495,2001,2019
+Life Satisfaction,Australia,lfsato,Last,3,0.007801730876490298,2001,2019
+Life Satisfaction,Australia,lfsato,Last,4,0.012724027213415019,2001,2019
+Life Satisfaction,Australia,lfsato,Last,5,0.035758395745981456,2001,2019
+Life Satisfaction,Australia,lfsato,Last,6,0.05612800462829995,2001,2019
+Life Satisfaction,Australia,lfsato,Last,7,0.2012131337072207,2001,2019
+Life Satisfaction,Australia,lfsato,Last,8,0.3396560900464294,2001,2019
+Life Satisfaction,Australia,lfsato,Last,9,0.22840280348180575,2001,2019
+Life Satisfaction,Australia,lfsato,Last,10,0.11269400979192551,2001,2019
+Life Satisfaction,Switzerland,sat_life,First,0,0.004315366166829281,2000,2019
+Life Satisfaction,Switzerland,sat_life,First,1,5.262339702158096e-4,2000,2019
+Life Satisfaction,Switzerland,sat_life,First,2,0.002277524913993845,2000,2019
+Life Satisfaction,Switzerland,sat_life,First,3,0.0030760447206281305,2000,2019
+Life Satisfaction,Switzerland,sat_life,First,4,0.008086864731002938,2000,2019
+Life Satisfaction,Switzerland,sat_life,First,5,0.04798467283487244,2000,2019
+Life Satisfaction,Switzerland,sat_life,First,6,0.03590834642189513,2000,2019
+Life Satisfaction,Switzerland,sat_life,First,7,0.14294419974982486,2000,2019
+Life Satisfaction,Switzerland,sat_life,First,8,0.35289128410793624,2000,2019
+Life Satisfaction,Switzerland,sat_life,First,9,0.1759618070767221,2000,2019
+Life Satisfaction,Switzerland,sat_life,First,10,0.22602765530607924,2000,2019
+Life Satisfaction,Switzerland,sat_life,Last,0,0.0022332264401830246,2000,2019
+Life Satisfaction,Switzerland,sat_life,Last,1,4.78361860802613e-4,2000,2019
+Life Satisfaction,Switzerland,sat_life,Last,2,0.0019181320283909588,2000,2019
+Life Satisfaction,Switzerland,sat_life,Last,3,0.006380959627404962,2000,2019
+Life Satisfaction,Switzerland,sat_life,Last,4,0.010259025969676169,2000,2019
+Life Satisfaction,Switzerland,sat_life,Last,5,0.03767846977615256,2000,2019
+Life Satisfaction,Switzerland,sat_life,Last,6,0.04339390167830725,2000,2019
+Life Satisfaction,Switzerland,sat_life,Last,7,0.1601532997083006,2000,2019
+Life Satisfaction,Switzerland,sat_life,Last,8,0.39320827105929207,2000,2019
+Life Satisfaction,Switzerland,sat_life,Last,9,0.21859753519258743,2000,2019
+Life Satisfaction,Switzerland,sat_life,Last,10,0.12569881665890223,2000,2019
+Political,UK (BES Elections),lr,First,0,0.03580003832928316,1,5
+Political,UK (BES Elections),lr,First,1,0.034201730741546144,1,5
+Political,UK (BES Elections),lr,First,2,0.08970088003563513,1,5
+Political,UK (BES Elections),lr,First,3,0.12571751730181513,1,5
+Political,UK (BES Elections),lr,First,4,0.09279509982732582,1,5
+Political,UK (BES Elections),lr,First,5,0.19188993846492408,1,5
+Political,UK (BES Elections),lr,First,6,0.10809586887275639,1,5
+Political,UK (BES Elections),lr,First,7,0.13359194254295734,1,5
+Political,UK (BES Elections),lr,First,8,0.11641472192542596,1,5
+Political,UK (BES Elections),lr,First,9,0.03669679407146849,1,5
+Political,UK (BES Elections),lr,First,10,0.03509546788686233,1,5
+Political,UK (BES Elections),lr,Last,0,0.038914389117403615,1,5
+Political,UK (BES Elections),lr,Last,1,0.03057240650401214,1,5
+Political,UK (BES Elections),lr,Last,2,0.09174852454931764,1,5
+Political,UK (BES Elections),lr,Last,3,0.14148028013389374,1,5
+Political,UK (BES Elections),lr,Last,4,0.10951904161522881,1,5
+Political,UK (BES Elections),lr,Last,5,0.241521420897719,1,5
+Political,UK (BES Elections),lr,Last,6,0.11822894299412597,1,5
+Political,UK (BES Elections),lr,Last,7,0.10975173588685701,1,5
+Political,UK (BES Elections),lr,Last,8,0.07373971795384161,1,5
+Political,UK (BES Elections),lr,Last,9,0.019122639826457496,1,5
+Political,UK (BES Elections),lr,Last,10,0.025400900521142973,1,5
+Political,Switzerland (SHP),lrself,First,0,0.07035149588016457,1999,2023
+Political,Switzerland (SHP),lrself,First,1,0.013125199611405087,1999,2023
+Political,Switzerland (SHP),lrself,First,2,0.06203371511380039,1999,2023
+Political,Switzerland (SHP),lrself,First,3,0.09964431804349681,1999,2023
+Political,Switzerland (SHP),lrself,First,4,0.10814393997295267,1999,2023
+Political,Switzerland (SHP),lrself,First,5,0.36152935550376136,1999,2023
+Political,Switzerland (SHP),lrself,First,6,0.08170314455692727,1999,2023
+Political,Switzerland (SHP),lrself,First,7,0.08883903140024887,1999,2023
+Political,Switzerland (SHP),lrself,First,8,0.0651783279043626,1999,2023
+Political,Switzerland (SHP),lrself,First,9,0.010474579953224282,1999,2023
+Political,Switzerland (SHP),lrself,First,10,0.038976892059656154,1999,2023
+Political,Switzerland (SHP),lrself,Last,0,0.04929752922711585,1999,2023
+Political,Switzerland (SHP),lrself,Last,1,0.02471651062354608,1999,2023
+Political,Switzerland (SHP),lrself,Last,2,0.07566295651541079,1999,2023
+Political,Switzerland (SHP),lrself,Last,3,0.12225027498868284,1999,2023
+Political,Switzerland (SHP),lrself,Last,4,0.1269056995242035,1999,2023
+Political,Switzerland (SHP),lrself,Last,5,0.2813628703634015,1999,2023
+Political,Switzerland (SHP),lrself,Last,6,0.10289170668165092,1999,2023
+Political,Switzerland (SHP),lrself,Last,7,0.1025464775427767,1999,2023
+Political,Switzerland (SHP),lrself,Last,8,0.06803021183448475,1999,2023
+Political,Switzerland (SHP),lrself,Last,9,0.01804351827140817,1999,2023
+Political,Switzerland (SHP),lrself,Last,10,0.028292244427318886,1999,2023

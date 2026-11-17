@@ -1,0 +1,519 @@
+domain,country,model_id,model_label,variable,variable_label,time_period,time_var_name,mean_within_var,mean_within_var_interpolated,indexed_within_var,indexed_within_var_interpolated,n_obs,controls_used
+Life Satisfaction,Germany,model_1,No Controls,lfsato,Life Satisfaction,1984,year,1.5271174899263529,1.5271174899263529,100,100,10247,none
+Life Satisfaction,Germany,model_1,No Controls,lfsato,Life Satisfaction,1985,year,1.3852439703744912,1.3852439703744912,90.70971811352226,90.70971811352226,9635,none
+Life Satisfaction,Germany,model_1,No Controls,lfsato,Life Satisfaction,1986,year,1.377606743963859,1.377606743963859,90.20961078969083,90.20961078969083,9570,none
+Life Satisfaction,Germany,model_1,No Controls,lfsato,Life Satisfaction,1987,year,1.3225714052302597,1.3225714052302597,86.60574015782127,86.60574015782127,9273,none
+Life Satisfaction,Germany,model_1,No Controls,lfsato,Life Satisfaction,1988,year,1.3204151953457437,1.3204151953457437,86.46454539718633,86.46454539718633,8932,none
+Life Satisfaction,Germany,model_1,No Controls,lfsato,Life Satisfaction,1989,year,1.2252994517178832,1.2252994517178832,80.23609576870047,80.23609576870047,8776,none
+Life Satisfaction,Germany,model_1,No Controls,lfsato,Life Satisfaction,1990,year,1.2362100693324711,1.2362100693324711,80.95055406588847,80.95055406588847,12596,none
+Life Satisfaction,Germany,model_1,No Controls,lfsato,Life Satisfaction,1991,year,1.1683077652729708,1.1683077652729708,76.50411792018136,76.50411792018136,12245,none
+Life Satisfaction,Germany,model_1,No Controls,lfsato,Life Satisfaction,1992,year,1.1503949117635706,1.1503949117635706,75.33113328556337,75.33113328556337,12100,none
+Life Satisfaction,Germany,model_1,No Controls,lfsato,Life Satisfaction,1993,year,1.1770143620021767,1.1770143620021767,77.07425065630935,77.07425065630935,11938,none
+Life Satisfaction,Germany,model_1,No Controls,lfsato,Life Satisfaction,1994,year,1.1347154526578598,1.1347154526578598,74.30439767359242,74.30439767359242,11792,none
+Life Satisfaction,Germany,model_1,No Controls,lfsato,Life Satisfaction,1995,year,1.123121924343602,1.123121924343602,73.54522043996535,73.54522043996535,12202,none
+Life Satisfaction,Germany,model_1,No Controls,lfsato,Life Satisfaction,1996,year,1.1107250205717965,1.1107250205717965,72.7334358946647,72.7334358946647,12002,none
+Life Satisfaction,Germany,model_1,No Controls,lfsato,Life Satisfaction,1997,year,1.1071523553997822,1.1071523553997822,72.49948761003164,72.49948761003164,11588,none
+Life Satisfaction,Germany,model_1,No Controls,lfsato,Life Satisfaction,1998,year,1.1271691626237306,1.1271691626237306,73.81024512253407,73.81024512253407,12798,none
+Life Satisfaction,Germany,model_1,No Controls,lfsato,Life Satisfaction,1999,year,1.0980759324242158,1.0980759324242158,71.90513759862523,71.90513759862523,12490,none
+Life Satisfaction,Germany,model_1,No Controls,lfsato,Life Satisfaction,2000,year,1.1160709489693357,1.1160709489693357,73.08350250268954,73.08350250268954,20525,none
+Life Satisfaction,Germany,model_1,No Controls,lfsato,Life Satisfaction,2001,year,1.0837376303482424,1.0837376303482424,70.96622476640661,70.96622476640661,19511,none
+Life Satisfaction,Germany,model_1,No Controls,lfsato,Life Satisfaction,2002,year,1.0752461910237705,1.0752461910237705,70.41018114956077,70.41018114956077,20758,none
+Life Satisfaction,Germany,model_1,No Controls,lfsato,Life Satisfaction,2003,year,1.134154591720644,1.134154591720644,74.26767090299909,74.26767090299909,20213,none
+Life Satisfaction,Germany,model_1,No Controls,lfsato,Life Satisfaction,2004,year,1.1622983430451541,1.1622983430451541,76.11060384759311,76.11060384759311,19425,none
+Life Satisfaction,Germany,model_1,No Controls,lfsato,Life Satisfaction,2005,year,1.128058751083904,1.128058751083904,73.86849790701474,73.86849790701474,18429,none
+Life Satisfaction,Germany,model_1,No Controls,lfsato,Life Satisfaction,2006,year,1.0945303792446635,1.0945303792446635,71.67296468442966,71.67296468442966,19588,none
+Life Satisfaction,Germany,model_1,No Controls,lfsato,Life Satisfaction,2007,year,1.079204099336541,1.079204099336541,70.66935625159967,70.66935625159967,18499,none
+Life Satisfaction,Germany,model_1,No Controls,lfsato,Life Satisfaction,2008,year,1.10721076185296,1.10721076185296,72.50331223083279,72.50331223083279,17372,none
+Life Satisfaction,Germany,model_1,No Controls,lfsato,Life Satisfaction,2009,year,1.0926557850767884,1.0926557850767884,71.55021092250624,71.55021092250624,16061,none
+Life Satisfaction,Germany,model_1,No Controls,lfsato,Life Satisfaction,2010,year,1.0676859685561082,1.0676859685561082,69.91511626309766,69.91511626309766,20947,none
+Life Satisfaction,Germany,model_1,No Controls,lfsato,Life Satisfaction,2011,year,1.0347279451870648,1.0347279451870648,67.75693108177066,67.75693108177066,21807,none
+Life Satisfaction,Germany,model_1,No Controls,lfsato,Life Satisfaction,2012,year,1.0418973558434752,1.0418973558434752,68.22640449843333,68.22640449843333,23170,none
+Life Satisfaction,Germany,model_1,No Controls,lfsato,Life Satisfaction,2013,year,1.0441034977730648,1.0441034977730648,68.37086895150536,68.37086895150536,22021,none
+Life Satisfaction,Germany,model_1,No Controls,lfsato,Life Satisfaction,2014,year,1.0143890385111836,1.0143890385111836,66.42508158033759,66.42508158033759,20572,none
+Life Satisfaction,Germany,model_1,No Controls,lfsato,Life Satisfaction,2015,year,1.0000426009844499,1.0000426009844499,65.48563601564659,65.48563601564659,19209,none
+Life Satisfaction,Germany,model_1,No Controls,lfsato,Life Satisfaction,2016,year,1.0049555270992463,1.0049555270992463,65.80734840170756,65.80734840170756,18042,none
+Life Satisfaction,Germany,model_1,No Controls,lfsato,Life Satisfaction,2017,year,1.0053683148005894,1.0053683148005894,65.83437891534295,65.83437891534295,20178,none
+Life Satisfaction,Germany,model_1,No Controls,lfsato,Life Satisfaction,2018,year,0.9815291008208609,0.9815291008208609,64.27331932844253,64.27331932844253,19053,none
+Life Satisfaction,Germany,model_1,No Controls,lfsato,Life Satisfaction,2019,year,0.9607308196631221,0.9607308196631221,62.91138867838221,62.91138867838221,19665,none
+Life Satisfaction,Germany,model_2,Demographic Controls,lfsato,Life Satisfaction,1984,year,1.5698518427213937,1.5698518427213937,100,100,10247,"agecat, sex, migback_collapsed"
+Life Satisfaction,Germany,model_2,Demographic Controls,lfsato,Life Satisfaction,1985,year,1.4264884439563046,1.4264884439563046,90.86771153406657,90.86771153406657,9635,"agecat, sex, migback_collapsed"
+Life Satisfaction,Germany,model_2,Demographic Controls,lfsato,Life Satisfaction,1986,year,1.417534636905618,1.417534636905618,90.2973515289361,90.2973515289361,9570,"agecat, sex, migback_collapsed"
+Life Satisfaction,Germany,model_2,Demographic Controls,lfsato,Life Satisfaction,1987,year,1.3628084962552454,1.3628084962552454,86.81128111381318,86.81128111381318,9273,"agecat, sex, migback_collapsed"
+Life Satisfaction,Germany,model_2,Demographic Controls,lfsato,Life Satisfaction,1988,year,1.3622943762277837,1.3622943762277837,86.77853152474556,86.77853152474556,8932,"agecat, sex, migback_collapsed"
+Life Satisfaction,Germany,model_2,Demographic Controls,lfsato,Life Satisfaction,1989,year,1.2663651944509486,1.2663651944509486,80.66781590393013,80.66781590393013,8776,"agecat, sex, migback_collapsed"
+Life Satisfaction,Germany,model_2,Demographic Controls,lfsato,Life Satisfaction,1990,year,1.2798389833326582,1.2798389833326582,81.52610001170633,81.52610001170633,12596,"agecat, sex, migback_collapsed"
+Life Satisfaction,Germany,model_2,Demographic Controls,lfsato,Life Satisfaction,1991,year,1.2124234939167553,1.2124234939167553,77.23171454288172,77.23171454288172,12245,"agecat, sex, migback_collapsed"
+Life Satisfaction,Germany,model_2,Demographic Controls,lfsato,Life Satisfaction,1992,year,1.1948518066759004,1.1948518066759004,76.1123931672802,76.1123931672802,12100,"agecat, sex, migback_collapsed"
+Life Satisfaction,Germany,model_2,Demographic Controls,lfsato,Life Satisfaction,1993,year,1.2218582737168548,1.2218582737168548,77.83271264622783,77.83271264622783,11938,"agecat, sex, migback_collapsed"
+Life Satisfaction,Germany,model_2,Demographic Controls,lfsato,Life Satisfaction,1994,year,1.1801675600415673,1.1801675600415673,75.17700256322948,75.17700256322948,11792,"agecat, sex, migback_collapsed"
+Life Satisfaction,Germany,model_2,Demographic Controls,lfsato,Life Satisfaction,1995,year,1.1681609693070087,1.1681609693070087,74.41217938642926,74.41217938642926,12202,"agecat, sex, migback_collapsed"
+Life Satisfaction,Germany,model_2,Demographic Controls,lfsato,Life Satisfaction,1996,year,1.1547092962247727,1.1547092962247727,73.55530406124461,73.55530406124461,12002,"agecat, sex, migback_collapsed"
+Life Satisfaction,Germany,model_2,Demographic Controls,lfsato,Life Satisfaction,1997,year,1.1508615463294418,1.1508615463294418,73.31020132029674,73.31020132029674,11588,"agecat, sex, migback_collapsed"
+Life Satisfaction,Germany,model_2,Demographic Controls,lfsato,Life Satisfaction,1998,year,1.1708382292701465,1.1708382292701465,74.58272159240562,74.58272159240562,12798,"agecat, sex, migback_collapsed"
+Life Satisfaction,Germany,model_2,Demographic Controls,lfsato,Life Satisfaction,1999,year,1.1412065021331104,1.1412065021331104,72.6951723135088,72.6951723135088,12490,"agecat, sex, migback_collapsed"
+Life Satisfaction,Germany,model_2,Demographic Controls,lfsato,Life Satisfaction,2000,year,1.1596921039781263,1.1596921039781263,73.87271030416215,73.87271030416215,20525,"agecat, sex, migback_collapsed"
+Life Satisfaction,Germany,model_2,Demographic Controls,lfsato,Life Satisfaction,2001,year,1.1270266125219255,1.1270266125219255,71.79190939242936,71.79190939242936,19511,"agecat, sex, migback_collapsed"
+Life Satisfaction,Germany,model_2,Demographic Controls,lfsato,Life Satisfaction,2002,year,1.1177121898240103,1.1177121898240103,71.19857807004365,71.19857807004365,20758,"agecat, sex, migback_collapsed"
+Life Satisfaction,Germany,model_2,Demographic Controls,lfsato,Life Satisfaction,2003,year,1.1767664725858633,1.1767664725858633,74.96035234419938,74.96035234419938,20213,"agecat, sex, migback_collapsed"
+Life Satisfaction,Germany,model_2,Demographic Controls,lfsato,Life Satisfaction,2004,year,1.2034682767708746,1.2034682767708746,76.66126471429429,76.66126471429429,19425,"agecat, sex, migback_collapsed"
+Life Satisfaction,Germany,model_2,Demographic Controls,lfsato,Life Satisfaction,2005,year,1.1685536709683775,1.1685536709683775,74.43719459172965,74.43719459172965,18429,"agecat, sex, migback_collapsed"
+Life Satisfaction,Germany,model_2,Demographic Controls,lfsato,Life Satisfaction,2006,year,1.1348241306608318,1.1348241306608318,72.28861347154736,72.28861347154736,19588,"agecat, sex, migback_collapsed"
+Life Satisfaction,Germany,model_2,Demographic Controls,lfsato,Life Satisfaction,2007,year,1.1194296341031267,1.1194296341031267,71.30797974938551,71.30797974938551,18499,"agecat, sex, migback_collapsed"
+Life Satisfaction,Germany,model_2,Demographic Controls,lfsato,Life Satisfaction,2008,year,1.1474593050633448,1.1474593050633448,73.09347760322295,73.09347760322295,17372,"agecat, sex, migback_collapsed"
+Life Satisfaction,Germany,model_2,Demographic Controls,lfsato,Life Satisfaction,2009,year,1.131763945967532,1.131763945967532,72.09367885351392,72.09367885351392,16061,"agecat, sex, migback_collapsed"
+Life Satisfaction,Germany,model_2,Demographic Controls,lfsato,Life Satisfaction,2010,year,1.1059975795656218,1.1059975795656218,70.4523541309692,70.4523541309692,20947,"agecat, sex, migback_collapsed"
+Life Satisfaction,Germany,model_2,Demographic Controls,lfsato,Life Satisfaction,2011,year,1.0726733892880476,1.0726733892880476,68.3295939206932,68.3295939206932,21807,"agecat, sex, migback_collapsed"
+Life Satisfaction,Germany,model_2,Demographic Controls,lfsato,Life Satisfaction,2012,year,1.078846701228043,1.078846701228043,68.72283561216987,68.72283561216987,23170,"agecat, sex, migback_collapsed"
+Life Satisfaction,Germany,model_2,Demographic Controls,lfsato,Life Satisfaction,2013,year,1.0822247872938706,1.0822247872938706,68.9380206362529,68.9380206362529,22021,"agecat, sex, migback_collapsed"
+Life Satisfaction,Germany,model_2,Demographic Controls,lfsato,Life Satisfaction,2014,year,1.0513537134237447,1.0513537134237447,66.97152462497262,66.97152462497262,20572,"agecat, sex, migback_collapsed"
+Life Satisfaction,Germany,model_2,Demographic Controls,lfsato,Life Satisfaction,2015,year,1.0358858841384764,1.0358858841384764,65.98621958762246,65.98621958762246,19209,"agecat, sex, migback_collapsed"
+Life Satisfaction,Germany,model_2,Demographic Controls,lfsato,Life Satisfaction,2016,year,1.039793548951842,1.039793548951842,66.23513892555128,66.23513892555128,18042,"agecat, sex, migback_collapsed"
+Life Satisfaction,Germany,model_2,Demographic Controls,lfsato,Life Satisfaction,2017,year,1.0393457556112096,1.0393457556112096,66.2066143649242,66.2066143649242,20178,"agecat, sex, migback_collapsed"
+Life Satisfaction,Germany,model_2,Demographic Controls,lfsato,Life Satisfaction,2018,year,1.0147428682165278,1.0147428682165278,64.63940357947634,64.63940357947634,19053,"agecat, sex, migback_collapsed"
+Life Satisfaction,Germany,model_2,Demographic Controls,lfsato,Life Satisfaction,2019,year,0.9947713308016619,0.9947713308016619,63.367211078797766,63.367211078797766,19659,"agecat, sex, migback_collapsed"
+Life Satisfaction,Germany,model_3,Linear Panel Tenure,lfsato,Life Satisfaction,1984,year,1.4943200328441473,1.4943200328441473,100,100,10247,panel_tenure
+Life Satisfaction,Germany,model_3,Linear Panel Tenure,lfsato,Life Satisfaction,1985,year,1.356516868942033,1.356516868942033,90.7782027361413,90.7782027361413,9635,panel_tenure
+Life Satisfaction,Germany,model_3,Linear Panel Tenure,lfsato,Life Satisfaction,1986,year,1.3528369099755697,1.3528369099755697,90.53193962746441,90.53193962746441,9570,panel_tenure
+Life Satisfaction,Germany,model_3,Linear Panel Tenure,lfsato,Life Satisfaction,1987,year,1.301775671048024,1.301775671048024,87.11491798516194,87.11491798516194,9273,panel_tenure
+Life Satisfaction,Germany,model_3,Linear Panel Tenure,lfsato,Life Satisfaction,1988,year,1.3035879701556485,1.3035879701556485,87.23619716684937,87.23619716684937,8932,panel_tenure
+Life Satisfaction,Germany,model_3,Linear Panel Tenure,lfsato,Life Satisfaction,1989,year,1.2121198058827254,1.2121198058827254,81.11514128440687,81.11514128440687,8776,panel_tenure
+Life Satisfaction,Germany,model_3,Linear Panel Tenure,lfsato,Life Satisfaction,1990,year,1.2220764761830707,1.2220764761830707,81.78144234987508,81.78144234987508,12596,panel_tenure
+Life Satisfaction,Germany,model_3,Linear Panel Tenure,lfsato,Life Satisfaction,1991,year,1.157482947003701,1.157482947003701,77.45883890753024,77.45883890753024,12245,panel_tenure
+Life Satisfaction,Germany,model_3,Linear Panel Tenure,lfsato,Life Satisfaction,1992,year,1.1428657006599985,1.1428657006599985,76.48065177074392,76.48065177074392,12100,panel_tenure
+Life Satisfaction,Germany,model_3,Linear Panel Tenure,lfsato,Life Satisfaction,1993,year,1.1725770134245532,1.1725770134245532,78.4689348768738,78.4689348768738,11938,panel_tenure
+Life Satisfaction,Germany,model_3,Linear Panel Tenure,lfsato,Life Satisfaction,1994,year,1.1333789968522026,1.1333789968522026,75.84580089547728,75.84580089547728,11792,panel_tenure
+Life Satisfaction,Germany,model_3,Linear Panel Tenure,lfsato,Life Satisfaction,1995,year,1.1237659550284478,1.1237659550284478,75.20249547144047,75.20249547144047,12202,panel_tenure
+Life Satisfaction,Germany,model_3,Linear Panel Tenure,lfsato,Life Satisfaction,1996,year,1.114772324416711,1.114772324416711,74.60064108857316,74.60064108857316,12002,panel_tenure
+Life Satisfaction,Germany,model_3,Linear Panel Tenure,lfsato,Life Satisfaction,1997,year,1.114522368751694,1.114522368751694,74.58391403817411,74.58391403817411,11588,panel_tenure
+Life Satisfaction,Germany,model_3,Linear Panel Tenure,lfsato,Life Satisfaction,1998,year,1.1310779231908552,1.1310779231908552,75.69181288683312,75.69181288683312,12798,panel_tenure
+Life Satisfaction,Germany,model_3,Linear Panel Tenure,lfsato,Life Satisfaction,1999,year,1.1048790397789547,1.1048790397789547,73.93858179603151,73.93858179603151,12490,panel_tenure
+Life Satisfaction,Germany,model_3,Linear Panel Tenure,lfsato,Life Satisfaction,2000,year,1.1068241278480373,1.1068241278480373,74.06874722420827,74.06874722420827,20525,panel_tenure
+Life Satisfaction,Germany,model_3,Linear Panel Tenure,lfsato,Life Satisfaction,2001,year,1.0772858680791824,1.0772858680791824,72.0920448365253,72.0920448365253,19511,panel_tenure
+Life Satisfaction,Germany,model_3,Linear Panel Tenure,lfsato,Life Satisfaction,2002,year,1.0708967147849353,1.0708967147849353,71.66448225596574,71.66448225596574,20758,panel_tenure
+Life Satisfaction,Germany,model_3,Linear Panel Tenure,lfsato,Life Satisfaction,2003,year,1.133026507247472,1.133026507247472,75.82221226673757,75.82221226673757,20213,panel_tenure
+Life Satisfaction,Germany,model_3,Linear Panel Tenure,lfsato,Life Satisfaction,2004,year,1.1641862205147462,1.1641862205147462,77.90742243473403,77.90742243473403,19425,panel_tenure
+Life Satisfaction,Germany,model_3,Linear Panel Tenure,lfsato,Life Satisfaction,2005,year,1.1327691077737665,1.1327691077737665,75.804987076146,75.804987076146,18429,panel_tenure
+Life Satisfaction,Germany,model_3,Linear Panel Tenure,lfsato,Life Satisfaction,2006,year,1.0982399060596455,1.0982399060596455,73.49429050812894,73.49429050812894,19588,panel_tenure
+Life Satisfaction,Germany,model_3,Linear Panel Tenure,lfsato,Life Satisfaction,2007,year,1.0858655477508201,1.0858655477508201,72.66619759383714,72.66619759383714,18499,panel_tenure
+Life Satisfaction,Germany,model_3,Linear Panel Tenure,lfsato,Life Satisfaction,2008,year,1.1167573921046927,1.1167573921046927,74.73348195561312,74.73348195561312,17372,panel_tenure
+Life Satisfaction,Germany,model_3,Linear Panel Tenure,lfsato,Life Satisfaction,2009,year,1.105329384606103,1.105329384606103,73.96871890302667,73.96871890302667,16061,panel_tenure
+Life Satisfaction,Germany,model_3,Linear Panel Tenure,lfsato,Life Satisfaction,2010,year,1.0800346188103043,1.0800346188103043,72.27599142565657,72.27599142565657,20947,panel_tenure
+Life Satisfaction,Germany,model_3,Linear Panel Tenure,lfsato,Life Satisfaction,2011,year,1.0444837337506077,1.0444837337506077,69.89692373745643,69.89692373745643,21807,panel_tenure
+Life Satisfaction,Germany,model_3,Linear Panel Tenure,lfsato,Life Satisfaction,2012,year,1.0477206064392905,1.0477206064392905,70.11353548176412,70.11353548176412,23170,panel_tenure
+Life Satisfaction,Germany,model_3,Linear Panel Tenure,lfsato,Life Satisfaction,2013,year,1.0517672386412578,1.0517672386412578,70.38433638873352,70.38433638873352,22021,panel_tenure
+Life Satisfaction,Germany,model_3,Linear Panel Tenure,lfsato,Life Satisfaction,2014,year,1.0241092730231707,1.0241092730231707,68.53346341573017,68.53346341573017,20572,panel_tenure
+Life Satisfaction,Germany,model_3,Linear Panel Tenure,lfsato,Life Satisfaction,2015,year,1.012324587823171,1.012324587823171,67.74483146668443,67.74483146668443,19209,panel_tenure
+Life Satisfaction,Germany,model_3,Linear Panel Tenure,lfsato,Life Satisfaction,2016,year,1.0201291018626037,1.0201291018626037,68.26711008625017,68.26711008625017,18042,panel_tenure
+Life Satisfaction,Germany,model_3,Linear Panel Tenure,lfsato,Life Satisfaction,2017,year,1.016288920470125,1.016288920470125,68.01012488173748,68.01012488173748,20178,panel_tenure
+Life Satisfaction,Germany,model_3,Linear Panel Tenure,lfsato,Life Satisfaction,2018,year,0.994704564210512,0.994704564210512,66.56569826727716,66.56569826727716,19053,panel_tenure
+Life Satisfaction,Germany,model_3,Linear Panel Tenure,lfsato,Life Satisfaction,2019,year,0.9751031685233232,0.9751031685233232,65.25397151153787,65.25397151153787,19665,panel_tenure
+Life Satisfaction,Germany,model_4,Panel Tenure (Factor),lfsato,Life Satisfaction,1984,year,1.3922820341235653,1.3922820341235653,100,100,10247,factor(panel_tenure)
+Life Satisfaction,Germany,model_4,Panel Tenure (Factor),lfsato,Life Satisfaction,1985,year,1.2984740874946208,1.2984740874946208,93.2622885069406,93.2622885069406,9635,factor(panel_tenure)
+Life Satisfaction,Germany,model_4,Panel Tenure (Factor),lfsato,Life Satisfaction,1986,year,1.2925606165734027,1.2925606165734027,92.83755624894371,92.83755624894371,9570,factor(panel_tenure)
+Life Satisfaction,Germany,model_4,Panel Tenure (Factor),lfsato,Life Satisfaction,1987,year,1.278381316340149,1.278381316340149,91.81913470174767,91.81913470174767,9273,factor(panel_tenure)
+Life Satisfaction,Germany,model_4,Panel Tenure (Factor),lfsato,Life Satisfaction,1988,year,1.30464395080551,1.30464395080551,93.70543602731878,93.70543602731878,8932,factor(panel_tenure)
+Life Satisfaction,Germany,model_4,Panel Tenure (Factor),lfsato,Life Satisfaction,1989,year,1.2293219901982357,1.2293219901982357,88.29547175562658,88.29547175562658,8776,factor(panel_tenure)
+Life Satisfaction,Germany,model_4,Panel Tenure (Factor),lfsato,Life Satisfaction,1990,year,1.229952939141268,1.229952939141268,88.34078936567742,88.34078936567742,12596,factor(panel_tenure)
+Life Satisfaction,Germany,model_4,Panel Tenure (Factor),lfsato,Life Satisfaction,1991,year,1.1583015817584215,1.1583015817584215,83.19446443820318,83.19446443820318,12245,factor(panel_tenure)
+Life Satisfaction,Germany,model_4,Panel Tenure (Factor),lfsato,Life Satisfaction,1992,year,1.1419329045191005,1.1419329045191005,82.01879192084394,82.01879192084394,12100,factor(panel_tenure)
+Life Satisfaction,Germany,model_4,Panel Tenure (Factor),lfsato,Life Satisfaction,1993,year,1.176338419159049,1.176338419159049,84.48995177184399,84.48995177184399,11938,factor(panel_tenure)
+Life Satisfaction,Germany,model_4,Panel Tenure (Factor),lfsato,Life Satisfaction,1994,year,1.1490036886494452,1.1490036886494452,82.52664765388124,82.52664765388124,11792,factor(panel_tenure)
+Life Satisfaction,Germany,model_4,Panel Tenure (Factor),lfsato,Life Satisfaction,1995,year,1.1291525272642604,1.1291525272642604,81.10084735633728,81.10084735633728,12202,factor(panel_tenure)
+Life Satisfaction,Germany,model_4,Panel Tenure (Factor),lfsato,Life Satisfaction,1996,year,1.1235225042340307,1.1235225042340307,80.69647360933466,80.69647360933466,12002,factor(panel_tenure)
+Life Satisfaction,Germany,model_4,Panel Tenure (Factor),lfsato,Life Satisfaction,1997,year,1.1180310128603101,1.1180310128603101,80.30204983317947,80.30204983317947,11588,factor(panel_tenure)
+Life Satisfaction,Germany,model_4,Panel Tenure (Factor),lfsato,Life Satisfaction,1998,year,1.1152330734855551,1.1152330734855551,80.10108915810214,80.10108915810214,12798,factor(panel_tenure)
+Life Satisfaction,Germany,model_4,Panel Tenure (Factor),lfsato,Life Satisfaction,1999,year,1.093619738328717,1.093619738328717,78.54872156108408,78.54872156108408,12490,factor(panel_tenure)
+Life Satisfaction,Germany,model_4,Panel Tenure (Factor),lfsato,Life Satisfaction,2000,year,1.053420543500409,1.053420543500409,75.6614333649383,75.6614333649383,20525,factor(panel_tenure)
+Life Satisfaction,Germany,model_4,Panel Tenure (Factor),lfsato,Life Satisfaction,2001,year,1.0418353341120843,1.0418353341120843,74.82933116837312,74.82933116837312,19511,factor(panel_tenure)
+Life Satisfaction,Germany,model_4,Panel Tenure (Factor),lfsato,Life Satisfaction,2002,year,1.032341385113441,1.032341385113441,74.1474327623063,74.1474327623063,20758,factor(panel_tenure)
+Life Satisfaction,Germany,model_4,Panel Tenure (Factor),lfsato,Life Satisfaction,2003,year,1.110039448831255,1.110039448831255,79.72805951848825,79.72805951848825,20213,factor(panel_tenure)
+Life Satisfaction,Germany,model_4,Panel Tenure (Factor),lfsato,Life Satisfaction,2004,year,1.158648626049964,1.158648626049964,83.21939073065234,83.21939073065234,19425,factor(panel_tenure)
+Life Satisfaction,Germany,model_4,Panel Tenure (Factor),lfsato,Life Satisfaction,2005,year,1.1341079328358272,1.1341079328358272,81.45676702276364,81.45676702276364,18429,factor(panel_tenure)
+Life Satisfaction,Germany,model_4,Panel Tenure (Factor),lfsato,Life Satisfaction,2006,year,1.0901597917372727,1.0901597917372727,78.30021253010874,78.30021253010874,19588,factor(panel_tenure)
+Life Satisfaction,Germany,model_4,Panel Tenure (Factor),lfsato,Life Satisfaction,2007,year,1.0804274425056002,1.0804274425056002,77.60119113981987,77.60119113981987,18499,factor(panel_tenure)
+Life Satisfaction,Germany,model_4,Panel Tenure (Factor),lfsato,Life Satisfaction,2008,year,1.1086359224492506,1.1086359224492506,79.62725189850858,79.62725189850858,17372,factor(panel_tenure)
+Life Satisfaction,Germany,model_4,Panel Tenure (Factor),lfsato,Life Satisfaction,2009,year,1.0949265628899918,1.0949265628899918,78.6425836184292,78.6425836184292,16061,factor(panel_tenure)
+Life Satisfaction,Germany,model_4,Panel Tenure (Factor),lfsato,Life Satisfaction,2010,year,1.068834617129064,1.068834617129064,76.76854192849584,76.76854192849584,20947,factor(panel_tenure)
+Life Satisfaction,Germany,model_4,Panel Tenure (Factor),lfsato,Life Satisfaction,2011,year,1.0222144248700162,1.0222144248700162,73.4200686223388,73.4200686223388,21807,factor(panel_tenure)
+Life Satisfaction,Germany,model_4,Panel Tenure (Factor),lfsato,Life Satisfaction,2012,year,1.011535771154788,1.011535771154788,72.65307935913609,72.65307935913609,23170,factor(panel_tenure)
+Life Satisfaction,Germany,model_4,Panel Tenure (Factor),lfsato,Life Satisfaction,2013,year,1.0155205287180455,1.0155205287180455,72.93928269047231,72.93928269047231,22021,factor(panel_tenure)
+Life Satisfaction,Germany,model_4,Panel Tenure (Factor),lfsato,Life Satisfaction,2014,year,0.9919582039507474,0.9919582039507474,71.24692983452739,71.24692983452739,20572,factor(panel_tenure)
+Life Satisfaction,Germany,model_4,Panel Tenure (Factor),lfsato,Life Satisfaction,2015,year,0.9920317532809563,0.9920317532809563,71.25221248045733,71.25221248045733,19209,factor(panel_tenure)
+Life Satisfaction,Germany,model_4,Panel Tenure (Factor),lfsato,Life Satisfaction,2016,year,1.0065663765229884,1.0065663765229884,72.29615493506077,72.29615493506077,18042,factor(panel_tenure)
+Life Satisfaction,Germany,model_4,Panel Tenure (Factor),lfsato,Life Satisfaction,2017,year,0.9912932630624566,0.9912932630624566,71.19917076905116,71.19917076905116,20178,factor(panel_tenure)
+Life Satisfaction,Germany,model_4,Panel Tenure (Factor),lfsato,Life Satisfaction,2018,year,0.9719384130142205,0.9719384130142205,69.80901779904464,69.80901779904464,19053,factor(panel_tenure)
+Life Satisfaction,Germany,model_4,Panel Tenure (Factor),lfsato,Life Satisfaction,2019,year,0.9477484662612442,0.9477484662612442,68.07158629019064,68.07158629019064,19665,factor(panel_tenure)
+Life Satisfaction,Germany,model_5,Panel Tenure (Factor) + Demographics,lfsato,Life Satisfaction,1984,year,1.4251005655351952,1.4251005655351952,100,100,10247,"factor(panel_tenure), agecat, sex, migback_collapsed"
+Life Satisfaction,Germany,model_5,Panel Tenure (Factor) + Demographics,lfsato,Life Satisfaction,1985,year,1.3273372516204605,1.3273372516204605,93.13990070040988,93.13990070040988,9635,"factor(panel_tenure), agecat, sex, migback_collapsed"
+Life Satisfaction,Germany,model_5,Panel Tenure (Factor) + Demographics,lfsato,Life Satisfaction,1986,year,1.3194358807818203,1.3194358807818203,92.58545766461803,92.58545766461803,9570,"factor(panel_tenure), agecat, sex, migback_collapsed"
+Life Satisfaction,Germany,model_5,Panel Tenure (Factor) + Demographics,lfsato,Life Satisfaction,1987,year,1.3053745804223165,1.3053745804223165,91.59876937751999,91.59876937751999,9273,"factor(panel_tenure), agecat, sex, migback_collapsed"
+Life Satisfaction,Germany,model_5,Panel Tenure (Factor) + Demographics,lfsato,Life Satisfaction,1988,year,1.3323577895879604,1.3323577895879604,93.49219429209859,93.49219429209859,8932,"factor(panel_tenure), agecat, sex, migback_collapsed"
+Life Satisfaction,Germany,model_5,Panel Tenure (Factor) + Demographics,lfsato,Life Satisfaction,1989,year,1.2549890096593015,1.2549890096593015,88.06318936432332,88.06318936432332,8776,"factor(panel_tenure), agecat, sex, migback_collapsed"
+Life Satisfaction,Germany,model_5,Panel Tenure (Factor) + Demographics,lfsato,Life Satisfaction,1990,year,1.2585677655949383,1.2585677655949383,88.31431240940421,88.31431240940421,12596,"factor(panel_tenure), agecat, sex, migback_collapsed"
+Life Satisfaction,Germany,model_5,Panel Tenure (Factor) + Demographics,lfsato,Life Satisfaction,1991,year,1.1812534829568144,1.1812534829568144,82.88913158301891,82.88913158301891,12245,"factor(panel_tenure), agecat, sex, migback_collapsed"
+Life Satisfaction,Germany,model_5,Panel Tenure (Factor) + Demographics,lfsato,Life Satisfaction,1992,year,1.165010688323758,1.165010688323758,81.7493667814411,81.7493667814411,12100,"factor(panel_tenure), agecat, sex, migback_collapsed"
+Life Satisfaction,Germany,model_5,Panel Tenure (Factor) + Demographics,lfsato,Life Satisfaction,1993,year,1.200622236154628,1.200622236154628,84.24824641787546,84.24824641787546,11938,"factor(panel_tenure), agecat, sex, migback_collapsed"
+Life Satisfaction,Germany,model_5,Panel Tenure (Factor) + Demographics,lfsato,Life Satisfaction,1994,year,1.1752467969519755,1.1752467969519755,82.46763950378566,82.46763950378566,11792,"factor(panel_tenure), agecat, sex, migback_collapsed"
+Life Satisfaction,Germany,model_5,Panel Tenure (Factor) + Demographics,lfsato,Life Satisfaction,1995,year,1.155824358195805,1.155824358195805,81.10475752718098,81.10475752718098,12202,"factor(panel_tenure), agecat, sex, migback_collapsed"
+Life Satisfaction,Germany,model_5,Panel Tenure (Factor) + Demographics,lfsato,Life Satisfaction,1996,year,1.149848423169804,1.149848423169804,80.68542325909327,80.68542325909327,12002,"factor(panel_tenure), agecat, sex, migback_collapsed"
+Life Satisfaction,Germany,model_5,Panel Tenure (Factor) + Demographics,lfsato,Life Satisfaction,1997,year,1.1439339712820096,1.1439339712820096,80.27040329272526,80.27040329272526,11588,"factor(panel_tenure), agecat, sex, migback_collapsed"
+Life Satisfaction,Germany,model_5,Panel Tenure (Factor) + Demographics,lfsato,Life Satisfaction,1998,year,1.1422872298276152,1.1422872298276152,80.15485064372496,80.15485064372496,12798,"factor(panel_tenure), agecat, sex, migback_collapsed"
+Life Satisfaction,Germany,model_5,Panel Tenure (Factor) + Demographics,lfsato,Life Satisfaction,1999,year,1.1209234806051875,1.1209234806051875,78.65574596724869,78.65574596724869,12490,"factor(panel_tenure), agecat, sex, migback_collapsed"
+Life Satisfaction,Germany,model_5,Panel Tenure (Factor) + Demographics,lfsato,Life Satisfaction,2000,year,1.08290244015419,1.08290244015419,75.98779106143341,75.98779106143341,20525,"factor(panel_tenure), agecat, sex, migback_collapsed"
+Life Satisfaction,Germany,model_5,Panel Tenure (Factor) + Demographics,lfsato,Life Satisfaction,2001,year,1.0701278599043567,1.0701278599043567,75.09139255042476,75.09139255042476,19511,"factor(panel_tenure), agecat, sex, migback_collapsed"
+Life Satisfaction,Germany,model_5,Panel Tenure (Factor) + Demographics,lfsato,Life Satisfaction,2002,year,1.0601377219305983,1.0601377219305983,74.39037970856917,74.39037970856917,20758,"factor(panel_tenure), agecat, sex, migback_collapsed"
+Life Satisfaction,Germany,model_5,Panel Tenure (Factor) + Demographics,lfsato,Life Satisfaction,2003,year,1.1383288534383107,1.1383288534383107,79.87708944672353,79.87708944672353,20213,"factor(panel_tenure), agecat, sex, migback_collapsed"
+Life Satisfaction,Germany,model_5,Panel Tenure (Factor) + Demographics,lfsato,Life Satisfaction,2004,year,1.1848391029772274,1.1848391029772274,83.14073628426793,83.14073628426793,19425,"factor(panel_tenure), agecat, sex, migback_collapsed"
+Life Satisfaction,Germany,model_5,Panel Tenure (Factor) + Demographics,lfsato,Life Satisfaction,2005,year,1.1594788738517106,1.1594788738517106,81.3611966686905,81.3611966686905,18429,"factor(panel_tenure), agecat, sex, migback_collapsed"
+Life Satisfaction,Germany,model_5,Panel Tenure (Factor) + Demographics,lfsato,Life Satisfaction,2006,year,1.1156929146399492,1.1156929146399492,78.28871460877933,78.28871460877933,19588,"factor(panel_tenure), agecat, sex, migback_collapsed"
+Life Satisfaction,Germany,model_5,Panel Tenure (Factor) + Demographics,lfsato,Life Satisfaction,2007,year,1.1033014369171228,1.1033014369171228,77.41919858847147,77.41919858847147,18499,"factor(panel_tenure), agecat, sex, migback_collapsed"
+Life Satisfaction,Germany,model_5,Panel Tenure (Factor) + Demographics,lfsato,Life Satisfaction,2008,year,1.1317073199765586,1.1317073199765586,79.41245322231326,79.41245322231326,17372,"factor(panel_tenure), agecat, sex, migback_collapsed"
+Life Satisfaction,Germany,model_5,Panel Tenure (Factor) + Demographics,lfsato,Life Satisfaction,2009,year,1.1178065845143252,1.1178065845143252,78.43703185217207,78.43703185217207,16061,"factor(panel_tenure), agecat, sex, migback_collapsed"
+Life Satisfaction,Germany,model_5,Panel Tenure (Factor) + Demographics,lfsato,Life Satisfaction,2010,year,1.0923387283135142,1.0923387283135142,76.64993999236029,76.64993999236029,20947,"factor(panel_tenure), agecat, sex, migback_collapsed"
+Life Satisfaction,Germany,model_5,Panel Tenure (Factor) + Demographics,lfsato,Life Satisfaction,2011,year,1.046303345797647,1.046303345797647,73.41961480484773,73.41961480484773,21807,"factor(panel_tenure), agecat, sex, migback_collapsed"
+Life Satisfaction,Germany,model_5,Panel Tenure (Factor) + Demographics,lfsato,Life Satisfaction,2012,year,1.0350349552499005,1.0350349552499005,72.62890635800106,72.62890635800106,23170,"factor(panel_tenure), agecat, sex, migback_collapsed"
+Life Satisfaction,Germany,model_5,Panel Tenure (Factor) + Demographics,lfsato,Life Satisfaction,2013,year,1.0394145323090924,1.0394145323090924,72.93622341092407,72.93622341092407,22021,"factor(panel_tenure), agecat, sex, migback_collapsed"
+Life Satisfaction,Germany,model_5,Panel Tenure (Factor) + Demographics,lfsato,Life Satisfaction,2014,year,1.0147506749444175,1.0147506749444175,71.20554854059222,71.20554854059222,20572,"factor(panel_tenure), agecat, sex, migback_collapsed"
+Life Satisfaction,Germany,model_5,Panel Tenure (Factor) + Demographics,lfsato,Life Satisfaction,2015,year,1.0139533227991042,1.0139533227991042,71.14959795264097,71.14959795264097,19209,"factor(panel_tenure), agecat, sex, migback_collapsed"
+Life Satisfaction,Germany,model_5,Panel Tenure (Factor) + Demographics,lfsato,Life Satisfaction,2016,year,1.0286750593059233,1.0286750593059233,72.18262936550063,72.18262936550063,18042,"factor(panel_tenure), agecat, sex, migback_collapsed"
+Life Satisfaction,Germany,model_5,Panel Tenure (Factor) + Demographics,lfsato,Life Satisfaction,2017,year,1.0130604621298982,1.0130604621298982,71.08694548510296,71.08694548510296,20178,"factor(panel_tenure), agecat, sex, migback_collapsed"
+Life Satisfaction,Germany,model_5,Panel Tenure (Factor) + Demographics,lfsato,Life Satisfaction,2018,year,0.9925255794681515,0.9925255794681515,69.64600277843616,69.64600277843616,19053,"factor(panel_tenure), agecat, sex, migback_collapsed"
+Life Satisfaction,Germany,model_5,Panel Tenure (Factor) + Demographics,lfsato,Life Satisfaction,2019,year,0.968524889541417,0.968524889541417,67.96186268985785,67.96186268985785,19659,"factor(panel_tenure), agecat, sex, migback_collapsed"
+Life Satisfaction,Germany,model_6,New Respondents Only,lfsato,Life Satisfaction,1984,year,1.5271174899263804,1.5271174899263804,100,100,10247,none
+Life Satisfaction,Germany,model_6,New Respondents Only,lfsato,Life Satisfaction,1985,year,1.3852439703745123,1.3852439703745123,90.709718113522,90.709718113522,9635,none
+Life Satisfaction,Germany,model_6,New Respondents Only,lfsato,Life Satisfaction,1986,year,1.5447462468705049,1.5447462468705049,101.15438118287639,101.15438118287639,988,none
+Life Satisfaction,Germany,model_6,New Respondents Only,lfsato,Life Satisfaction,1987,year,1.5163881187527455,1.5163881187527455,99.29741023566221,99.29741023566221,805,none
+Life Satisfaction,Germany,model_6,New Respondents Only,lfsato,Life Satisfaction,1988,year,1.3979122064948641,1.3979122064948641,91.53927027332095,91.53927027332095,713,none
+Life Satisfaction,Germany,model_6,New Respondents Only,lfsato,Life Satisfaction,1989,year,1.2178143375555768,1.2178143375555768,79.74594918785753,79.74594918785753,676,none
+Life Satisfaction,Germany,model_6,New Respondents Only,lfsato,Life Satisfaction,1990,year,1.613272926391226,1.613272926391226,105.64170321099517,105.64170321099517,4583,none
+Life Satisfaction,Germany,model_6,New Respondents Only,lfsato,Life Satisfaction,1991,year,1.368037011966489,1.368037011966489,89.58295749938924,89.58295749938924,4310,none
+Life Satisfaction,Germany,model_6,New Respondents Only,lfsato,Life Satisfaction,1992,year,1.2338052856974002,1.2338052856974002,80.79308198852989,80.79308198852989,1008,none
+Life Satisfaction,Germany,model_6,New Respondents Only,lfsato,Life Satisfaction,1993,year,1.256322444544314,1.256322444544314,82.26756964225974,82.26756964225974,841,none
+Life Satisfaction,Germany,model_6,New Respondents Only,lfsato,Life Satisfaction,1994,year,1.172921971490197,1.172921971490197,76.80626927707713,76.80626927707713,855,none
+Life Satisfaction,Germany,model_6,New Respondents Only,lfsato,Life Satisfaction,1995,year,1.3780082313811743,1.3780082313811743,90.23590132856154,90.23590132856154,1377,none
+Life Satisfaction,Germany,model_6,New Respondents Only,lfsato,Life Satisfaction,1996,year,1.2795314281691255,1.2795314281691255,83.7873599516439,83.7873599516439,1122,none
+Life Satisfaction,Germany,model_6,New Respondents Only,lfsato,Life Satisfaction,1997,year,1.2558464750568938,1.2558464750568938,82.23640180543254,82.23640180543254,757,none
+Life Satisfaction,Germany,model_6,New Respondents Only,lfsato,Life Satisfaction,1998,year,1.2463223708003515,1.2463223708003515,81.61273634947592,81.61273634947592,2243,none
+Life Satisfaction,Germany,model_6,New Respondents Only,lfsato,Life Satisfaction,1999,year,1.1726304633427862,1.1726304633427862,76.78718049384116,76.78718049384116,2166,none
+Life Satisfaction,Germany,model_6,New Respondents Only,lfsato,Life Satisfaction,2000,year,1.1741417666157183,1.1741417666157183,76.88614493389908,76.88614493389908,9273,none
+Life Satisfaction,Germany,model_6,New Respondents Only,lfsato,Life Satisfaction,2001,year,1.1176982945360823,1.1176982945360823,73.19006572244578,73.19006572244578,8537,none
+Life Satisfaction,Germany,model_6,New Respondents Only,lfsato,Life Satisfaction,2002,year,1.0856369817420166,1.0856369817420166,71.09059970194915,71.09059970194915,3214,none
+Life Satisfaction,Germany,model_6,New Respondents Only,lfsato,Life Satisfaction,2003,year,1.1795285087832177,1.1795285087832177,77.23888414375246,77.23888414375246,2821,none
+Life Satisfaction,Germany,model_6,New Respondents Only,lfsato,Life Satisfaction,2004,year,1.2976271788371951,1.2976271788371951,84.97232121280672,84.97232121280672,1200,none
+Life Satisfaction,Germany,model_6,New Respondents Only,lfsato,Life Satisfaction,2005,year,1.3432775722913173,1.3432775722913173,87.96163891463742,87.96163891463742,1023,none
+Life Satisfaction,Germany,model_6,New Respondents Only,lfsato,Life Satisfaction,2006,year,1.1565328309490324,1.1565328309490324,75.73306170468828,75.73306170468828,2904,none
+Life Satisfaction,Germany,model_6,New Respondents Only,lfsato,Life Satisfaction,2007,year,1.1156080032113653,1.1156080032113653,73.05318749673589,73.05318749673589,2647,none
+Life Satisfaction,Germany,model_6,New Respondents Only,lfsato,Life Satisfaction,2008,year,1.272713069253097,1.272713069253097,83.34087440216878,83.34087440216878,947,none
+Life Satisfaction,Germany,model_6,New Respondents Only,lfsato,Life Satisfaction,2009,year,1.160357888215128,1.160357888215128,75.98353734204608,75.98353734204608,738,none
+Life Satisfaction,Germany,model_6,New Respondents Only,lfsato,Life Satisfaction,2010,year,1.1057295567760625,1.1057295567760625,72.40631870632087,72.40631870632087,6530,none
+Life Satisfaction,Germany,model_6,New Respondents Only,lfsato,Life Satisfaction,2011,year,1.0505080935833093,1.0505080935833093,68.79026011508469,68.79026011508469,8929,none
+Life Satisfaction,Germany,model_6,New Respondents Only,lfsato,Life Satisfaction,2012,year,1.105035595897823,1.105035595897823,72.36087617273606,72.36087617273606,6686,none
+Life Satisfaction,Germany,model_6,New Respondents Only,lfsato,Life Satisfaction,2013,year,1.0826846136964041,1.0826846136964041,70.8972702387554,70.8972702387554,4515,none
+Life Satisfaction,Germany,model_6,New Respondents Only,lfsato,Life Satisfaction,2014,year,0.9950845109608478,0.9950845109608478,65.16096616828212,65.16096616828212,1940,none
+Life Satisfaction,Germany,model_6,New Respondents Only,lfsato,Life Satisfaction,2015,year,1.1569853321479946,1.1569853321479946,75.76269277118756,75.76269277118756,1036,none
+Life Satisfaction,Germany,model_6,New Respondents Only,lfsato,Life Satisfaction,2016,year,1.0478234310519756,1.0478234310519756,68.61446077095805,68.61446077095805,901,none
+Life Satisfaction,Germany,model_6,New Respondents Only,lfsato,Life Satisfaction,2017,year,1.0073633947794574,1.0073633947794574,65.96502243111763,65.96502243111763,4078,none
+Life Satisfaction,Germany,model_6,New Respondents Only,lfsato,Life Satisfaction,2018,year,0.9930761304598249,0.9930761304598249,65.02945169645719,65.02945169645719,4421,none
+Life Satisfaction,Germany,model_6,New Respondents Only,lfsato,Life Satisfaction,2019,year,1.0092780732200177,1.0092780732200177,66.09040102531164,66.09040102531164,3697,none
+Life Satisfaction,Germany,model_7,Balanced Panel,lfsato,Life Satisfaction,1984,year,1.344228383400132,1.344228383400132,100,100,794,none
+Life Satisfaction,Germany,model_7,Balanced Panel,lfsato,Life Satisfaction,1985,year,1.2600096618776222,1.2600096618776222,93.73479071246179,93.73479071246179,796,none
+Life Satisfaction,Germany,model_7,Balanced Panel,lfsato,Life Satisfaction,1986,year,1.225530757083974,1.225530757083974,91.16983186920062,91.16983186920062,793,none
+Life Satisfaction,Germany,model_7,Balanced Panel,lfsato,Life Satisfaction,1987,year,1.2518852348127452,1.2518852348127452,93.13039735451714,93.13039735451714,793,none
+Life Satisfaction,Germany,model_7,Balanced Panel,lfsato,Life Satisfaction,1988,year,1.2277036715827345,1.2277036715827345,91.33147958662676,91.33147958662676,793,none
+Life Satisfaction,Germany,model_7,Balanced Panel,lfsato,Life Satisfaction,1989,year,1.1156674117828818,1.1156674117828818,82.996864637010475,82.996864637010475,793,none
+Life Satisfaction,Germany,model_7,Balanced Panel,lfsato,Life Satisfaction,1990,year,0.9699245791324772,0.9699245791324772,72.15474625518029,72.15474625518029,792,none
+Life Satisfaction,Germany,model_7,Balanced Panel,lfsato,Life Satisfaction,1991,year,0.9121690521826963,0.9121690521826963,67.85819012952459,67.85819012952459,791,none
+Life Satisfaction,Germany,model_7,Balanced Panel,lfsato,Life Satisfaction,1992,year,0.924674551881335,0.924674551881335,68.78850077115878,68.78850077115878,792,none
+Life Satisfaction,Germany,model_7,Balanced Panel,lfsato,Life Satisfaction,1993,year,0.91561873664908,0.91561873664908,68.11481947234935,68.11481947234935,792,none
+Life Satisfaction,Germany,model_7,Balanced Panel,lfsato,Life Satisfaction,1994,year,0.9830021043815576,0.9830021043815576,73.12761109054416,73.12761109054416,790,none
+Life Satisfaction,Germany,model_7,Balanced Panel,lfsato,Life Satisfaction,1995,year,1.0985022594525635,1.0985022594525635,81.71991255488733,81.71991255488733,795,none
+Life Satisfaction,Germany,model_7,Balanced Panel,lfsato,Life Satisfaction,1996,year,0.9520066765370978,0.9520066765370978,70.82179548456365,70.82179548456365,798,none
+Life Satisfaction,Germany,model_7,Balanced Panel,lfsato,Life Satisfaction,1997,year,0.9322255336169981,0.9322255336169981,69.35023431502009,69.35023431502009,795,none
+Life Satisfaction,Germany,model_7,Balanced Panel,lfsato,Life Satisfaction,1998,year,0.9102024676168425,0.9102024676168425,67.71189173334882,67.71189173334882,794,none
+Life Satisfaction,Germany,model_7,Balanced Panel,lfsato,Life Satisfaction,1999,year,0.9664122706724865,0.9664122706724865,71.8934581806712,71.8934581806712,794,none
+Life Satisfaction,Germany,model_7,Balanced Panel,lfsato,Life Satisfaction,2000,year,0.895033695578308,0.895033695578308,66.58345461463793,66.58345461463793,792,none
+Life Satisfaction,Germany,model_7,Balanced Panel,lfsato,Life Satisfaction,2001,year,0.868719356873066,0.868719356873066,64.6258751564002,64.6258751564002,794,none
+Life Satisfaction,Germany,model_7,Balanced Panel,lfsato,Life Satisfaction,2002,year,0.9504898913611641,0.9504898913611641,70.70895861884468,70.70895861884468,795,none
+Life Satisfaction,Germany,model_7,Balanced Panel,lfsato,Life Satisfaction,2003,year,0.9389785973183722,0.9389785973183722,69.85260904425267,69.85260904425267,796,none
+Life Satisfaction,Germany,model_7,Balanced Panel,lfsato,Life Satisfaction,2004,year,1.0104842017290214,1.0104842017290214,75.17206259051547,75.17206259051547,795,none
+Life Satisfaction,Germany,model_7,Balanced Panel,lfsato,Life Satisfaction,2005,year,0.9573633357582501,0.9573633357582501,71.22028872330951,71.22028872330951,796,none
+Life Satisfaction,Germany,model_7,Balanced Panel,lfsato,Life Satisfaction,2006,year,1.0323764720194153,1.0323764720194153,76.80067500197332,76.80067500197332,797,none
+Life Satisfaction,Germany,model_7,Balanced Panel,lfsato,Life Satisfaction,2007,year,0.9559378487271027,0.9559378487271027,71.11424372018723,71.11424372018723,796,none
+Life Satisfaction,Germany,model_7,Balanced Panel,lfsato,Life Satisfaction,2008,year,0.9253638092933456,0.9253638092933456,68.83977609167144,68.83977609167144,796,none
+Life Satisfaction,Germany,model_7,Balanced Panel,lfsato,Life Satisfaction,2009,year,0.976276601175107,0.976276601175107,72.62728664497348,72.62728664497348,797,none
+Life Satisfaction,Germany,model_7,Balanced Panel,lfsato,Life Satisfaction,2010,year,0.9570399077372049,0.9570399077372049,71.19622822696535,71.19622822696535,796,none
+Life Satisfaction,Germany,model_7,Balanced Panel,lfsato,Life Satisfaction,2011,year,0.9941208900923664,0.9941208900923664,73.95476113797024,73.95476113797024,795,none
+Life Satisfaction,Germany,model_7,Balanced Panel,lfsato,Life Satisfaction,2012,year,0.930542349677105,0.930542349677105,69.22501869238641,69.22501869238641,794,none
+Life Satisfaction,Germany,model_7,Balanced Panel,lfsato,Life Satisfaction,2013,year,1.059927160492927,1.059927160492927,78.85022914126505,78.85022914126505,793,none
+Life Satisfaction,Germany,model_7,Balanced Panel,lfsato,Life Satisfaction,2014,year,0.8987234561422124,0.8987234561422124,66.85794372746051,66.85794372746051,792,none
+Life Satisfaction,Germany,model_7,Balanced Panel,lfsato,Life Satisfaction,2015,year,0.8931353209257722,0.8931353209257722,66.44223049855923,66.44223049855923,788,none
+Life Satisfaction,Germany,model_7,Balanced Panel,lfsato,Life Satisfaction,2016,year,0.8885809580531112,0.8885809580531112,66.1034217865202,66.1034217865202,791,none
+Life Satisfaction,Germany,model_7,Balanced Panel,lfsato,Life Satisfaction,2017,year,0.9702231274763027,0.9702231274763027,72.17695589957644,72.17695589957644,794,none
+Life Satisfaction,Germany,model_7,Balanced Panel,lfsato,Life Satisfaction,2018,year,0.9230977107210507,0.9230977107210507,68.67119621340976,68.67119621340976,794,none
+Life Satisfaction,Germany,model_7,Balanced Panel,lfsato,Life Satisfaction,2019,year,0.9326685416846674,0.9326685416846674,69.38319062461301,69.38319062461301,703,none
+Life Satisfaction,Australia,model_1,No Controls,lfsato,Life Satisfaction,2001,year,1.0366883426500624,1.0366883426500624,100,100,11368,none
+Life Satisfaction,Australia,model_1,No Controls,lfsato,Life Satisfaction,2002,year,0.9490002799574031,0.9490002799574031,91.54152129573441,91.54152129573441,10853,none
+Life Satisfaction,Australia,model_1,No Controls,lfsato,Life Satisfaction,2003,year,0.9037626565167429,0.9037626565167429,87.17785464882101,87.17785464882101,10624,none
+Life Satisfaction,Australia,model_1,No Controls,lfsato,Life Satisfaction,2004,year,0.8800747559629725,0.8800747559629725,84.89289594144155,84.89289594144155,10667,none
+Life Satisfaction,Australia,model_1,No Controls,lfsato,Life Satisfaction,2005,year,0.8626386002884628,0.8626386002884628,83.21098683171452,83.21098683171452,11028,none
+Life Satisfaction,Australia,model_1,No Controls,lfsato,Life Satisfaction,2006,year,0.8633540513805908,0.8633540513805908,83.27999996350098,83.27999996350098,11067,none
+Life Satisfaction,Australia,model_1,No Controls,lfsato,Life Satisfaction,2007,year,0.8615620384071463,0.8615620384071463,83.10714059007891,83.10714059007891,11042,none
+Life Satisfaction,Australia,model_1,No Controls,lfsato,Life Satisfaction,2008,year,0.8496154166597812,0.8496154166597812,81.95475744310282,81.95475744310282,11169,none
+Life Satisfaction,Australia,model_1,No Controls,lfsato,Life Satisfaction,2009,year,0.8338409249405547,0.8338409249405547,80.43313410943027,80.43313410943027,11650,none
+Life Satisfaction,Australia,model_1,No Controls,lfsato,Life Satisfaction,2010,year,0.813366122119421,0.813366122119421,78.458114040352,78.458114040352,11850,none
+Life Satisfaction,Australia,model_1,No Controls,lfsato,Life Satisfaction,2011,year,0.8514185440031062,0.8514185440031062,82.1286889198199,82.1286889198199,15318,none
+Life Satisfaction,Australia,model_1,No Controls,lfsato,Life Satisfaction,2012,year,0.8200654594374467,0.8200654594374467,79.10433885473549,79.10433885473549,15285,none
+Life Satisfaction,Australia,model_1,No Controls,lfsato,Life Satisfaction,2013,year,0.8256651919690776,0.8256651919690776,79.64449468568816,79.64449468568816,15341,none
+Life Satisfaction,Australia,model_1,No Controls,lfsato,Life Satisfaction,2014,year,0.8108789501374933,0.8108789501374933,78.21819892993706,78.21819892993706,15425,none
+Life Satisfaction,Australia,model_1,No Controls,lfsato,Life Satisfaction,2015,year,0.7908727322406811,0.7908727322406811,76.28837903385616,76.28837903385616,15556,none
+Life Satisfaction,Australia,model_1,No Controls,lfsato,Life Satisfaction,2016,year,0.8019689343823427,0.8019689343823427,77.35872985050533,77.35872985050533,15596,none
+Life Satisfaction,Australia,model_1,No Controls,lfsato,Life Satisfaction,2017,year,0.8041834238574721,0.8041834238574721,77.57234173211177,77.57234173211177,15527,none
+Life Satisfaction,Australia,model_1,No Controls,lfsato,Life Satisfaction,2018,year,0.7742132912494535,0.7742132912494535,74.68139260352345,74.68139260352345,15514,none
+Life Satisfaction,Australia,model_2,Demographic Controls,lfsato,Life Satisfaction,2001,year,1.0668739131445113,1.0668739131445113,100,100,11368,"agecat, sex, migback_collapsed"
+Life Satisfaction,Australia,model_2,Demographic Controls,lfsato,Life Satisfaction,2002,year,0.9791337905417968,0.9791337905417968,91.77596138384257,91.77596138384257,10853,"agecat, sex, migback_collapsed"
+Life Satisfaction,Australia,model_2,Demographic Controls,lfsato,Life Satisfaction,2003,year,0.9338364123532324,0.9338364123532324,87.53015711114698,87.53015711114698,10624,"agecat, sex, migback_collapsed"
+Life Satisfaction,Australia,model_2,Demographic Controls,lfsato,Life Satisfaction,2004,year,0.9094529540499551,0.9094529540499551,85.24465195417773,85.24465195417773,10667,"agecat, sex, migback_collapsed"
+Life Satisfaction,Australia,model_2,Demographic Controls,lfsato,Life Satisfaction,2005,year,0.8921000670622173,0.8921000670622173,83.61813482090265,83.61813482090265,11028,"agecat, sex, migback_collapsed"
+Life Satisfaction,Australia,model_2,Demographic Controls,lfsato,Life Satisfaction,2006,year,0.8935587520196028,0.8935587520196028,83.75485997083965,83.75485997083965,11067,"agecat, sex, migback_collapsed"
+Life Satisfaction,Australia,model_2,Demographic Controls,lfsato,Life Satisfaction,2007,year,0.8925118946034828,0.8925118946034828,83.65673615290558,83.65673615290558,11042,"agecat, sex, migback_collapsed"
+Life Satisfaction,Australia,model_2,Demographic Controls,lfsato,Life Satisfaction,2008,year,0.880262934607919,0.880262934607919,82.50861922506158,82.50861922506158,11169,"agecat, sex, migback_collapsed"
+Life Satisfaction,Australia,model_2,Demographic Controls,lfsato,Life Satisfaction,2009,year,0.8646362393503303,0.8646362393503303,81.04390112997474,81.04390112997474,11650,"agecat, sex, migback_collapsed"
+Life Satisfaction,Australia,model_2,Demographic Controls,lfsato,Life Satisfaction,2010,year,0.8443114274835913,0.8443114274835913,79.13882016245596,79.13882016245596,11850,"agecat, sex, migback_collapsed"
+Life Satisfaction,Australia,model_2,Demographic Controls,lfsato,Life Satisfaction,2011,year,0.8772423384433451,0.8772423384433451,82.22549334417178,82.22549334417178,15318,"agecat, sex, migback_collapsed"
+Life Satisfaction,Australia,model_2,Demographic Controls,lfsato,Life Satisfaction,2012,year,0.8453948096335381,0.8453948096335381,79.24036750901668,79.24036750901668,15285,"agecat, sex, migback_collapsed"
+Life Satisfaction,Australia,model_2,Demographic Controls,lfsato,Life Satisfaction,2013,year,0.851317294478536,0.851317294478536,79.79549260599669,79.79549260599669,15341,"agecat, sex, migback_collapsed"
+Life Satisfaction,Australia,model_2,Demographic Controls,lfsato,Life Satisfaction,2014,year,0.8361489924289746,0.8361489924289746,78.37374052614179,78.37374052614179,15425,"agecat, sex, migback_collapsed"
+Life Satisfaction,Australia,model_2,Demographic Controls,lfsato,Life Satisfaction,2015,year,0.8164918389514758,0.8164918389514758,76.53124037356413,76.53124037356413,15556,"agecat, sex, migback_collapsed"
+Life Satisfaction,Australia,model_2,Demographic Controls,lfsato,Life Satisfaction,2016,year,0.8273021954400855,0.8273021954400855,77.54451442173608,77.54451442173608,15596,"agecat, sex, migback_collapsed"
+Life Satisfaction,Australia,model_2,Demographic Controls,lfsato,Life Satisfaction,2017,year,0.8302174584866034,0.8302174584866034,77.81776724108053,77.81776724108053,15527,"agecat, sex, migback_collapsed"
+Life Satisfaction,Australia,model_2,Demographic Controls,lfsato,Life Satisfaction,2018,year,0.7997983129344303,0.7997983129344303,74.96652632334963,74.96652632334963,15514,"agecat, sex, migback_collapsed"
+Life Satisfaction,Australia,model_3,Linear Panel Tenure,lfsato,Life Satisfaction,2001,year,0.9646932572476827,0.9646932572476827,100,100,11368,panel_tenure
+Life Satisfaction,Australia,model_3,Linear Panel Tenure,lfsato,Life Satisfaction,2002,year,0.887514076027656,0.887514076027656,91.99961431883304,91.99961431883304,10853,panel_tenure
+Life Satisfaction,Australia,model_3,Linear Panel Tenure,lfsato,Life Satisfaction,2003,year,0.8524173154660144,0.8524173154660144,88.36148786796778,88.36148786796778,10624,panel_tenure
+Life Satisfaction,Australia,model_3,Linear Panel Tenure,lfsato,Life Satisfaction,2004,year,0.8384513997588425,0.8384513997588425,86.91378253756905,86.91378253756905,10667,panel_tenure
+Life Satisfaction,Australia,model_3,Linear Panel Tenure,lfsato,Life Satisfaction,2005,year,0.8298749147984908,0.8298749147984908,86.02474502269921,86.02474502269921,11028,panel_tenure
+Life Satisfaction,Australia,model_3,Linear Panel Tenure,lfsato,Life Satisfaction,2006,year,0.8396516781292371,0.8396516781292371,87.03820326523321,87.03820326523321,11067,panel_tenure
+Life Satisfaction,Australia,model_3,Linear Panel Tenure,lfsato,Life Satisfaction,2007,year,0.8475371648882802,0.8475371648882802,87.85561198036622,87.85561198036622,11042,panel_tenure
+Life Satisfaction,Australia,model_3,Linear Panel Tenure,lfsato,Life Satisfaction,2008,year,0.8442050552464684,0.8442050552464684,87.51020585082422,87.51020585082422,11169,panel_tenure
+Life Satisfaction,Australia,model_3,Linear Panel Tenure,lfsato,Life Satisfaction,2009,year,0.8354566529737701,0.8354566529737701,86.60334740572034,86.60334740572034,11650,panel_tenure
+Life Satisfaction,Australia,model_3,Linear Panel Tenure,lfsato,Life Satisfaction,2010,year,0.8233095206419642,0.8233095206419642,85.34417696573382,85.34417696573382,11850,panel_tenure
+Life Satisfaction,Australia,model_3,Linear Panel Tenure,lfsato,Life Satisfaction,2011,year,0.8447486381054465,0.8447486381054465,87.56655359192163,87.56655359192163,15318,panel_tenure
+Life Satisfaction,Australia,model_3,Linear Panel Tenure,lfsato,Life Satisfaction,2012,year,0.8223759941499655,0.8223759941499655,85.24740770929039,85.24740770929039,15285,panel_tenure
+Life Satisfaction,Australia,model_3,Linear Panel Tenure,lfsato,Life Satisfaction,2013,year,0.8370756592838465,0.8370756592838465,86.77117342688436,86.77117342688436,15341,panel_tenure
+Life Satisfaction,Australia,model_3,Linear Panel Tenure,lfsato,Life Satisfaction,2014,year,0.8301410004795584,0.8301410004795584,86.05232743597601,86.05232743597601,15425,panel_tenure
+Life Satisfaction,Australia,model_3,Linear Panel Tenure,lfsato,Life Satisfaction,2015,year,0.8182520813838359,0.8182520813838359,84.81992335246017,84.81992335246017,15556,panel_tenure
+Life Satisfaction,Australia,model_3,Linear Panel Tenure,lfsato,Life Satisfaction,2016,year,0.8367127817156315,0.8367127817156315,86.73355757692494,86.73355757692494,15596,panel_tenure
+Life Satisfaction,Australia,model_3,Linear Panel Tenure,lfsato,Life Satisfaction,2017,year,0.8470866674335114,0.8470866674335114,87.80891346232596,87.80891346232596,15527,panel_tenure
+Life Satisfaction,Australia,model_3,Linear Panel Tenure,lfsato,Life Satisfaction,2018,year,0.8235965695974716,0.8235965695974716,85.37393242979982,85.37393242979982,15514,panel_tenure
+Life Satisfaction,Australia,model_4,Panel Tenure (Factor),lfsato,Life Satisfaction,2001,year,0.9077644585664534,0.9077644585664534,100,100,11368,factor(panel_tenure)
+Life Satisfaction,Australia,model_4,Panel Tenure (Factor),lfsato,Life Satisfaction,2002,year,0.8389825582833844,0.8389825582833844,92.42293530728337,92.42293530728337,10853,factor(panel_tenure)
+Life Satisfaction,Australia,model_4,Panel Tenure (Factor),lfsato,Life Satisfaction,2003,year,0.8383878318674816,0.8383878318674816,92.35741980815907,92.35741980815907,10624,factor(panel_tenure)
+Life Satisfaction,Australia,model_4,Panel Tenure (Factor),lfsato,Life Satisfaction,2004,year,0.8345045514949581,0.8345045514949581,91.92963478795063,91.92963478795063,10667,factor(panel_tenure)
+Life Satisfaction,Australia,model_4,Panel Tenure (Factor),lfsato,Life Satisfaction,2005,year,0.8126292596385821,0.8126292596385821,89.51983655781046,89.51983655781046,11028,factor(panel_tenure)
+Life Satisfaction,Australia,model_4,Panel Tenure (Factor),lfsato,Life Satisfaction,2006,year,0.8375922679128407,0.8375922679128407,92.26977989814351,92.26977989814351,11067,factor(panel_tenure)
+Life Satisfaction,Australia,model_4,Panel Tenure (Factor),lfsato,Life Satisfaction,2007,year,0.8288666517358033,0.8288666517358033,91.30855960639327,91.30855960639327,11042,factor(panel_tenure)
+Life Satisfaction,Australia,model_4,Panel Tenure (Factor),lfsato,Life Satisfaction,2008,year,0.8230956075545709,0.8230956075545709,90.6728171374332,90.6728171374332,11169,factor(panel_tenure)
+Life Satisfaction,Australia,model_4,Panel Tenure (Factor),lfsato,Life Satisfaction,2009,year,0.8145659680785935,0.8145659680785935,89.7331857831227,89.7331857831227,11650,factor(panel_tenure)
+Life Satisfaction,Australia,model_4,Panel Tenure (Factor),lfsato,Life Satisfaction,2010,year,0.7993843671125871,0.7993843671125871,88.06076946160452,88.06076946160452,11850,factor(panel_tenure)
+Life Satisfaction,Australia,model_4,Panel Tenure (Factor),lfsato,Life Satisfaction,2011,year,0.8142144343849164,0.8142144343849164,89.69446057303546,89.69446057303546,15318,factor(panel_tenure)
+Life Satisfaction,Australia,model_4,Panel Tenure (Factor),lfsato,Life Satisfaction,2012,year,0.8029154938891263,0.8029154938891263,88.44976098283192,88.44976098283192,15285,factor(panel_tenure)
+Life Satisfaction,Australia,model_4,Panel Tenure (Factor),lfsato,Life Satisfaction,2013,year,0.8241304252089832,0.8241304252089832,90.78681341087692,90.78681341087692,15341,factor(panel_tenure)
+Life Satisfaction,Australia,model_4,Panel Tenure (Factor),lfsato,Life Satisfaction,2014,year,0.8132400175478721,0.8132400175478721,89.5871180980301,89.5871180980301,15425,factor(panel_tenure)
+Life Satisfaction,Australia,model_4,Panel Tenure (Factor),lfsato,Life Satisfaction,2015,year,0.7933244730409151,0.7933244730409151,87.39320707639705,87.39320707639705,15556,factor(panel_tenure)
+Life Satisfaction,Australia,model_4,Panel Tenure (Factor),lfsato,Life Satisfaction,2016,year,0.8106458396496287,0.8106458396496287,89.30134155393185,89.30134155393185,15596,factor(panel_tenure)
+Life Satisfaction,Australia,model_4,Panel Tenure (Factor),lfsato,Life Satisfaction,2017,year,0.8118451348729392,0.8118451348729392,89.43345679726319,89.43345679726319,15527,factor(panel_tenure)
+Life Satisfaction,Australia,model_4,Panel Tenure (Factor),lfsato,Life Satisfaction,2018,year,0.7896612448736666,0.7896612448736666,86.98966316886916,86.98966316886916,15514,factor(panel_tenure)
+Life Satisfaction,Australia,model_5,Panel Tenure (Factor) + Demographics,lfsato,Life Satisfaction,2001,year,0.9069234902050323,0.9069234902050323,100,100,11368,"factor(panel_tenure), agecat, sex, migback_collapsed"
+Life Satisfaction,Australia,model_5,Panel Tenure (Factor) + Demographics,lfsato,Life Satisfaction,2002,year,0.8430409493148666,0.8430409493148666,92.95612677584043,92.95612677584043,10853,"factor(panel_tenure), agecat, sex, migback_collapsed"
+Life Satisfaction,Australia,model_5,Panel Tenure (Factor) + Demographics,lfsato,Life Satisfaction,2003,year,0.8447951839719116,0.8447951839719116,93.14955374911779,93.14955374911779,10624,"factor(panel_tenure), agecat, sex, migback_collapsed"
+Life Satisfaction,Australia,model_5,Panel Tenure (Factor) + Demographics,lfsato,Life Satisfaction,2004,year,0.8454200820732427,0.8454200820732427,93.21845681625412,93.21845681625412,10667,"factor(panel_tenure), agecat, sex, migback_collapsed"
+Life Satisfaction,Australia,model_5,Panel Tenure (Factor) + Demographics,lfsato,Life Satisfaction,2005,year,0.8275713542788187,0.8275713542788187,91.25040460598566,91.25040460598566,11028,"factor(panel_tenure), agecat, sex, migback_collapsed"
+Life Satisfaction,Australia,model_5,Panel Tenure (Factor) + Demographics,lfsato,Life Satisfaction,2006,year,0.8572498899580199,0.8572498899580199,94.52284555604768,94.52284555604768,11067,"factor(panel_tenure), agecat, sex, migback_collapsed"
+Life Satisfaction,Australia,model_5,Panel Tenure (Factor) + Demographics,lfsato,Life Satisfaction,2007,year,0.853907726074135,0.853907726074135,94.15432892592607,94.15432892592607,11042,"factor(panel_tenure), agecat, sex, migback_collapsed"
+Life Satisfaction,Australia,model_5,Panel Tenure (Factor) + Demographics,lfsato,Life Satisfaction,2008,year,0.8529776409768963,0.8529776409768963,94.05177506032618,94.05177506032618,11169,"factor(panel_tenure), agecat, sex, migback_collapsed"
+Life Satisfaction,Australia,model_5,Panel Tenure (Factor) + Demographics,lfsato,Life Satisfaction,2009,year,0.8424093213020379,0.8424093213020379,92.88648164925033,92.88648164925033,11650,"factor(panel_tenure), agecat, sex, migback_collapsed"
+Life Satisfaction,Australia,model_5,Panel Tenure (Factor) + Demographics,lfsato,Life Satisfaction,2010,year,0.8277346523847078,0.8277346523847078,91.26841032616522,91.26841032616522,11850,"factor(panel_tenure), agecat, sex, migback_collapsed"
+Life Satisfaction,Australia,model_5,Panel Tenure (Factor) + Demographics,lfsato,Life Satisfaction,2011,year,0.8261238499568768,0.8261238499568768,91.09079860420324,91.09079860420324,15318,"factor(panel_tenure), agecat, sex, migback_collapsed"
+Life Satisfaction,Australia,model_5,Panel Tenure (Factor) + Demographics,lfsato,Life Satisfaction,2012,year,0.8168641790129528,0.8168641790129528,90.06980057692415,90.06980057692415,15285,"factor(panel_tenure), agecat, sex, migback_collapsed"
+Life Satisfaction,Australia,model_5,Panel Tenure (Factor) + Demographics,lfsato,Life Satisfaction,2013,year,0.8401948313737948,0.8401948313737948,92.64230560219012,92.64230560219012,15341,"factor(panel_tenure), agecat, sex, migback_collapsed"
+Life Satisfaction,Australia,model_5,Panel Tenure (Factor) + Demographics,lfsato,Life Satisfaction,2014,year,0.832006390505134,0.832006390505134,91.73942449291269,91.73942449291269,15425,"factor(panel_tenure), agecat, sex, migback_collapsed"
+Life Satisfaction,Australia,model_5,Panel Tenure (Factor) + Demographics,lfsato,Life Satisfaction,2015,year,0.8152959119195072,0.8152959119195072,89.89687892362228,89.89687892362228,15556,"factor(panel_tenure), agecat, sex, migback_collapsed"
+Life Satisfaction,Australia,model_5,Panel Tenure (Factor) + Demographics,lfsato,Life Satisfaction,2016,year,0.8355029891647027,0.8355029891647027,92.12496954685966,92.12496954685966,15596,"factor(panel_tenure), agecat, sex, migback_collapsed"
+Life Satisfaction,Australia,model_5,Panel Tenure (Factor) + Demographics,lfsato,Life Satisfaction,2017,year,0.8408836081608496,0.8408836081608496,92.71825211746884,92.71825211746884,15527,"factor(panel_tenure), agecat, sex, migback_collapsed"
+Life Satisfaction,Australia,model_5,Panel Tenure (Factor) + Demographics,lfsato,Life Satisfaction,2018,year,0.8212386297068135,0.8212386297068135,90.55214012828716,90.55214012828716,15514,"factor(panel_tenure), agecat, sex, migback_collapsed"
+Life Satisfaction,Australia,model_6,New Respondents Only,lfsato,Life Satisfaction,2001,year,1.0366883426500646,1.0366883426500646,100,100,11368,none
+Life Satisfaction,Australia,model_6,New Respondents Only,lfsato,Life Satisfaction,2002,year,0.9490002799573996,0.9490002799573996,91.54152129573389,91.54152129573389,10853,none
+Life Satisfaction,Australia,model_6,New Respondents Only,lfsato,Life Satisfaction,2003,year,1.0036382165572266,1.0036382165572266,96.81195160270128,96.81195160270128,1274,none
+Life Satisfaction,Australia,model_6,New Respondents Only,lfsato,Life Satisfaction,2004,year,1.0039353626458944,1.0039353626458944,96.84061461321689,96.84061461321689,923,none
+Life Satisfaction,Australia,model_6,New Respondents Only,lfsato,Life Satisfaction,2005,year,0.9171389832402048,0.9171389832402048,88.46814857546693,88.46814857546693,1021,none
+Life Satisfaction,Australia,model_6,New Respondents Only,lfsato,Life Satisfaction,2006,year,0.990536724342895,0.990536724342895,95.54816848917262,95.54816848917262,1058,none
+Life Satisfaction,Australia,model_6,New Respondents Only,lfsato,Life Satisfaction,2007,year,0.9919949961215903,0.9919949961215903,95.68883485134735,95.68883485134735,959,none
+Life Satisfaction,Australia,model_6,New Respondents Only,lfsato,Life Satisfaction,2008,year,0.8725636562197953,0.8725636562197953,84.16836770723968,84.16836770723968,919,none
+Life Satisfaction,Australia,model_6,New Respondents Only,lfsato,Life Satisfaction,2009,year,0.9329710751394087,0.9329710751394087,89.99532808042139,89.99532808042139,1121,none
+Life Satisfaction,Australia,model_6,New Respondents Only,lfsato,Life Satisfaction,2010,year,0.8763616473711406,0.8763616473711406,84.53472575286376,84.53472575286376,1183,none
+Life Satisfaction,Australia,model_6,New Respondents Only,lfsato,Life Satisfaction,2011,year,0.9539014112087998,0.9539014112087998,92.01428934469946,92.01428934469946,4483,none
+Life Satisfaction,Australia,model_6,New Respondents Only,lfsato,Life Satisfaction,2012,year,0.9279053784483887,0.9279053784483887,89.50668588366719,89.50668588366719,4343,none
+Life Satisfaction,Australia,model_6,New Respondents Only,lfsato,Life Satisfaction,2013,year,0.9186361005845652,0.9186361005845652,88.61256201996784,88.61256201996784,1291,none
+Life Satisfaction,Australia,model_6,New Respondents Only,lfsato,Life Satisfaction,2014,year,0.9034833143281235,0.9034833143281235,87.15090902040704,87.15090902040704,1233,none
+Life Satisfaction,Australia,model_6,New Respondents Only,lfsato,Life Satisfaction,2015,year,0.8947149062936232,0.8947149062936232,86.30509956410644,86.30509956410644,1202,none
+Life Satisfaction,Australia,model_6,New Respondents Only,lfsato,Life Satisfaction,2016,year,0.8816847103397516,0.8816847103397516,85.0481937595555,85.0481937595555,1190,none
+Life Satisfaction,Australia,model_6,New Respondents Only,lfsato,Life Satisfaction,2017,year,0.9229997383430923,0.9229997383430923,89.03348290612081,89.03348290612081,1098,none
+Life Satisfaction,Australia,model_6,New Respondents Only,lfsato,Life Satisfaction,2018,year,0.83991989233295,0.83991989233295,81.01951741695873,81.01951741695873,1067,none
+Life Satisfaction,Australia,model_7,Balanced Panel,lfsato,Life Satisfaction,2001,year,0.9637277884305961,0.9637277884305961,100,100,5362,none
+Life Satisfaction,Australia,model_7,Balanced Panel,lfsato,Life Satisfaction,2002,year,0.8903860477058909,0.8903860477058909,92.38978665914156,92.38978665914156,5356,none
+Life Satisfaction,Australia,model_7,Balanced Panel,lfsato,Life Satisfaction,2003,year,0.834601764470583,0.834601764470583,86.60140077829537,86.60140077829537,5351,none
+Life Satisfaction,Australia,model_7,Balanced Panel,lfsato,Life Satisfaction,2004,year,0.8200908048932396,0.8200908048932396,85.09568933658483,85.09568933658483,5355,none
+Life Satisfaction,Australia,model_7,Balanced Panel,lfsato,Life Satisfaction,2005,year,0.7861726502499823,0.7861726502499823,81.57621474526978,81.57621474526978,5359,none
+Life Satisfaction,Australia,model_7,Balanced Panel,lfsato,Life Satisfaction,2006,year,0.78249311487322315,0.78249311487322315,81.19441239185304,81.19441239185304,5356,none
+Life Satisfaction,Australia,model_7,Balanced Panel,lfsato,Life Satisfaction,2007,year,0.7938335367822208,0.7938335367822208,82.3711369861978,82.3711369861978,5357,none
+Life Satisfaction,Australia,model_7,Balanced Panel,lfsato,Life Satisfaction,2008,year,0.7897709138967262,0.7897709138967262,81.949584039996,81.949584039996,5355,none
+Life Satisfaction,Australia,model_7,Balanced Panel,lfsato,Life Satisfaction,2009,year,0.7824745324940374,0.7824745324940374,81.19248421468426,81.19248421468426,5362,none
+Life Satisfaction,Australia,model_7,Balanced Panel,lfsato,Life Satisfaction,2010,year,0.7564749346041892,0.7564749346041892,78.49466869022088,78.49466869022088,5360,none
+Life Satisfaction,Australia,model_7,Balanced Panel,lfsato,Life Satisfaction,2011,year,0.7539330163451136,0.7539330163451136,78.23090974401313,78.23090974401313,5358,none
+Life Satisfaction,Australia,model_7,Balanced Panel,lfsato,Life Satisfaction,2012,year,0.7107650182046232,0.7107650182046232,73.75163679383824,73.75163679383824,5356,none
+Life Satisfaction,Australia,model_7,Balanced Panel,lfsato,Life Satisfaction,2013,year,0.7339862009284609,0.7339862009284609,76.16115356845079,76.16115356845079,5363,none
+Life Satisfaction,Australia,model_7,Balanced Panel,lfsato,Life Satisfaction,2014,year,0.7326454591001502,0.7326454591001502,76.02203318151103,76.02203318151103,5361,none
+Life Satisfaction,Australia,model_7,Balanced Panel,lfsato,Life Satisfaction,2015,year,0.7123725939762888,0.7123725939762888,73.91844486879098,73.91844486879098,5359,none
+Life Satisfaction,Australia,model_7,Balanced Panel,lfsato,Life Satisfaction,2016,year,0.736170278192142,0.736170278192142,76.38778159452835,76.38778159452835,5350,none
+Life Satisfaction,Australia,model_7,Balanced Panel,lfsato,Life Satisfaction,2017,year,0.744710919749789,0.744710919749789,77.27399050747825,77.27399050747825,5338,none
+Life Satisfaction,Australia,model_7,Balanced Panel,lfsato,Life Satisfaction,2018,year,0.7195125426874398,0.7195125426874398,74.65931265291685,74.65931265291685,5328,none
+Life Satisfaction,Switzerland,model_1,No Controls,sat_life,Life Satisfaction,2000,year,0.9183096620988335,0.9183096620988335,100,100,5886,none
+Life Satisfaction,Switzerland,model_1,No Controls,sat_life,Life Satisfaction,2001,year,0.8848034323653652,0.8848034323653652,96.35131469085401,96.35131469085401,5183,none
+Life Satisfaction,Switzerland,model_1,No Controls,sat_life,Life Satisfaction,2002,year,0.8633842150152875,0.8633842150152875,94.01885340528688,94.01885340528688,4726,none
+Life Satisfaction,Switzerland,model_1,No Controls,sat_life,Life Satisfaction,2003,year,0.8365505306016043,0.8365505306016043,91.0967797822833,91.0967797822833,3898,none
+Life Satisfaction,Switzerland,model_1,No Controls,sat_life,Life Satisfaction,2004,year,0.9061790716851589,0.9061790716851589,98.67903051504983,98.67903051504983,5915,none
+Life Satisfaction,Switzerland,model_1,No Controls,sat_life,Life Satisfaction,2005,year,0.858429172356328,0.858429172356328,93.47927042326374,93.47927042326374,5418,none
+Life Satisfaction,Switzerland,model_1,No Controls,sat_life,Life Satisfaction,2006,year,0.8421228312158782,0.8421228312158782,91.7035795192629,91.7035795192629,5457,none
+Life Satisfaction,Switzerland,model_1,No Controls,sat_life,Life Satisfaction,2007,year,0.8366440021833832,0.8366440021833832,91.10695843831152,91.10695843831152,5893,none
+Life Satisfaction,Switzerland,model_1,No Controls,sat_life,Life Satisfaction,2008,year,0.8001558285496442,0.8001558285496442,87.13355217463965,87.13355217463965,5945,none
+Life Satisfaction,Switzerland,model_1,No Controls,sat_life,Life Satisfaction,2009,year,0.7842600070268885,0.7842600070268885,85.40256510363082,85.40256510363082,6442,none
+Life Satisfaction,Switzerland,model_1,No Controls,sat_life,Life Satisfaction,2010,year,0.8225859116231641,0.8225859116231641,89.57609241996987,89.57609241996987,6787,none
+Life Satisfaction,Switzerland,model_1,No Controls,sat_life,Life Satisfaction,2011,year,0.8326035162415681,0.8326035162415681,90.6669667766121,90.6669667766121,6737,none
+Life Satisfaction,Switzerland,model_1,No Controls,sat_life,Life Satisfaction,2012,year,0.7974306506723601,0.7974306506723601,86.83679194334081,86.83679194334081,6598,none
+Life Satisfaction,Switzerland,model_1,No Controls,sat_life,Life Satisfaction,2013,year,0.7303262662770468,0.7303262662770468,79.5294110929702,79.5294110929702,6318,none
+Life Satisfaction,Switzerland,model_1,No Controls,sat_life,Life Satisfaction,2014,year,0.7878880729727804,0.7878880729727804,85.79764598926583,85.79764598926583,10227,none
+Life Satisfaction,Switzerland,model_1,No Controls,sat_life,Life Satisfaction,2015,year,0.771935230707567,0.771935230707567,84.06044960294527,84.06044960294527,9218,none
+Life Satisfaction,Switzerland,model_1,No Controls,sat_life,Life Satisfaction,2016,year,0.733512777240078,0.733512777240078,79.87640852690205,79.87640852690205,8517,none
+Life Satisfaction,Switzerland,model_1,No Controls,sat_life,Life Satisfaction,2017,year,0.7438631619557114,0.7438631619557114,81.00352121479179,81.00352121479179,8415,none
+Life Satisfaction,Switzerland,model_1,No Controls,sat_life,Life Satisfaction,2018,year,0.7338256350970551,0.7338256350970551,79.9104774112762,79.9104774112762,8116,none
+Life Satisfaction,Switzerland,model_1,No Controls,sat_life,Life Satisfaction,2019,year,0.7460769264132238,0.7460769264132238,81.24459070898101,81.24459070898101,7684,none
+Life Satisfaction,Switzerland,model_2,Demographic Controls,sat_life,Life Satisfaction,2000,year,0.932657461050737,0.932657461050737,100,100,5886,"agecat, sex"
+Life Satisfaction,Switzerland,model_2,Demographic Controls,sat_life,Life Satisfaction,2001,year,0.8998877060661525,0.8998877060661525,96.48641046117126,96.48641046117126,5183,"agecat, sex"
+Life Satisfaction,Switzerland,model_2,Demographic Controls,sat_life,Life Satisfaction,2002,year,0.8777498455490312,0.8777498455490312,94.11277797104131,94.11277797104131,4726,"agecat, sex"
+Life Satisfaction,Switzerland,model_2,Demographic Controls,sat_life,Life Satisfaction,2003,year,0.8505930882687126,0.8505930882687126,91.20101685676,91.20101685676,3898,"agecat, sex"
+Life Satisfaction,Switzerland,model_2,Demographic Controls,sat_life,Life Satisfaction,2004,year,0.9197683690108643,0.9197683690108643,98.61802509730082,98.61802509730082,5915,"agecat, sex"
+Life Satisfaction,Switzerland,model_2,Demographic Controls,sat_life,Life Satisfaction,2005,year,0.8710185092387852,0.8710185092387852,93.39104072115512,93.39104072115512,5418,"agecat, sex"
+Life Satisfaction,Switzerland,model_2,Demographic Controls,sat_life,Life Satisfaction,2006,year,0.8538035811997357,0.8538035811997357,91.54524751647148,91.54524751647148,5457,"agecat, sex"
+Life Satisfaction,Switzerland,model_2,Demographic Controls,sat_life,Life Satisfaction,2007,year,0.8483656980853821,0.8483656980853821,90.96219496594266,90.96219496594266,5893,"agecat, sex"
+Life Satisfaction,Switzerland,model_2,Demographic Controls,sat_life,Life Satisfaction,2008,year,0.8114616481706617,0.8114616481706617,87.00532425446579,87.00532425446579,5945,"agecat, sex"
+Life Satisfaction,Switzerland,model_2,Demographic Controls,sat_life,Life Satisfaction,2009,year,0.7947521629806769,0.7947521629806769,85.21372488515824,85.21372488515824,6442,"agecat, sex"
+Life Satisfaction,Switzerland,model_2,Demographic Controls,sat_life,Life Satisfaction,2010,year,0.8326028024867677,0.8326028024867677,89.27208940662446,89.27208940662446,6787,"agecat, sex"
+Life Satisfaction,Switzerland,model_2,Demographic Controls,sat_life,Life Satisfaction,2011,year,0.8423714443225702,0.8423714443225702,90.31948807588478,90.31948807588478,6737,"agecat, sex"
+Life Satisfaction,Switzerland,model_2,Demographic Controls,sat_life,Life Satisfaction,2012,year,0.8061023734850593,0.8061023734850593,86.43070013903068,86.43070013903068,6598,"agecat, sex"
+Life Satisfaction,Switzerland,model_2,Demographic Controls,sat_life,Life Satisfaction,2013,year,0.7376819796521998,0.7376819796521998,79.09463125091213,79.09463125091213,6318,"agecat, sex"
+Life Satisfaction,Switzerland,model_2,Demographic Controls,sat_life,Life Satisfaction,2014,year,0.7968658926579927,0.7968658926579927,85.44036003960545,85.44036003960545,10227,"agecat, sex"
+Life Satisfaction,Switzerland,model_2,Demographic Controls,sat_life,Life Satisfaction,2015,year,0.7807751940841374,0.7807751940841374,83.71510728113533,83.71510728113533,9218,"agecat, sex"
+Life Satisfaction,Switzerland,model_2,Demographic Controls,sat_life,Life Satisfaction,2016,year,0.741145381802896,0.741145381802896,79.46597896380067,79.46597896380067,8517,"agecat, sex"
+Life Satisfaction,Switzerland,model_2,Demographic Controls,sat_life,Life Satisfaction,2017,year,0.7516852459958439,0.7516852459958439,80.59606848038197,80.59606848038197,8415,"agecat, sex"
+Life Satisfaction,Switzerland,model_2,Demographic Controls,sat_life,Life Satisfaction,2018,year,0.7417925273976768,0.7417925273976768,79.53536623852978,79.53536623852978,8116,"agecat, sex"
+Life Satisfaction,Switzerland,model_2,Demographic Controls,sat_life,Life Satisfaction,2019,year,0.7506435970097942,0.7506435970097942,80.48438235449433,80.48438235449433,7684,"agecat, sex"
+Life Satisfaction,Switzerland,model_3,Linear Panel Tenure,sat_life,Life Satisfaction,2000,year,0.8524544444364609,0.8524544444364609,100,100,5886,panel_tenure
+Life Satisfaction,Switzerland,model_3,Linear Panel Tenure,sat_life,Life Satisfaction,2001,year,0.8294879374564098,0.8294879374564098,97.30583761631581,97.30583761631581,5183,panel_tenure
+Life Satisfaction,Switzerland,model_3,Linear Panel Tenure,sat_life,Life Satisfaction,2002,year,0.8185615252069283,0.8185615252069283,96.02407853572298,96.02407853572298,4726,panel_tenure
+Life Satisfaction,Switzerland,model_3,Linear Panel Tenure,sat_life,Life Satisfaction,2003,year,0.8019182917625368,0.8019182917625368,94.07168875665462,94.07168875665462,3898,panel_tenure
+Life Satisfaction,Switzerland,model_3,Linear Panel Tenure,sat_life,Life Satisfaction,2004,year,0.8608756746532907,0.8608756746532907,100.98788038138471,100.98788038138471,5915,panel_tenure
+Life Satisfaction,Switzerland,model_3,Linear Panel Tenure,sat_life,Life Satisfaction,2005,year,0.8268972070385626,0.8268972070385626,97.0019233796366,97.0019233796366,5418,panel_tenure
+Life Satisfaction,Switzerland,model_3,Linear Panel Tenure,sat_life,Life Satisfaction,2006,year,0.8192898294117088,0.8192898294117088,96.1095146794998,96.1095146794998,5457,panel_tenure
+Life Satisfaction,Switzerland,model_3,Linear Panel Tenure,sat_life,Life Satisfaction,2007,year,0.8185359154284054,0.8185359154284054,96.02107429559145,96.02107429559145,5893,panel_tenure
+Life Satisfaction,Switzerland,model_3,Linear Panel Tenure,sat_life,Life Satisfaction,2008,year,0.7895060712801195,0.7895060712801195,92.61563200624109,92.61563200624109,5945,panel_tenure
+Life Satisfaction,Switzerland,model_3,Linear Panel Tenure,sat_life,Life Satisfaction,2009,year,0.7800464302127574,0.7800464302127574,91.5059373909921,91.5059373909921,6442,panel_tenure
+Life Satisfaction,Switzerland,model_3,Linear Panel Tenure,sat_life,Life Satisfaction,2010,year,0.8251036584261121,0.8251036584261121,96.79152520244881,96.79152520244881,6787,panel_tenure
+Life Satisfaction,Switzerland,model_3,Linear Panel Tenure,sat_life,Life Satisfaction,2011,year,0.8431568860836498,0.8431568860836498,98.90931903593305,98.90931903593305,6737,panel_tenure
+Life Satisfaction,Switzerland,model_3,Linear Panel Tenure,sat_life,Life Satisfaction,2012,year,0.8167765352569888,0.8167765352569888,95.81468436086834,95.81468436086834,6598,panel_tenure
+Life Satisfaction,Switzerland,model_3,Linear Panel Tenure,sat_life,Life Satisfaction,2013,year,0.7606353706168231,0.7606353706168231,89.2288585719865,89.2288585719865,6318,panel_tenure
+Life Satisfaction,Switzerland,model_3,Linear Panel Tenure,sat_life,Life Satisfaction,2014,year,0.7811755956683529,0.7811755956683529,91.63839789524133,91.63839789524133,10227,panel_tenure
+Life Satisfaction,Switzerland,model_3,Linear Panel Tenure,sat_life,Life Satisfaction,2015,year,0.7781119037807352,0.7781119037807352,91.27900134242694,91.27900134242694,9218,panel_tenure
+Life Satisfaction,Switzerland,model_3,Linear Panel Tenure,sat_life,Life Satisfaction,2016,year,0.7490170942459502,0.7490170942459502,87.86593807263321,87.86593807263321,8517,panel_tenure
+Life Satisfaction,Switzerland,model_3,Linear Panel Tenure,sat_life,Life Satisfaction,2017,year,0.7681932630012502,0.7681932630012502,90.11546224139708,90.11546224139708,8415,panel_tenure
+Life Satisfaction,Switzerland,model_3,Linear Panel Tenure,sat_life,Life Satisfaction,2018,year,0.7661129248922578,0.7661129248922578,89.87142126975694,89.87142126975694,8116,panel_tenure
+Life Satisfaction,Switzerland,model_3,Linear Panel Tenure,sat_life,Life Satisfaction,2019,year,0.7908382882523471,0.7908382882523471,92.77191214307683,92.77191214307683,7684,panel_tenure
+Life Satisfaction,Switzerland,model_4,Panel Tenure (Factor),sat_life,Life Satisfaction,2000,year,0.7517978384763679,0.7517978384763679,100,100,5886,factor(panel_tenure)
+Life Satisfaction,Switzerland,model_4,Panel Tenure (Factor),sat_life,Life Satisfaction,2001,year,0.7771114466004059,0.7771114466004059,103.36707647036334,103.36707647036334,5183,factor(panel_tenure)
+Life Satisfaction,Switzerland,model_4,Panel Tenure (Factor),sat_life,Life Satisfaction,2002,year,0.7861342614011935,0.7861342614011935,104.56724150662811,104.56724150662811,4726,factor(panel_tenure)
+Life Satisfaction,Switzerland,model_4,Panel Tenure (Factor),sat_life,Life Satisfaction,2003,year,0.7804921698575715,0.7804921698575715,103.81676162295929,103.81676162295929,3898,factor(panel_tenure)
+Life Satisfaction,Switzerland,model_4,Panel Tenure (Factor),sat_life,Life Satisfaction,2004,year,0.8113196236117282,0.8113196236117282,107.91725941324732,107.91725941324732,5915,factor(panel_tenure)
+Life Satisfaction,Switzerland,model_4,Panel Tenure (Factor),sat_life,Life Satisfaction,2005,year,0.7931949656450061,0.7931949656450061,105.50641742367013,105.50641742367013,5418,factor(panel_tenure)
+Life Satisfaction,Switzerland,model_4,Panel Tenure (Factor),sat_life,Life Satisfaction,2006,year,0.792775445560439,0.792775445560439,105.4506151769628,105.4506151769628,5457,factor(panel_tenure)
+Life Satisfaction,Switzerland,model_4,Panel Tenure (Factor),sat_life,Life Satisfaction,2007,year,0.805057919277943,0.805057919277943,107.08436205529863,107.08436205529863,5893,factor(panel_tenure)
+Life Satisfaction,Switzerland,model_4,Panel Tenure (Factor),sat_life,Life Satisfaction,2008,year,0.7754754719688599,0.7754754719688599,103.14946815229986,103.14946815229986,5945,factor(panel_tenure)
+Life Satisfaction,Switzerland,model_4,Panel Tenure (Factor),sat_life,Life Satisfaction,2009,year,0.7568068235219088,0.7568068235219088,100.66626755082089,100.66626755082089,6442,factor(panel_tenure)
+Life Satisfaction,Switzerland,model_4,Panel Tenure (Factor),sat_life,Life Satisfaction,2010,year,0.8081380940237683,0.8081380940237683,107.49406990336425,107.49406990336425,6787,factor(panel_tenure)
+Life Satisfaction,Switzerland,model_4,Panel Tenure (Factor),sat_life,Life Satisfaction,2011,year,0.8285743065125675,0.8285743065125675,110.2123821201453,110.2123821201453,6737,factor(panel_tenure)
+Life Satisfaction,Switzerland,model_4,Panel Tenure (Factor),sat_life,Life Satisfaction,2012,year,0.8012706713694804,0.8012706713694804,106.58060323681917,106.58060323681917,6598,factor(panel_tenure)
+Life Satisfaction,Switzerland,model_4,Panel Tenure (Factor),sat_life,Life Satisfaction,2013,year,0.7311508727703442,0.7311508727703442,97.25365455321501,97.25365455321501,6318,factor(panel_tenure)
+Life Satisfaction,Switzerland,model_4,Panel Tenure (Factor),sat_life,Life Satisfaction,2014,year,0.7222121137808506,0.7222121137808506,96.0646701571426,96.0646701571426,10227,factor(panel_tenure)
+Life Satisfaction,Switzerland,model_4,Panel Tenure (Factor),sat_life,Life Satisfaction,2015,year,0.7412011605580366,0.7412011605580366,98.59048837652858,98.59048837652858,9218,factor(panel_tenure)
+Life Satisfaction,Switzerland,model_4,Panel Tenure (Factor),sat_life,Life Satisfaction,2016,year,0.7146385597268907,0.7146385597268907,95.05727778829663,95.05727778829663,8517,factor(panel_tenure)
+Life Satisfaction,Switzerland,model_4,Panel Tenure (Factor),sat_life,Life Satisfaction,2017,year,0.7298353399551882,0.7298353399551882,97.07866963734692,97.07866963734692,8415,factor(panel_tenure)
+Life Satisfaction,Switzerland,model_4,Panel Tenure (Factor),sat_life,Life Satisfaction,2018,year,0.7314891633165566,0.7314891633165566,97.29865209496079,97.29865209496079,8116,factor(panel_tenure)
+Life Satisfaction,Switzerland,model_4,Panel Tenure (Factor),sat_life,Life Satisfaction,2019,year,0.7454677655019812,0.7454677655019812,99.1580086227415,99.1580086227415,7684,factor(panel_tenure)
+Life Satisfaction,Switzerland,model_5,Panel Tenure (Factor) + Demographics,sat_life,Life Satisfaction,2000,year,0.745637716650866,0.745637716650866,100,100,5886,"factor(panel_tenure), agecat, sex"
+Life Satisfaction,Switzerland,model_5,Panel Tenure (Factor) + Demographics,sat_life,Life Satisfaction,2001,year,0.774476144520375,0.774476144520375,103.86761925067857,103.86761925067857,5183,"factor(panel_tenure), agecat, sex"
+Life Satisfaction,Switzerland,model_5,Panel Tenure (Factor) + Demographics,sat_life,Life Satisfaction,2002,year,0.7848791944714398,0.7848791944714398,105.26280751955954,105.26280751955954,4726,"factor(panel_tenure), agecat, sex"
+Life Satisfaction,Switzerland,model_5,Panel Tenure (Factor) + Demographics,sat_life,Life Satisfaction,2003,year,0.7807954192903098,0.7807954192903098,104.7151185963821,104.7151185963821,3898,"factor(panel_tenure), agecat, sex"
+Life Satisfaction,Switzerland,model_5,Panel Tenure (Factor) + Demographics,sat_life,Life Satisfaction,2004,year,0.8082536857382244,0.8082536857382244,108.3976397235653,108.3976397235653,5915,"factor(panel_tenure), agecat, sex"
+Life Satisfaction,Switzerland,model_5,Panel Tenure (Factor) + Demographics,sat_life,Life Satisfaction,2005,year,0.7924231265447449,0.7924231265447449,106.27454980469899,106.27454980469899,5418,"factor(panel_tenure), agecat, sex"
+Life Satisfaction,Switzerland,model_5,Panel Tenure (Factor) + Demographics,sat_life,Life Satisfaction,2006,year,0.7910092268741037,0.7910092268741037,106.0849269303369,106.0849269303369,5457,"factor(panel_tenure), agecat, sex"
+Life Satisfaction,Switzerland,model_5,Panel Tenure (Factor) + Demographics,sat_life,Life Satisfaction,2007,year,0.8040111359409644,0.8040111359409644,107.82865699877557,107.82865699877557,5893,"factor(panel_tenure), agecat, sex"
+Life Satisfaction,Switzerland,model_5,Panel Tenure (Factor) + Demographics,sat_life,Life Satisfaction,2008,year,0.7751140731106817,0.7751140731106817,103.95317401488391,103.95317401488391,5945,"factor(panel_tenure), agecat, sex"
+Life Satisfaction,Switzerland,model_5,Panel Tenure (Factor) + Demographics,sat_life,Life Satisfaction,2009,year,0.7572821927539256,0.7572821927539256,101.56168013540979,101.56168013540979,6442,"factor(panel_tenure), agecat, sex"
+Life Satisfaction,Switzerland,model_5,Panel Tenure (Factor) + Demographics,sat_life,Life Satisfaction,2010,year,0.8088819587501309,0.8088819587501309,108.48189954544347,108.48189954544347,6787,"factor(panel_tenure), agecat, sex"
+Life Satisfaction,Switzerland,model_5,Panel Tenure (Factor) + Demographics,sat_life,Life Satisfaction,2011,year,0.8304195550213002,0.8304195550213002,111.370379539174,111.370379539174,6737,"factor(panel_tenure), agecat, sex"
+Life Satisfaction,Switzerland,model_5,Panel Tenure (Factor) + Demographics,sat_life,Life Satisfaction,2012,year,0.8038170111964676,0.8038170111964676,107.80262227170078,107.80262227170078,6598,"factor(panel_tenure), agecat, sex"
+Life Satisfaction,Switzerland,model_5,Panel Tenure (Factor) + Demographics,sat_life,Life Satisfaction,2013,year,0.7348025861932804,0.7348025861932804,98.54686395073293,98.54686395073293,6318,"factor(panel_tenure), agecat, sex"
+Life Satisfaction,Switzerland,model_5,Panel Tenure (Factor) + Demographics,sat_life,Life Satisfaction,2014,year,0.720341073873141,0.720341073873141,96.60738154564547,96.60738154564547,10227,"factor(panel_tenure), agecat, sex"
+Life Satisfaction,Switzerland,model_5,Panel Tenure (Factor) + Demographics,sat_life,Life Satisfaction,2015,year,0.7419814761654896,0.7419814761654896,99.50964920312792,99.50964920312792,9218,"factor(panel_tenure), agecat, sex"
+Life Satisfaction,Switzerland,model_5,Panel Tenure (Factor) + Demographics,sat_life,Life Satisfaction,2016,year,0.7165565076607406,0.7165565076607406,96.0998205508236,96.0998205508236,8517,"factor(panel_tenure), agecat, sex"
+Life Satisfaction,Switzerland,model_5,Panel Tenure (Factor) + Demographics,sat_life,Life Satisfaction,2017,year,0.7340303604956092,0.7340303604956092,98.4432981465325,98.4432981465325,8415,"factor(panel_tenure), agecat, sex"
+Life Satisfaction,Switzerland,model_5,Panel Tenure (Factor) + Demographics,sat_life,Life Satisfaction,2018,year,0.7380827499508632,0.7380827499508632,98.98677782369474,98.98677782369474,8116,"factor(panel_tenure), agecat, sex"
+Life Satisfaction,Switzerland,model_5,Panel Tenure (Factor) + Demographics,sat_life,Life Satisfaction,2019,year,0.7506088536393248,0.7506088536393248,100.66669602106333,100.66669602106333,7684,"factor(panel_tenure), agecat, sex"
+Life Satisfaction,Switzerland,model_6,New Respondents Only,sat_life,Life Satisfaction,2000,year,0.918309662098829,0.918309662098829,100,100,5886,none
+Life Satisfaction,Switzerland,model_6,New Respondents Only,sat_life,Life Satisfaction,2001,year,0.8848034323653668,0.8848034323653668,96.35131469085466,96.35131469085466,5183,none
+Life Satisfaction,Switzerland,model_6,New Respondents Only,sat_life,Life Satisfaction,2002,year,1.0239233430667538,1.0239233430667538,111.50087876964521,111.50087876964521,590,none
+Life Satisfaction,Switzerland,model_6,New Respondents Only,sat_life,Life Satisfaction,2003,year,0.985912305019354,0.985912305019354,107.36163907564871,107.36163907564871,263,none
+Life Satisfaction,Switzerland,model_6,New Respondents Only,sat_life,Life Satisfaction,2004,year,1.0263133477197899,1.0263133477197899,111.76114006838549,111.76114006838549,2596,none
+Life Satisfaction,Switzerland,model_6,New Respondents Only,sat_life,Life Satisfaction,2005,year,0.9166857777496309,0.9166857777496309,99.82316593016274,99.82316593016274,2235,none
+Life Satisfaction,Switzerland,model_6,New Respondents Only,sat_life,Life Satisfaction,2006,year,0.9071208334192243,0.9071208334192243,98.78158434552107,98.78158434552107,649,none
+Life Satisfaction,Switzerland,model_6,New Respondents Only,sat_life,Life Satisfaction,2007,year,0.9987334629943488,0.9987334629943488,108.7578084185359,108.7578084185359,760,none
+Life Satisfaction,Switzerland,model_6,New Respondents Only,sat_life,Life Satisfaction,2008,year,0.9198672627290073,0.9198672627290073,100.16961605594112,100.16961605594112,697,none
+Life Satisfaction,Switzerland,model_6,New Respondents Only,sat_life,Life Satisfaction,2009,year,0.8856773418089443,0.8856773418089443,96.44647969669595,96.44647969669595,679,none
+Life Satisfaction,Switzerland,model_6,New Respondents Only,sat_life,Life Satisfaction,2010,year,0.9160645423942514,0.9160645423942514,99.75551605332711,99.75551605332711,666,none
+Life Satisfaction,Switzerland,model_6,New Respondents Only,sat_life,Life Satisfaction,2011,year,0.9956073699064086,0.9956073699064086,108.41739023315,108.41739023315,553,none
+Life Satisfaction,Switzerland,model_6,New Respondents Only,sat_life,Life Satisfaction,2012,year,0.8560977403104926,0.8560977403104926,93.22538743127792,93.22538743127792,436,none
+Life Satisfaction,Switzerland,model_6,New Respondents Only,sat_life,Life Satisfaction,2013,year,0.7585221841895151,0.7585221841895151,82.59982612574129,82.59982612574129,382,none
+Life Satisfaction,Switzerland,model_6,New Respondents Only,sat_life,Life Satisfaction,2014,year,0.8552949733933811,0.8552949733933811,93.13796954271115,93.13796954271115,4461,none
+Life Satisfaction,Switzerland,model_6,New Respondents Only,sat_life,Life Satisfaction,2015,year,0.8136003501288696,0.8136003501288696,88.59760315157278,88.59760315157278,3703,none
+Life Satisfaction,Switzerland,model_6,New Respondents Only,sat_life,Life Satisfaction,2016,year,0.8921859125081195,0.8921859125081195,97.15523524700778,97.15523524700778,553,none
+Life Satisfaction,Switzerland,model_6,New Respondents Only,sat_life,Life Satisfaction,2017,year,1.0081661776922222,1.0081661776922222,109.78499076096216,109.78499076096216,584,none
+Life Satisfaction,Switzerland,model_6,New Respondents Only,sat_life,Life Satisfaction,2018,year,0.749177580064998,0.749177580064998,81.58223864842348,81.58223864842348,490,none
+Life Satisfaction,Switzerland,model_6,New Respondents Only,sat_life,Life Satisfaction,2019,year,0.7922209888773022,0.7922209888773022,86.26948202490358,86.26948202490358,409,none
+Life Satisfaction,Switzerland,model_7,Balanced Panel,sat_life,Life Satisfaction,2000,year,0.8271231579736033,0.8271231579736033,100,100,1684,none
+Life Satisfaction,Switzerland,model_7,Balanced Panel,sat_life,Life Satisfaction,2001,year,0.8047797280217419,0.8047797280217419,97.2986574325157,97.2986574325157,1701,none
+Life Satisfaction,Switzerland,model_7,Balanced Panel,sat_life,Life Satisfaction,2002,year,0.8021427510852859,0.8021427510852859,96.97984433787131,96.97984433787131,1694,none
+Life Satisfaction,Switzerland,model_7,Balanced Panel,sat_life,Life Satisfaction,2003,year,0.7557054090756206,0.7557054090756206,91.36552420162538,91.36552420162538,1660,none
+Life Satisfaction,Switzerland,model_7,Balanced Panel,sat_life,Life Satisfaction,2004,year,0.7106786613083629,0.7106786613083629,85.92174629102132,85.92174629102132,1655,none
+Life Satisfaction,Switzerland,model_7,Balanced Panel,sat_life,Life Satisfaction,2005,year,0.7607479425171741,0.7607479425171741,91.97517143407713,91.97517143407713,1673,none
+Life Satisfaction,Switzerland,model_7,Balanced Panel,sat_life,Life Satisfaction,2006,year,0.7673634603116105,0.7673634603116105,92.77499401559497,92.77499401559497,1731,none
+Life Satisfaction,Switzerland,model_7,Balanced Panel,sat_life,Life Satisfaction,2007,year,0.7139941136372296,0.7139941136372296,86.32258772520258,86.32258772520258,1768,none
+Life Satisfaction,Switzerland,model_7,Balanced Panel,sat_life,Life Satisfaction,2008,year,0.6952314320743453,0.6952314320743453,84.05416114543523,84.05416114543523,1798,none
+Life Satisfaction,Switzerland,model_7,Balanced Panel,sat_life,Life Satisfaction,2009,year,0.6645288341640716,0.6645288341640716,80.34218698363168,80.34218698363168,1861,none
+Life Satisfaction,Switzerland,model_7,Balanced Panel,sat_life,Life Satisfaction,2010,year,0.6993180994079176,0.6993180994079176,84.54824322912205,84.54824322912205,1954,none
+Life Satisfaction,Switzerland,model_7,Balanced Panel,sat_life,Life Satisfaction,2011,year,0.7050869274812643,0.7050869274812643,85.24570019399292,85.24570019399292,1997,none
+Life Satisfaction,Switzerland,model_7,Balanced Panel,sat_life,Life Satisfaction,2012,year,0.7164884097340847,0.7164884097340847,86.6241505665775,86.6241505665775,2039,none
+Life Satisfaction,Switzerland,model_7,Balanced Panel,sat_life,Life Satisfaction,2013,year,0.6609755163462796,0.6609755163462796,79.91258737884037,79.91258737884037,2071,none
+Life Satisfaction,Switzerland,model_7,Balanced Panel,sat_life,Life Satisfaction,2014,year,0.6830628682976619,0.6830628682976619,82.58296986522787,82.58296986522787,2053,none
+Life Satisfaction,Switzerland,model_7,Balanced Panel,sat_life,Life Satisfaction,2015,year,0.6999438549938422,0.6999438549938422,84.62389769241355,84.62389769241355,2037,none
+Life Satisfaction,Switzerland,model_7,Balanced Panel,sat_life,Life Satisfaction,2016,year,0.6597439724520092,0.6597439724520092,79.76369251567543,79.76369251567543,2013,none
+Life Satisfaction,Switzerland,model_7,Balanced Panel,sat_life,Life Satisfaction,2017,year,0.7024101094735281,0.7024101094735281,84.92207027480481,84.92207027480481,2014,none
+Life Satisfaction,Switzerland,model_7,Balanced Panel,sat_life,Life Satisfaction,2018,year,0.7079455298195433,0.7079455298195433,85.59130801680887,85.59130801680887,1976,none
+Life Satisfaction,Switzerland,model_7,Balanced Panel,sat_life,Life Satisfaction,2019,year,0.7119162194985975,0.7119162194985975,86.0713682884596,86.0713682884596,1864,none

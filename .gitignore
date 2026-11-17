@@ -1,0 +1,33 @@
+# Panel microdata. Not redistributable under the SOEP, HILDA, SHP and BES
+# data agreements, and several files exceed GitHub's 100 MB limit.
+data/Processed_Data/*
+!data/Processed_Data/README.md
+
+# CHES requires registration; not redistributable.
+data/Raw_Data/*CHES*
+data/Raw_Data/CHES*
+
+# Generated output. Figures and tables are rebuilt by the pipeline.
+output/Figures_for_Publication/*
+output/Figures_for_Slides/*
+output/Tables_091126/*
+!output/**/README.md
+!output/**/.gitkeep
+
+# Temporary files left by an interrupted safe_save()
+output/**/.tmp_*
+
+# R
+.Rhistory
+.RData
+.Rproj.user/
+*.Rproj.user
+renv/library/
+
+# Stata
+*.smcl
+*.log
+!README.md
+
+# macOS
+.DS_Store

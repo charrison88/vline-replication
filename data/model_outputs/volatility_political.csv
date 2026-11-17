@@ -1,0 +1,235 @@
+domain,country,model_id,model_label,variable,variable_label,time_period,time_var_name,mean_within_var,mean_within_var_interpolated,indexed_within_var,indexed_within_var_interpolated,n_obs,controls_used
+Political,Switzerland (SHP),model_1,No Controls,lrself,Left-Right (SHP),1999,year,1.0561470755951738,1.0561470755951738,100,100,4821,none
+Political,Switzerland (SHP),model_1,No Controls,lrself,Left-Right (SHP),2000,year,1.0320599372530903,1.0320599372530903,97.71933863202626,97.71933863202626,4507,none
+Political,Switzerland (SHP),model_1,No Controls,lrself,Left-Right (SHP),2001,year,1.0338733094268946,1.0338733094268946,97.89103556853318,97.89103556853318,4127,none
+Political,Switzerland (SHP),model_1,No Controls,lrself,Left-Right (SHP),2002,year,1.0382764497275376,1.0382764497275376,98.30794154710266,98.30794154710266,3867,none
+Political,Switzerland (SHP),model_1,No Controls,lrself,Left-Right (SHP),2003,year,0.9488237065564816,0.9488237065564816,89.83821746812943,89.83821746812943,3239,none
+Political,Switzerland (SHP),model_1,No Controls,lrself,Left-Right (SHP),2004,year,0.9606459123580476,0.9606459123580476,90.95758863098607,90.95758863098607,4822,none
+Political,Switzerland (SHP),model_1,No Controls,lrself,Left-Right (SHP),2005,year,0.9106268975266869,0.9106268975266869,86.22159910952918,86.22159910952918,4545,none
+Political,Switzerland (SHP),model_1,No Controls,lrself,Left-Right (SHP),2006,year,0.9014624411358827,0.9014624411358827,85.35387371383656,85.35387371383656,4631,none
+Political,Switzerland (SHP),model_1,No Controls,lrself,Left-Right (SHP),2007,year,0.9193139266366909,0.9193139266366909,87.04411988440408,87.04411988440408,5052,none
+Political,Switzerland (SHP),model_1,No Controls,lrself,Left-Right (SHP),2008,year,0.8851488499434573,0.8851488499434573,83.80924119348118,83.80924119348118,4958,none
+Political,Switzerland (SHP),model_1,No Controls,lrself,Left-Right (SHP),2009,year,0.8417729578417312,0.8417729578417312,79.70224765971768,79.70224765971768,5176,none
+Political,Switzerland (SHP),model_1,No Controls,lrself,Left-Right (SHP),2010,year,0.9195698565607471,0.9195698565607471,87.06835229767019,87.06835229767019,5452,none
+Political,Switzerland (SHP),model_1,No Controls,lrself,Left-Right (SHP),2011,year,0.858749138638151,0.858749138638151,81.30961667002842,81.30961667002842,5531,none
+Political,Switzerland (SHP),model_1,No Controls,lrself,Left-Right (SHP),2012,year,0.7872264346273256,0.7872264346273256,74.53757651922649,74.53757651922649,5380,none
+Political,Switzerland (SHP),model_1,No Controls,lrself,Left-Right (SHP),2013,year,0.7573218051837494,0.7573218051837494,71.70609308906843,71.70609308906843,5127,none
+Political,Switzerland (SHP),model_1,No Controls,lrself,Left-Right (SHP),2014,year,0.893923695377443,0.893923695377443,84.64007675007645,84.64007675007645,8175,none
+Political,Switzerland (SHP),model_1,No Controls,lrself,Left-Right (SHP),2015,year,0.8537879591827316,0.8537879591827316,80.83987343349825,80.83987343349825,7511,none
+Political,Switzerland (SHP),model_1,No Controls,lrself,Left-Right (SHP),2016,year,0.79101301879857,0.79101301879857,74.89610463133725,74.89610463133725,7017,none
+Political,Switzerland (SHP),model_1,No Controls,lrself,Left-Right (SHP),2017,year,0.7848151975952772,0.7848151975952772,74.30927147651362,74.30927147651362,6956,none
+Political,Switzerland (SHP),model_1,No Controls,lrself,Left-Right (SHP),2018,year,0.8241167660108123,0.8241167660108123,78.03049263251476,78.03049263251476,6717,none
+Political,Switzerland (SHP),model_1,No Controls,lrself,Left-Right (SHP),2019,year,0.7982237306252118,0.7982237306252118,75.57884210164444,75.57884210164444,6452,none
+Political,Switzerland (SHP),model_1,No Controls,lrself,Left-Right (SHP),2020,year,0.7789438919024827,0.7789438919024827,73.75335404527083,73.75335404527083,5900,none
+Political,Switzerland (SHP),model_1,No Controls,lrself,Left-Right (SHP),2021,year,0.714092755036094,0.714092755036094,67.61300310694693,67.61300310694693,5429,none
+Political,Switzerland (SHP),model_1,No Controls,lrself,Left-Right (SHP),2022,year,0.7256076707053767,0.7256076707053767,68.70327887775221,68.70327887775221,5132,none
+Political,Switzerland (SHP),model_2,Demographic Controls,lrself,Left-Right (SHP),1999,year,1.0979007926785518,1.0979007926785518,100,100,4821,"agecat, sex"
+Political,Switzerland (SHP),model_2,Demographic Controls,lrself,Left-Right (SHP),2000,year,1.071188653104794,1.071188653104794,97.56698057311827,97.56698057311827,4507,"agecat, sex"
+Political,Switzerland (SHP),model_2,Demographic Controls,lrself,Left-Right (SHP),2001,year,1.0708206718143263,1.0708206718143263,97.53346376605138,97.53346376605138,4127,"agecat, sex"
+Political,Switzerland (SHP),model_2,Demographic Controls,lrself,Left-Right (SHP),2002,year,1.0734313761149052,1.0734313761149052,97.77125431306517,97.77125431306517,3867,"agecat, sex"
+Political,Switzerland (SHP),model_2,Demographic Controls,lrself,Left-Right (SHP),2003,year,0.9827430082410689,0.9827430082410689,89.51109378867173,89.51109378867173,3239,"agecat, sex"
+Political,Switzerland (SHP),model_2,Demographic Controls,lrself,Left-Right (SHP),2004,year,0.9944244654285239,0.9944244654285239,90.57507491204407,90.57507491204407,4822,"agecat, sex"
+Political,Switzerland (SHP),model_2,Demographic Controls,lrself,Left-Right (SHP),2005,year,0.9429592891655771,0.9429592891655771,85.88747685162305,85.88747685162305,4545,"agecat, sex"
+Political,Switzerland (SHP),model_2,Demographic Controls,lrself,Left-Right (SHP),2006,year,0.930602745228189,0.930602745228189,84.76200686200387,84.76200686200387,4631,"agecat, sex"
+Political,Switzerland (SHP),model_2,Demographic Controls,lrself,Left-Right (SHP),2007,year,0.9498688795282121,0.9498688795282121,86.51682245449648,86.51682245449648,5052,"agecat, sex"
+Political,Switzerland (SHP),model_2,Demographic Controls,lrself,Left-Right (SHP),2008,year,0.916535198451049,0.916535198451049,83.48069375330128,83.48069375330128,4958,"agecat, sex"
+Political,Switzerland (SHP),model_2,Demographic Controls,lrself,Left-Right (SHP),2009,year,0.8731862515793154,0.8731862515793154,79.53234549079798,79.53234549079798,5176,"agecat, sex"
+Political,Switzerland (SHP),model_2,Demographic Controls,lrself,Left-Right (SHP),2010,year,0.9505896479913148,0.9505896479913148,86.58247214415053,86.58247214415053,5452,"agecat, sex"
+Political,Switzerland (SHP),model_2,Demographic Controls,lrself,Left-Right (SHP),2011,year,0.8888232637019111,0.8888232637019111,80.95661007161188,80.95661007161188,5531,"agecat, sex"
+Political,Switzerland (SHP),model_2,Demographic Controls,lrself,Left-Right (SHP),2012,year,0.8155022473733082,0.8155022473733082,74.27831847937053,74.27831847937053,5380,"agecat, sex"
+Political,Switzerland (SHP),model_2,Demographic Controls,lrself,Left-Right (SHP),2013,year,0.7803199027675676,0.7803199027675676,71.07380812284677,71.07380812284677,5127,"agecat, sex"
+Political,Switzerland (SHP),model_2,Demographic Controls,lrself,Left-Right (SHP),2014,year,0.9215906764204533,0.9215906764204533,83.94116140239282,83.94116140239282,8175,"agecat, sex"
+Political,Switzerland (SHP),model_2,Demographic Controls,lrself,Left-Right (SHP),2015,year,0.8811792279926678,0.8811792279926678,80.26036904872363,80.26036904872363,7511,"agecat, sex"
+Political,Switzerland (SHP),model_2,Demographic Controls,lrself,Left-Right (SHP),2016,year,0.8162385244580754,0.8162385244580754,74.34538073942873,74.34538073942873,7017,"agecat, sex"
+Political,Switzerland (SHP),model_2,Demographic Controls,lrself,Left-Right (SHP),2017,year,0.8094108420142474,0.8094108420142474,73.72349554822028,73.72349554822028,6956,"agecat, sex"
+Political,Switzerland (SHP),model_2,Demographic Controls,lrself,Left-Right (SHP),2018,year,0.8510827875482793,0.8510827875482793,77.5190976474195,77.5190976474195,6717,"agecat, sex"
+Political,Switzerland (SHP),model_2,Demographic Controls,lrself,Left-Right (SHP),2019,year,0.8138916953760776,0.8138916953760776,74.13162471541929,74.13162471541929,6452,"agecat, sex"
+Political,Switzerland (SHP),model_2,Demographic Controls,lrself,Left-Right (SHP),2020,year,0.7880389122070122,0.7880389122070122,71.77687797131755,71.77687797131755,5900,"agecat, sex"
+Political,Switzerland (SHP),model_2,Demographic Controls,lrself,Left-Right (SHP),2021,year,0.7326815086787228,0.7326815086787228,66.73476452195627,66.73476452195627,5429,"agecat, sex"
+Political,Switzerland (SHP),model_2,Demographic Controls,lrself,Left-Right (SHP),2022,year,0.7399752549337173,0.7399752549337173,67.3991001617184,67.3991001617184,5132,"agecat, sex"
+Political,Switzerland (SHP),model_3,Linear Panel Tenure,lrself,Left-Right (SHP),1999,year,0.9274555031651568,0.9274555031651568,100,100,4821,panel_tenure
+Political,Switzerland (SHP),model_3,Linear Panel Tenure,lrself,Left-Right (SHP),2000,year,0.9201655148006047,0.9201655148006047,99.2139797176605,99.2139797176605,4507,panel_tenure
+Political,Switzerland (SHP),model_3,Linear Panel Tenure,lrself,Left-Right (SHP),2001,year,0.9383920145980689,0.9383920145980689,101.17919527088779,101.17919527088779,4127,panel_tenure
+Political,Switzerland (SHP),model_3,Linear Panel Tenure,lrself,Left-Right (SHP),2002,year,0.9589420646505324,0.9589420646505324,103.39494039098594,103.39494039098594,3867,panel_tenure
+Political,Switzerland (SHP),model_3,Linear Panel Tenure,lrself,Left-Right (SHP),2003,year,0.8857629401583391,0.8857629401583391,95.50462929331573,95.50462929331573,3239,panel_tenure
+Political,Switzerland (SHP),model_3,Linear Panel Tenure,lrself,Left-Right (SHP),2004,year,0.8742602440414868,0.8742602440414868,94.26438692291664,94.26438692291664,4822,panel_tenure
+Political,Switzerland (SHP),model_3,Linear Panel Tenure,lrself,Left-Right (SHP),2005,year,0.8464768577615257,0.8464768577615257,91.26872986064855,91.26872986064855,4545,panel_tenure
+Political,Switzerland (SHP),model_3,Linear Panel Tenure,lrself,Left-Right (SHP),2006,year,0.8510884406298513,0.8510884406298513,91.76595941533743,91.76595941533743,4631,panel_tenure
+Political,Switzerland (SHP),model_3,Linear Panel Tenure,lrself,Left-Right (SHP),2007,year,0.8761519402700688,0.8761519402700688,94.46835317489597,94.46835317489597,5052,panel_tenure
+Political,Switzerland (SHP),model_3,Linear Panel Tenure,lrself,Left-Right (SHP),2008,year,0.8555983193787496,0.8555983193787496,92.25222304022373,92.25222304022373,4958,panel_tenure
+Political,Switzerland (SHP),model_3,Linear Panel Tenure,lrself,Left-Right (SHP),2009,year,0.8248346858354398,0.8248346858354398,88.93523010219901,88.93523010219901,5176,panel_tenure
+Political,Switzerland (SHP),model_3,Linear Panel Tenure,lrself,Left-Right (SHP),2010,year,0.9128029104048321,0.9128029104048321,98.42012983800092,98.42012983800092,5452,panel_tenure
+Political,Switzerland (SHP),model_3,Linear Panel Tenure,lrself,Left-Right (SHP),2011,year,0.8652672106625419,0.8652672106625419,93.29474111799617,93.29474111799617,5531,panel_tenure
+Political,Switzerland (SHP),model_3,Linear Panel Tenure,lrself,Left-Right (SHP),2012,year,0.8081062995232732,0.8081062995232732,87.131543967923335,87.131543967923335,5380,panel_tenure
+Political,Switzerland (SHP),model_3,Linear Panel Tenure,lrself,Left-Right (SHP),2013,year,0.797652614387688,0.797652614387688,86.004407938226,86.004407938226,5127,panel_tenure
+Political,Switzerland (SHP),model_3,Linear Panel Tenure,lrself,Left-Right (SHP),2014,year,0.8704591040383645,0.8704591040383645,93.85454084511021,93.85454084511021,8175,panel_tenure
+Political,Switzerland (SHP),model_3,Linear Panel Tenure,lrself,Left-Right (SHP),2015,year,0.8500540070129076,0.8500540070129076,91.65442483352585,91.65442483352585,7511,panel_tenure
+Political,Switzerland (SHP),model_3,Linear Panel Tenure,lrself,Left-Right (SHP),2016,year,0.8011867625238119,0.8011867625238119,86.38546644982713,86.38546644982713,7017,panel_tenure
+Political,Switzerland (SHP),model_3,Linear Panel Tenure,lrself,Left-Right (SHP),2017,year,0.8088989060018692,0.8088989060018692,87.21700429199183,87.21700429199183,6956,panel_tenure
+Political,Switzerland (SHP),model_3,Linear Panel Tenure,lrself,Left-Right (SHP),2018,year,0.8623101560557964,0.8623101560557964,92.97590591817755,92.97590591817755,6717,panel_tenure
+Political,Switzerland (SHP),model_3,Linear Panel Tenure,lrself,Left-Right (SHP),2019,year,0.8571208668173863,0.8571208668173863,92.41638697406643,92.41638697406643,6452,panel_tenure
+Political,Switzerland (SHP),model_3,Linear Panel Tenure,lrself,Left-Right (SHP),2020,year,0.8631635575327928,0.8631635575327928,93.06792127353249,93.06792127353249,5900,panel_tenure
+Political,Switzerland (SHP),model_3,Linear Panel Tenure,lrself,Left-Right (SHP),2021,year,0.8152348409738104,0.8152348409738104,87.90015673977162,87.90015673977162,5429,panel_tenure
+Political,Switzerland (SHP),model_3,Linear Panel Tenure,lrself,Left-Right (SHP),2022,year,0.8278482570723116,0.8278482570723116,89.26015903157484,89.26015903157484,5132,panel_tenure
+Political,Switzerland (SHP),model_4,Panel Tenure (Factor),lrself,Left-Right (SHP),1999,year,0.7516028279989945,0.7516028279989945,100,100,4821,factor(panel_tenure)
+Political,Switzerland (SHP),model_4,Panel Tenure (Factor),lrself,Left-Right (SHP),2000,year,0.7963735118419902,0.7963735118419902,105.95669443689954,105.95669443689954,4507,factor(panel_tenure)
+Political,Switzerland (SHP),model_4,Panel Tenure (Factor),lrself,Left-Right (SHP),2001,year,0.8536154922455069,0.8536154922455069,113.57268233251632,113.57268233251632,4127,factor(panel_tenure)
+Political,Switzerland (SHP),model_4,Panel Tenure (Factor),lrself,Left-Right (SHP),2002,year,0.895430388785991,0.895430388785991,119.1361122429397,119.1361122429397,3867,factor(panel_tenure)
+Political,Switzerland (SHP),model_4,Panel Tenure (Factor),lrself,Left-Right (SHP),2003,year,0.8332151837987732,0.8332151837987732,110.85844182053664,110.85844182053664,3239,factor(panel_tenure)
+Political,Switzerland (SHP),model_4,Panel Tenure (Factor),lrself,Left-Right (SHP),2004,year,0.7592206782324614,0.7592206782324614,101.01354730845654,101.01354730845654,4822,factor(panel_tenure)
+Political,Switzerland (SHP),model_4,Panel Tenure (Factor),lrself,Left-Right (SHP),2005,year,0.7695668716916274,0.7695668716916274,102.39009793782428,102.39009793782428,4545,factor(panel_tenure)
+Political,Switzerland (SHP),model_4,Panel Tenure (Factor),lrself,Left-Right (SHP),2006,year,0.7891687209983175,0.7891687209983175,104.99810426463341,104.99810426463341,4631,factor(panel_tenure)
+Political,Switzerland (SHP),model_4,Panel Tenure (Factor),lrself,Left-Right (SHP),2007,year,0.8167117631672508,0.8167117631672508,108.6626783113093,108.6626783113093,5052,factor(panel_tenure)
+Political,Switzerland (SHP),model_4,Panel Tenure (Factor),lrself,Left-Right (SHP),2008,year,0.8022431916858409,0.8022431916858409,106.7376494340325,106.7376494340325,4958,factor(panel_tenure)
+Political,Switzerland (SHP),model_4,Panel Tenure (Factor),lrself,Left-Right (SHP),2009,year,0.7726265695363027,0.7726265695363027,102.79718765738018,102.79718765738018,5176,factor(panel_tenure)
+Political,Switzerland (SHP),model_4,Panel Tenure (Factor),lrself,Left-Right (SHP),2010,year,0.8672931755061895,0.8672931755061895,115.39248432781972,115.39248432781972,5452,factor(panel_tenure)
+Political,Switzerland (SHP),model_4,Panel Tenure (Factor),lrself,Left-Right (SHP),2011,year,0.8172451371498731,0.8172451371498731,108.73364318301452,108.73364318301452,5531,factor(panel_tenure)
+Political,Switzerland (SHP),model_4,Panel Tenure (Factor),lrself,Left-Right (SHP),2012,year,0.7544138893778071,0.7544138893778071,100.37400888795169,100.37400888795169,5380,factor(panel_tenure)
+Political,Switzerland (SHP),model_4,Panel Tenure (Factor),lrself,Left-Right (SHP),2013,year,0.7463396468489195,0.7463396468489195,99.2997390438129,99.2997390438129,5127,factor(panel_tenure)
+Political,Switzerland (SHP),model_4,Panel Tenure (Factor),lrself,Left-Right (SHP),2014,year,0.7655824245186366,0.7655824245186366,101.85997125062185,101.85997125062185,8175,factor(panel_tenure)
+Political,Switzerland (SHP),model_4,Panel Tenure (Factor),lrself,Left-Right (SHP),2015,year,0.7671887224540267,0.7671887224540267,102.07368757466317,102.07368757466317,7511,factor(panel_tenure)
+Political,Switzerland (SHP),model_4,Panel Tenure (Factor),lrself,Left-Right (SHP),2016,year,0.7274384323033086,0.7274384323033086,96.78495146698435,96.78495146698435,7017,factor(panel_tenure)
+Political,Switzerland (SHP),model_4,Panel Tenure (Factor),lrself,Left-Right (SHP),2017,year,0.7340133160365546,0.7340133160365546,97.65973313202284,97.65973313202284,6956,factor(panel_tenure)
+Political,Switzerland (SHP),model_4,Panel Tenure (Factor),lrself,Left-Right (SHP),2018,year,0.7888507762408009,0.7888507762408009,104.9558020345629,104.9558020345629,6717,factor(panel_tenure)
+Political,Switzerland (SHP),model_4,Panel Tenure (Factor),lrself,Left-Right (SHP),2019,year,0.7779093024790559,0.7779093024790559,103.50004995991003,103.50004995991003,6452,factor(panel_tenure)
+Political,Switzerland (SHP),model_4,Panel Tenure (Factor),lrself,Left-Right (SHP),2020,year,0.7833980626626106,0.7833980626626106,104.2303239795232,104.2303239795232,5900,factor(panel_tenure)
+Political,Switzerland (SHP),model_4,Panel Tenure (Factor),lrself,Left-Right (SHP),2021,year,0.7187565375434884,0.7187565375434884,95.62983410494166,95.62983410494166,5429,factor(panel_tenure)
+Political,Switzerland (SHP),model_4,Panel Tenure (Factor),lrself,Left-Right (SHP),2022,year,0.7332072378807452,0.7332072378807452,97.55248524447092,97.55248524447092,5132,factor(panel_tenure)
+Political,Switzerland (SHP),model_5,Panel Tenure (Factor) + Demographics,lrself,Left-Right (SHP),1999,year,0.7494134136058422,0.7494134136058422,100,100,4821,"factor(panel_tenure), agecat, sex"
+Political,Switzerland (SHP),model_5,Panel Tenure (Factor) + Demographics,lrself,Left-Right (SHP),2000,year,0.7958022479771049,0.7958022479771049,106.19001922424371,106.19001922424371,4507,"factor(panel_tenure), agecat, sex"
+Political,Switzerland (SHP),model_5,Panel Tenure (Factor) + Demographics,lrself,Left-Right (SHP),2001,year,0.8526093166971046,0.8526093166971046,113.7702236466158,113.7702236466158,4127,"factor(panel_tenure), agecat, sex"
+Political,Switzerland (SHP),model_5,Panel Tenure (Factor) + Demographics,lrself,Left-Right (SHP),2002,year,0.8946299474728229,0.8946299474728229,119.37735984311564,119.37735984311564,3867,"factor(panel_tenure), agecat, sex"
+Political,Switzerland (SHP),model_5,Panel Tenure (Factor) + Demographics,lrself,Left-Right (SHP),2003,year,0.8344322092651896,0.8344322092651896,111.34471229308198,111.34471229308198,3239,"factor(panel_tenure), agecat, sex"
+Political,Switzerland (SHP),model_5,Panel Tenure (Factor) + Demographics,lrself,Left-Right (SHP),2004,year,0.7575045589994537,0.7575045589994537,101.07966380728102,101.07966380728102,4822,"factor(panel_tenure), agecat, sex"
+Political,Switzerland (SHP),model_5,Panel Tenure (Factor) + Demographics,lrself,Left-Right (SHP),2005,year,0.7697935008799274,0.7697935008799274,102.71947191017377,102.71947191017377,4545,"factor(panel_tenure), agecat, sex"
+Political,Switzerland (SHP),model_5,Panel Tenure (Factor) + Demographics,lrself,Left-Right (SHP),2006,year,0.7885529931346688,0.7885529931346688,105.22269535322357,105.22269535322357,4631,"factor(panel_tenure), agecat, sex"
+Political,Switzerland (SHP),model_5,Panel Tenure (Factor) + Demographics,lrself,Left-Right (SHP),2007,year,0.8173299416343166,0.8173299416343166,109.06262508722529,109.06262508722529,5052,"factor(panel_tenure), agecat, sex"
+Political,Switzerland (SHP),model_5,Panel Tenure (Factor) + Demographics,lrself,Left-Right (SHP),2008,year,0.8017108407082628,0.8017108407082628,106.97844823070204,106.97844823070204,4958,"factor(panel_tenure), agecat, sex"
+Political,Switzerland (SHP),model_5,Panel Tenure (Factor) + Demographics,lrself,Left-Right (SHP),2009,year,0.7744721076979394,0.7744721076979394,103.3437744290599,103.3437744290599,5176,"factor(panel_tenure), agecat, sex"
+Political,Switzerland (SHP),model_5,Panel Tenure (Factor) + Demographics,lrself,Left-Right (SHP),2010,year,0.870953779167286,0.870953779167286,116.21806647103443,116.21806647103443,5452,"factor(panel_tenure), agecat, sex"
+Political,Switzerland (SHP),model_5,Panel Tenure (Factor) + Demographics,lrself,Left-Right (SHP),2011,year,0.8215174305159417,0.8215174305159417,109.62139395973274,109.62139395973274,5531,"factor(panel_tenure), agecat, sex"
+Political,Switzerland (SHP),model_5,Panel Tenure (Factor) + Demographics,lrself,Left-Right (SHP),2012,year,0.7600259268629924,0.7600259268629924,101.41610932823949,101.41610932823949,5380,"factor(panel_tenure), agecat, sex"
+Political,Switzerland (SHP),model_5,Panel Tenure (Factor) + Demographics,lrself,Left-Right (SHP),2013,year,0.747863407889947,0.747863407889947,99.79317080695989,99.79317080695989,5127,"factor(panel_tenure), agecat, sex"
+Political,Switzerland (SHP),model_5,Panel Tenure (Factor) + Demographics,lrself,Left-Right (SHP),2014,year,0.7630120753349207,0.7630120753349207,101.81457410318396,101.81457410318396,8175,"factor(panel_tenure), agecat, sex"
+Political,Switzerland (SHP),model_5,Panel Tenure (Factor) + Demographics,lrself,Left-Right (SHP),2015,year,0.7679229407136402,0.7679229407136402,102.46986866951559,102.46986866951559,7511,"factor(panel_tenure), agecat, sex"
+Political,Switzerland (SHP),model_5,Panel Tenure (Factor) + Demographics,lrself,Left-Right (SHP),2016,year,0.7297957695575633,0.7297957695575633,97.38226675795839,97.38226675795839,7017,"factor(panel_tenure), agecat, sex"
+Political,Switzerland (SHP),model_5,Panel Tenure (Factor) + Demographics,lrself,Left-Right (SHP),2017,year,0.7385393690358825,0.7385393690358825,98.54899253569019,98.54899253569019,6956,"factor(panel_tenure), agecat, sex"
+Political,Switzerland (SHP),model_5,Panel Tenure (Factor) + Demographics,lrself,Left-Right (SHP),2018,year,0.8002223439644017,0.8002223439644017,106.77982665323398,106.77982665323398,6717,"factor(panel_tenure), agecat, sex"
+Political,Switzerland (SHP),model_5,Panel Tenure (Factor) + Demographics,lrself,Left-Right (SHP),2019,year,0.7794945828803449,0.7794945828803449,104.01396195055617,104.01396195055617,6452,"factor(panel_tenure), agecat, sex"
+Political,Switzerland (SHP),model_5,Panel Tenure (Factor) + Demographics,lrself,Left-Right (SHP),2020,year,0.7825055347532927,0.7825055347532927,104.41573643421005,104.41573643421005,5900,"factor(panel_tenure), agecat, sex"
+Political,Switzerland (SHP),model_5,Panel Tenure (Factor) + Demographics,lrself,Left-Right (SHP),2021,year,0.7301303303002159,0.7301303303002159,97.426909772959,97.426909772959,5429,"factor(panel_tenure), agecat, sex"
+Political,Switzerland (SHP),model_5,Panel Tenure (Factor) + Demographics,lrself,Left-Right (SHP),2022,year,0.7431981084139548,0.7431981084139548,99.17064398914583,99.17064398914583,5132,"factor(panel_tenure), agecat, sex"
+Political,Switzerland (SHP),model_6,New Respondents Only,lrself,Left-Right (SHP),1999,year,1.0561470755951397,1.0561470755951397,100,100,4821,none
+Political,Switzerland (SHP),model_6,New Respondents Only,lrself,Left-Right (SHP),2000,year,1.0320599372530765,1.0320599372530765,97.71933863202811,97.71933863202811,4507,none
+Political,Switzerland (SHP),model_6,New Respondents Only,lrself,Left-Right (SHP),2001,year,1.2537535784671017,1.2537535784671017,118.71013113970047,118.71013113970047,931,none
+Political,Switzerland (SHP),model_6,New Respondents Only,lrself,Left-Right (SHP),2002,year,1.3425677742407713,1.3425677742407713,127.11939513578005,127.11939513578005,453,none
+Political,Switzerland (SHP),model_6,New Respondents Only,lrself,Left-Right (SHP),2003,year,1.2557107274988533,1.2557107274988533,118.89544141295467,118.89544141295467,259,none
+Political,Switzerland (SHP),model_6,New Respondents Only,lrself,Left-Right (SHP),2004,year,1.0567905864998974,1.0567905864998974,100.06093004654633,100.06093004654633,2077,none
+Political,Switzerland (SHP),model_6,New Respondents Only,lrself,Left-Right (SHP),2005,year,0.9789254315522646,0.9789254315522646,92.68836265068853,92.68836265068853,1875,none
+Political,Switzerland (SHP),model_6,New Respondents Only,lrself,Left-Right (SHP),2006,year,1.1350924163562601,1.1350924163562601,107.47484347448813,107.47484347448813,720,none
+Political,Switzerland (SHP),model_6,New Respondents Only,lrself,Left-Right (SHP),2007,year,1.1924428600014143,1.1924428600014143,112.9050004072086,112.9050004072086,716,none
+Political,Switzerland (SHP),model_6,New Respondents Only,lrself,Left-Right (SHP),2008,year,1.0676155181013691,1.0676155181013691,101.08587551594242,101.08587551594242,534,none
+Political,Switzerland (SHP),model_6,New Respondents Only,lrself,Left-Right (SHP),2009,year,1.0426830367816686,1.0426830367816686,98.72517387733294,98.72517387733294,421,none
+Political,Switzerland (SHP),model_6,New Respondents Only,lrself,Left-Right (SHP),2010,year,1.2952408355971685,1.2952408355971685,122.6383015705743,122.6383015705743,474,none
+Political,Switzerland (SHP),model_6,New Respondents Only,lrself,Left-Right (SHP),2011,year,1.0684893264443647,1.0684893264443647,101.16861099504253,101.16861099504253,409,none
+Political,Switzerland (SHP),model_6,New Respondents Only,lrself,Left-Right (SHP),2012,year,0.9674773743474712,0.9674773743474712,91.6044172921936,91.6044172921936,368,none
+Political,Switzerland (SHP),model_6,New Respondents Only,lrself,Left-Right (SHP),2013,year,1.019590153411679,1.019590153411679,96.53865233089238,96.53865233089238,324,none
+Political,Switzerland (SHP),model_6,New Respondents Only,lrself,Left-Right (SHP),2014,year,0.9848594541448629,0.9848594541448629,93.25021835523181,93.25021835523181,3480,none
+Political,Switzerland (SHP),model_6,New Respondents Only,lrself,Left-Right (SHP),2015,year,0.9499788914568672,0.9499788914568672,89.94759474399466,89.94759474399466,2973,none
+Political,Switzerland (SHP),model_6,New Respondents Only,lrself,Left-Right (SHP),2016,year,0.953953291513207,0.953953291513207,90.32390597452098,90.32390597452098,675,none
+Political,Switzerland (SHP),model_6,New Respondents Only,lrself,Left-Right (SHP),2017,year,1.122566988140943,1.122566988140943,106.2888885535545,106.2888885535545,535,none
+Political,Switzerland (SHP),model_6,New Respondents Only,lrself,Left-Right (SHP),2018,year,1.0588977553232342,1.0588977553232342,100.26044476111858,100.26044476111858,431,none
+Political,Switzerland (SHP),model_6,New Respondents Only,lrself,Left-Right (SHP),2019,year,0.9983771215059092,0.9983771215059092,94.5301222316336,94.5301222316336,405,none
+Political,Switzerland (SHP),model_6,New Respondents Only,lrself,Left-Right (SHP),2020,year,0.9705779369713742,0.9705779369713742,91.89799028932147,91.89799028932147,255,none
+Political,Switzerland (SHP),model_6,New Respondents Only,lrself,Left-Right (SHP),2021,year,0.8341258775445148,0.8341258775445148,78.9781931720527,78.9781931720527,238,none
+Political,Switzerland (SHP),model_6,New Respondents Only,lrself,Left-Right (SHP),2022,year,1.039653425066163,1.039653425066163,98.43831878058438,98.43831878058438,244,none
+Political,Switzerland (SHP),model_7,Balanced Panel,lrself,Left-Right (SHP),1999,year,0.90829793080826,0.90829793080826,100,100,1051,none
+Political,Switzerland (SHP),model_7,Balanced Panel,lrself,Left-Right (SHP),2000,year,0.9422917953424428,0.9422917953424428,103.74258967032249,103.74258967032249,1106,none
+Political,Switzerland (SHP),model_7,Balanced Panel,lrself,Left-Right (SHP),2001,year,0.9310313198175567,0.9310313198175567,102.5028559724965,102.5028559724965,1156,none
+Political,Switzerland (SHP),model_7,Balanced Panel,lrself,Left-Right (SHP),2002,year,0.9034958292434646,0.9034958292434646,99.4713076621762,99.4713076621762,1154,none
+Political,Switzerland (SHP),model_7,Balanced Panel,lrself,Left-Right (SHP),2003,year,0.8419418044708014,0.8419418044708014,92.69445364932068,92.69445364932068,1134,none
+Political,Switzerland (SHP),model_7,Balanced Panel,lrself,Left-Right (SHP),2004,year,0.8014688717499805,0.8014688717499805,88.23854426672354,88.23854426672354,1132,none
+Political,Switzerland (SHP),model_7,Balanced Panel,lrself,Left-Right (SHP),2005,year,0.7982234700700939,0.7982234700700939,87.88123841257514,87.88123841257514,1159,none
+Political,Switzerland (SHP),model_7,Balanced Panel,lrself,Left-Right (SHP),2006,year,0.7371353539907997,0.7371353539907997,81.15567909913113,81.15567909913113,1204,none
+Political,Switzerland (SHP),model_7,Balanced Panel,lrself,Left-Right (SHP),2007,year,0.749953568456574,0.749953568456574,82.56691367657511,82.56691367657511,1234,none
+Political,Switzerland (SHP),model_7,Balanced Panel,lrself,Left-Right (SHP),2008,year,0.7173824815988846,0.7173824815988846,78.98096618589817,78.98096618589817,1221,none
+Political,Switzerland (SHP),model_7,Balanced Panel,lrself,Left-Right (SHP),2009,year,0.6398193812238666,0.6398193812238666,70.44157643896816,70.44157643896816,1225,none
+Political,Switzerland (SHP),model_7,Balanced Panel,lrself,Left-Right (SHP),2010,year,0.74413582563467,0.74413582563467,81.9264032642342,81.9264032642342,1293,none
+Political,Switzerland (SHP),model_7,Balanced Panel,lrself,Left-Right (SHP),2011,year,0.7131173166344127,0.7131173166344127,78.51138843835486,78.51138843835486,1344,none
+Political,Switzerland (SHP),model_7,Balanced Panel,lrself,Left-Right (SHP),2012,year,0.7322760768150177,0.7322760768150177,80.62069195328816,80.62069195328816,1357,none
+Political,Switzerland (SHP),model_7,Balanced Panel,lrself,Left-Right (SHP),2013,year,0.7157505570491962,0.7157505570491962,78.80129776496098,78.80129776496098,1354,none
+Political,Switzerland (SHP),model_7,Balanced Panel,lrself,Left-Right (SHP),2014,year,0.7384739277352662,0.7384739277352662,81.3030507598015,81.3030507598015,1370,none
+Political,Switzerland (SHP),model_7,Balanced Panel,lrself,Left-Right (SHP),2015,year,0.7134256726186549,0.7134256726186549,78.5453372093234,78.5453372093234,1403,none
+Political,Switzerland (SHP),model_7,Balanced Panel,lrself,Left-Right (SHP),2016,year,0.6714609170394057,0.6714609170394057,73.92518404637319,73.92518404637319,1401,none
+Political,Switzerland (SHP),model_7,Balanced Panel,lrself,Left-Right (SHP),2017,year,0.6524336830346505,0.6524336830346505,71.83036104178665,71.83036104178665,1398,none
+Political,Switzerland (SHP),model_7,Balanced Panel,lrself,Left-Right (SHP),2018,year,0.7408114532454031,0.7408114532454031,81.56040304816977,81.56040304816977,1398,none
+Political,Switzerland (SHP),model_7,Balanced Panel,lrself,Left-Right (SHP),2019,year,0.6621836204581669,0.6621836204581669,72.90379048523371,72.90379048523371,1405,none
+Political,Switzerland (SHP),model_7,Balanced Panel,lrself,Left-Right (SHP),2020,year,0.649321457629072,0.649321457629072,71.48771736728116,71.48771736728116,1382,none
+Political,Switzerland (SHP),model_7,Balanced Panel,lrself,Left-Right (SHP),2021,year,0.6856538672371468,0.6856538672371468,75.48777157589794,75.48777157589794,1342,none
+Political,Switzerland (SHP),model_7,Balanced Panel,lrself,Left-Right (SHP),2022,year,0.6533675672175412,0.6533675672175412,71.93317798666942,71.93317798666942,1326,none
+Political,UK (BES Elections),model_1,No Controls,lr,Left-Right (BES),1,election,0.7221629616465538,0.7221629616465538,100,100,41695,none
+Political,UK (BES Elections),model_1,No Controls,lr,Left-Right (BES),2,election,0.6490488444052834,0.6490488444052834,89.87567611130764,89.87567611130764,8194,none
+Political,UK (BES Elections),model_1,No Controls,lr,Left-Right (BES),3,election,0.6105159290041171,0.6105159290041171,84.53991154740504,84.53991154740504,33536,none
+Political,UK (BES Elections),model_1,No Controls,lr,Left-Right (BES),4,election,0.5767739197413086,0.5767739197413086,79.86755765294946,79.86755765294946,28518,none
+Political,UK (BES Elections),model_1,No Controls,lr,Left-Right (BES),5,election,0.471791558667396,0.471791558667396,65.33034560394745,65.33034560394745,30544,none
+Political,UK (BES Elections),model_2,Demographic Controls,lr,Left-Right (BES),1,election,0.7381875595788487,0.7381875595788487,100,100,41669,"factor(wave_pos), agecat, female"
+Political,UK (BES Elections),model_2,Demographic Controls,lr,Left-Right (BES),2,election,0.6653140529388061,0.6653140529388061,90.128050020022215,90.128050020022215,8194,"factor(wave_pos), agecat, female"
+Political,UK (BES Elections),model_2,Demographic Controls,lr,Left-Right (BES),3,election,0.6259289583893152,0.6259289583893152,84.7926723049113,84.7926723049113,33536,"factor(wave_pos), agecat, female"
+Political,UK (BES Elections),model_2,Demographic Controls,lr,Left-Right (BES),4,election,0.5904863273835874,0.5904863273835874,79.9913680095709,79.9913680095709,28518,"factor(wave_pos), agecat, female"
+Political,UK (BES Elections),model_2,Demographic Controls,lr,Left-Right (BES),5,election,0.4822042524972184,0.4822042524972184,65.32272811158263,65.32272811158263,30544,"factor(wave_pos), agecat, female"
+Political,UK (BES Elections),model_3,Linear Panel Tenure,lr,Left-Right (BES),1,election,0.6793174993798619,0.6793174993798619,100,100,41695,"factor(wave_pos), panel_tenure"
+Political,UK (BES Elections),model_3,Linear Panel Tenure,lr,Left-Right (BES),2,election,0.6240471067923935,0.6240471067923935,91.86383500529224,91.86383500529224,8194,"factor(wave_pos), panel_tenure"
+Political,UK (BES Elections),model_3,Linear Panel Tenure,lr,Left-Right (BES),3,election,0.5925207863431216,0.5925207863431216,87.22295346197093,87.22295346197093,33536,"factor(wave_pos), panel_tenure"
+Political,UK (BES Elections),model_3,Linear Panel Tenure,lr,Left-Right (BES),4,election,0.5756406320251488,0.5756406320251488,84.7380838195162,84.7380838195162,28518,"factor(wave_pos), panel_tenure"
+Political,UK (BES Elections),model_3,Linear Panel Tenure,lr,Left-Right (BES),5,election,0.5127179398754648,0.5127179398754648,75.47545004265558,75.47545004265558,30544,"factor(wave_pos), panel_tenure"
+Political,UK (BES Elections),model_4,Panel Tenure (Factor),lr,Left-Right (BES),1,election,0.6264691192675572,0.6264691192675572,100,100,41695,"factor(wave_pos), factor(panel_tenure)"
+Political,UK (BES Elections),model_4,Panel Tenure (Factor),lr,Left-Right (BES),2,election,0.5514395720018564,0.5514395720018564,88.02342446608982,88.02342446608982,8194,"factor(wave_pos), factor(panel_tenure)"
+Political,UK (BES Elections),model_4,Panel Tenure (Factor),lr,Left-Right (BES),3,election,0.5255729880032712,0.5255729880032712,83.89447649355012,83.89447649355012,33536,"factor(wave_pos), factor(panel_tenure)"
+Political,UK (BES Elections),model_4,Panel Tenure (Factor),lr,Left-Right (BES),4,election,0.5067425059649674,0.5067425059649674,80.88866480081741,80.88866480081741,28518,"factor(wave_pos), factor(panel_tenure)"
+Political,UK (BES Elections),model_4,Panel Tenure (Factor),lr,Left-Right (BES),5,election,0.4328725521375932,0.4328725521375932,69.09718912301544,69.09718912301544,30544,"factor(wave_pos), factor(panel_tenure)"
+Political,UK (BES Elections),model_5,Panel Tenure (Factor) + Demographics + Days until next survey,lr,Left-Right (BES),1,election,0.6096753138017753,0.6096753138017753,100,100,41669,"factor(wave_pos), factor(panel_tenure), days_gap, agecat, female"
+Political,UK (BES Elections),model_5,Panel Tenure (Factor) + Demographics + Days until next survey,lr,Left-Right (BES),2,election,0.5313109412617909,0.5313109412617909,87.14654000810287,87.14654000810287,8194,"factor(wave_pos), factor(panel_tenure), days_gap, agecat, female"
+Political,UK (BES Elections),model_5,Panel Tenure (Factor) + Demographics + Days until next survey,lr,Left-Right (BES),3,election,0.5189730057253489,0.5189730057253489,85.12285047087921,85.12285047087921,33536,"factor(wave_pos), factor(panel_tenure), days_gap, agecat, female"
+Political,UK (BES Elections),model_5,Panel Tenure (Factor) + Demographics + Days until next survey,lr,Left-Right (BES),4,election,0.5084741547830285,0.5084741547830285,83.40081077128038,83.40081077128038,28518,"factor(wave_pos), factor(panel_tenure), days_gap, agecat, female"
+Political,UK (BES Elections),model_5,Panel Tenure (Factor) + Demographics + Days until next survey,lr,Left-Right (BES),5,election,0.44146294213841386,0.44146294213841386,72.40951571182484,72.40951571182484,30544,"factor(wave_pos), factor(panel_tenure), days_gap, agecat, female"
+Political,UK (BES Elections),model_6,New Respondents Only,lr,Left-Right (BES),1,election,0.8223932332495869,0.8223932332495869,100,100,7853,factor(wave_pos)
+Political,UK (BES Elections),model_6,New Respondents Only,lr,Left-Right (BES),2,election,0.6976036561785022,0.6976036561785022,84.82604525112714,84.82604525112714,1977,factor(wave_pos)
+Political,UK (BES Elections),model_6,New Respondents Only,lr,Left-Right (BES),3,election,0.7111389656693757,0.7111389656693757,86.47188922741941,86.47188922741941,6868,factor(wave_pos)
+Political,UK (BES Elections),model_6,New Respondents Only,lr,Left-Right (BES),4,election,0.6757042841871925,0.6757042841871925,82.16316196051724,82.16316196051724,5659,factor(wave_pos)
+Political,UK (BES Elections),model_6,New Respondents Only,lr,Left-Right (BES),5,election,0.5941835298895323,0.5941835298895323,72.25053731797966,72.25053731797966,2291,factor(wave_pos)
+Political,UK (BES Elections),model_7,Balanced Panel,lr,Left-Right (BES),1,election,0.6010054548642311,0.6010054548642311,100,100,498,factor(wave_pos)
+Political,UK (BES Elections),model_7,Balanced Panel,lr,Left-Right (BES),2,election,0.5000665061137753,0.5000665061137753,83.20498625536466,83.20498625536466,498,factor(wave_pos)
+Political,UK (BES Elections),model_7,Balanced Panel,lr,Left-Right (BES),3,election,0.5140676229091462,0.5140676229091462,85.53460184904239,85.53460184904239,498,factor(wave_pos)
+Political,UK (BES Elections),model_7,Balanced Panel,lr,Left-Right (BES),4,election,0.4243689476906228,0.4243689476906228,70.6098329484362,70.6098329484362,498,factor(wave_pos)
+Political,UK (BES Elections),model_7,Balanced Panel,lr,Left-Right (BES),5,election,0.3423713130141046,0.3423713130141046,56.966423556246646,56.966423556246646,498,factor(wave_pos)
+Political,UK (BES Elections),model_8,Model 5 without days control,lr,Left-Right (BES),1,election,0.6159378345071193,0.6159378345071193,100,100,41669,"factor(wave_pos), factor(panel_tenure), agecat, female"
+Political,UK (BES Elections),model_8,Model 5 without days control,lr,Left-Right (BES),2,election,0.5477303763231544,0.5477303763231544,88.92624314293904,88.92624314293904,8194,"factor(wave_pos), factor(panel_tenure), agecat, female"
+Political,UK (BES Elections),model_8,Model 5 without days control,lr,Left-Right (BES),3,election,0.5188849658188338,0.5188849658188338,84.24307401639838,84.24307401639838,33536,"factor(wave_pos), factor(panel_tenure), agecat, female"
+Political,UK (BES Elections),model_8,Model 5 without days control,lr,Left-Right (BES),4,election,0.5017620416206087,0.5017620416206087,81.46309798002986,81.46309798002986,28518,"factor(wave_pos), factor(panel_tenure), agecat, female"
+Political,UK (BES Elections),model_8,Model 5 without days control,lr,Left-Right (BES),5,election,0.4328027436201011,0.4328027436201011,70.26727688621938,70.26727688621938,30544,"factor(wave_pos), factor(panel_tenure), agecat, female"
+Political,UK (BES Elections),R1,Election position only,lr,Left-Right (BES),1,election,0.7222496804038501,0.7222496804038501,100,100,41695,factor(wave_pos)
+Political,UK (BES Elections),R1,Election position only,lr,Left-Right (BES),2,election,0.6491179486941578,0.6491179486941578,89.87445288050523,89.87445288050523,8194,factor(wave_pos)
+Political,UK (BES Elections),R1,Election position only,lr,Left-Right (BES),3,election,0.610582520733889,0.610582520733889,84.53898108926518,84.53898108926518,33536,factor(wave_pos)
+Political,UK (BES Elections),R1,Election position only,lr,Left-Right (BES),4,election,0.576901408351505,0.576901408351505,79.87561974813575,79.87561974813575,28518,factor(wave_pos)
+Political,UK (BES Elections),R1,Election position only,lr,Left-Right (BES),5,election,0.47186517469657246,0.47186517469657246,65.33269414985774,65.33269414985774,30544,factor(wave_pos)
+Political,"UK (BES Elections, Pre-Election)",model_5,Panel Tenure (Factor) + Demographics + Days (Pre-Election),lr,Left-Right (BES),1,election,0.6452535441094356,0.6452535441094356,100,100,20730,"factor(panel_tenure), days_gap, agecat, female"
+Political,"UK (BES Elections, Pre-Election)",model_5,Panel Tenure (Factor) + Demographics + Days (Pre-Election),lr,Left-Right (BES),2,election,0.5378196455673745,0.5378196455673745,83.35012654748934,83.35012654748934,4088,"factor(panel_tenure), days_gap, agecat, female"
+Political,"UK (BES Elections, Pre-Election)",model_5,Panel Tenure (Factor) + Demographics + Days (Pre-Election),lr,Left-Right (BES),3,election,0.5520142065514813,0.5520142065514813,85.54996893714994,85.54996893714994,16697,"factor(panel_tenure), days_gap, agecat, female"
+Political,"UK (BES Elections, Pre-Election)",model_5,Panel Tenure (Factor) + Demographics + Days (Pre-Election),lr,Left-Right (BES),4,election,0.5327641114776025,0.5327641114776025,82.56663079827194,82.56663079827194,14130,"factor(panel_tenure), days_gap, agecat, female"
+Political,"UK (BES Elections, Pre-Election)",model_5,Panel Tenure (Factor) + Demographics + Days (Pre-Election),lr,Left-Right (BES),5,election,0.4707763664434587,0.4707763664434587,72.9599040162133,72.9599040162133,15229,"factor(panel_tenure), days_gap, agecat, female"
+Political,"UK (BES Elections, Election Swing)",model_5,Panel Tenure (Factor) + Demographics + Days (Election Swing),lr,Left-Right (BES),1,election,0.6196891415322092,0.6196891415322092,100,100,20939,"factor(panel_tenure), days_gap, agecat, female"
+Political,"UK (BES Elections, Election Swing)",model_5,Panel Tenure (Factor) + Demographics + Days (Election Swing),lr,Left-Right (BES),2,election,0.5400463356568204,0.5400463356568204,87.14794232500694,87.14794232500694,4106,"factor(panel_tenure), days_gap, agecat, female"
+Political,"UK (BES Elections, Election Swing)",model_5,Panel Tenure (Factor) + Demographics + Days (Election Swing),lr,Left-Right (BES),3,election,0.5140432620127307,0.5140432620127307,82.9517943047599,82.9517943047599,16839,"factor(panel_tenure), days_gap, agecat, female"
+Political,"UK (BES Elections, Election Swing)",model_5,Panel Tenure (Factor) + Demographics + Days (Election Swing),lr,Left-Right (BES),4,election,0.5134447997073774,0.5134447997073774,82.85521970545783,82.85521970545783,14388,"factor(panel_tenure), days_gap, agecat, female"
+Political,"UK (BES Elections, Election Swing)",model_5,Panel Tenure (Factor) + Demographics + Days (Election Swing),lr,Left-Right (BES),5,election,0.43298471667757094,0.43298471667757094,69.8712770094691,69.8712770094691,15315,"factor(panel_tenure), days_gap, agecat, female"
+Political,UK (BES Yearly),model_8,Demographics + Tenure + Days Between Surveys,lr,Left-Right (BES),2014,year,0.6975918784419818,0.6975918784419818,100,100,18589,"factor(panel_tenure), days_gap, agecat, female"
+Political,UK (BES Yearly),model_8,Demographics + Tenure + Days Between Surveys,lr,Left-Right (BES),2015,year,0.6945689709581238,0.6945689709581238,99.56666532720973,99.56666532720973,3628,"factor(panel_tenure), days_gap, agecat, female"
+Political,UK (BES Yearly),model_8,Demographics + Tenure + Days Between Surveys,lr,Left-Right (BES),2016,year,0.6485782398878323,0.6485782398878323,92.97388056414623,92.97388056414623,3948,"factor(panel_tenure), days_gap, agecat, female"
+Political,UK (BES Yearly),model_8,Demographics + Tenure + Days Between Surveys,lr,Left-Right (BES),2017,year,0.5866604781564949,0.5866604781564949,84.09795129306211,84.09795129306211,15548,"factor(panel_tenure), days_gap, agecat, female"
+Political,UK (BES Yearly),model_8,Demographics + Tenure + Days Between Surveys,lr,Left-Right (BES),2018,year,0.6090425879727205,0.6090425879727205,87.30643328775137,87.30643328775137,12894,"factor(panel_tenure), days_gap, agecat, female"
+Political,UK (BES Yearly),model_8,Demographics + Tenure + Days Between Surveys,lr,Left-Right (BES),2019,year,0.5709312282725664,0.5709312282725664,81.84315871734312,81.84315871734312,13482,"factor(panel_tenure), days_gap, agecat, female"
+Political,UK (BES Yearly),model_8,Demographics + Tenure + Days Between Surveys,lr,Left-Right (BES),2020,year,0.5536319354746411,0.5536319354746411,79.36330003026063,79.36330003026063,12110,"factor(panel_tenure), days_gap, agecat, female"
+Political,UK (BES Yearly),model_8,Demographics + Tenure + Days Between Surveys,lr,Left-Right (BES),2021,year,0.545877199705527,0.545877199705527,78.2516563875001,78.2516563875001,13705,"factor(panel_tenure), days_gap, agecat, female"
+Political,UK (BES Yearly),model_8,Demographics + Tenure + Days Between Surveys,lr,Left-Right (BES),2022,year,0.5628946625787726,0.5628946625787726,80.6911146723719,80.6911146723719,14733,"factor(panel_tenure), days_gap, agecat, female"
+Political,UK (BES Yearly),model_8,Demographics + Tenure + Days Between Surveys,lr,Left-Right (BES),2023,year,0.5547010243386787,0.5547010243386787,79.51655423190435,79.51655423190435,13571,"factor(panel_tenure), days_gap, agecat, female"
+Political,UK (BES Yearly),model_8,Demographics + Tenure + Days Between Surveys,lr,Left-Right (BES),2024,year,0.5366201109520834,0.5366201109520834,76.92465000461064,76.92465000461064,15759,"factor(panel_tenure), days_gap, agecat, female"
