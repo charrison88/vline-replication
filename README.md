@@ -190,18 +190,13 @@ first, in the order the text presents them. Appendix and slide figures follow,
 grouped but unnumbered, since appendix numbering shifts whenever a float is
 added.
 
-## Stata paths
+## Contact
 
-The do-files in `stata/` set their own absolute paths to the panel and raw
-data directories in their opening lines, and those assignments override
-anything set beforehand. Running the Stata half therefore means pointing
-those two lines in each of the seven files at `data/Processed_Data` and
-`data/Raw_Data`. `main.do` checks for this and stops with instructions rather
-than failing part-way through a build.
-
-The R side needs no such step.
+Charlie Harrison — <charlie.t.harrison@lse.ac.uk>
 
 ## Licence
 
-Code: MIT, see `LICENCE`. Survey microdata remains governed by each
+No licence is granted. All rights reserved by the authors. The code is
+published so that the results in the paper can be inspected and checked; any
+other use requires permission. Survey microdata remains governed by each
 provider's own agreement.

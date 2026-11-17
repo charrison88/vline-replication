@@ -21,8 +21,11 @@
 
 clear all
 set more off
-global data "/Users/charlieharrison/Google Drive/My Drive/Stretching_Volatility/Processed_Data"
-global rawdata "/Users/charlieharrison/Google Drive/My Drive/Stretching_Volatility/Raw_Data"
+* Paths. main.do sets VLINE_ROOT before calling this file. The fallback lets
+* the file run on its own, with the repository root as the working directory.
+if "$VLINE_ROOT" == "" global VLINE_ROOT "`c(pwd)'"
+global data    "$VLINE_ROOT/data/Processed_Data"
+global rawdata "$VLINE_ROOT/data/Raw_Data"
 
 
 
