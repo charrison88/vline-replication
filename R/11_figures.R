@@ -3623,14 +3623,14 @@ create_input_volatility_plot <- function(vol_data, country_name,
     geom_line(linewidth = 1, alpha = 0.9) +
     scale_x_continuous(breaks = x_breaks, limits = x_limits) +
     scale_y_continuous(breaks = y_breaks, limits = y_limits) +
-    scale_color_manual(values = input_colors, name = "Input:") +
+    scale_color_manual(values = input_colors, guide = "none") +
     labs(title = country_name, x = "", y = "Indexed Volatility") +
     theme_minimal(base_size = 14) +
     theme(
       panel.border = element_rect(color = "black", fill = NA),
       panel.grid.minor = element_blank(),
       plot.title = element_text(size = 16, hjust = 0.5),
-      legend.position = "bottom"
+      legend.position = "none"
     )
 }
 
@@ -3673,7 +3673,11 @@ get_wid_layout <- function(country_name) {
 }
 
 wid_colors <- setNames(c("limegreen", "#006D2C"), unname(WID_LABELS[c("income", "wealth")]))
-wid_shapes <- c("WID core estimate" = 16, "Interpolated/extrapolated" = 1)
+# The core/interpolated distinction was retired on 21 Nov 2026. WID returned
+# identical year coverage with and without extrapolations in all six series,
+# so is_core_estimate was TRUE everywhere and the second legend entry was an
+# empty category that drop = FALSE forced into the key. Points now use one
+# shape and carry no legend.
 
 build_wid_plot_data <- function(country_name, concepts, measure = c("indexed", "level")) {
   measure <- match.arg(measure)
@@ -3681,9 +3685,7 @@ build_wid_plot_data <- function(country_name, concepts, measure = c("indexed", "
   d %>%
     mutate(
       y = if (measure == "indexed") value else level,
-      series = factor(series, levels = unname(WID_LABELS[concepts])),
-      estimate = factor(if_else(is_core_estimate, "WID core estimate", "Interpolated/extrapolated"),
-                        levels = names(wid_shapes))
+      series = factor(series, levels = unname(WID_LABELS[concepts]))
     )
 }
 
@@ -3697,8 +3699,7 @@ create_wid_panel <- function(plot_data, country_name, y_scale, y_label = "",
     geom_line(linewidth = 1, alpha = 0.9)
   
   if (show_points) {
-    p <- p + geom_point(aes(shape = estimate), size = 1.6, alpha = 0.9) +
-      scale_shape_manual(name = "", values = wid_shapes, drop = FALSE)
+    p <- p + geom_point(size = 1.6, alpha = 0.9, show.legend = FALSE)
   }
   
   p +
