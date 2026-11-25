@@ -2,20 +2,12 @@
 # 11_figures.R — all figures, generated in the order they appear in the paper
 #
 # Structure of this file:
-#   Part A  Provenance notes, carried over from the original script
-#   Part B  Figure construction: every builder function and plot object.
+#   Part A  Figure construction: every builder function and plot object.
 #           Extracted verbatim from plotting_volatilities_091126.R
 #           lines 66-4023 and 4605-4813 (9 Nov 2026 version).
-#   Part C  All writes to disk, in paper figure order, signposted
+#   Part B  All writes to disk, in paper figure order, signposted
 #           Figure 1 ... Figure 22, then unnumbered and slide figures.
 #
-# Why saving is separated from construction: in the original script the
-# ggsave calls were spread across two blocks in the order the plots were
-# written rather than the order they appear in the paper. Part B therefore
-# runs with .vline_defer_saves = TRUE, which turns safe_save into a no-op,
-# so the save calls still embedded in the extracted code do nothing. Every
-# file is then written once, in order, in Part C. No plotting code was
-# altered to achieve this.
 #
 # Figure numbers follow HapIneq-45 (17 Nov 2026). FIGURES.md holds the
 # figure-to-filename mapping. Filenames are unchanged from the original.
@@ -25,62 +17,9 @@ if (!exists("VLINE_ROOT")) {
   stop("Source R/00_config.R first, or run the pipeline through run_all.R.")
 }
 
-# ============================================================================
-# PART A — provenance notes from the original script
-# ============================================================================
-
-# > # ============================================================
-# > # ============================================================
-# > # Charlie Harrison
-# > # Last Updated: 9th November 2026
-# > # (Previous version: 15th August 2026 -- kept unchanged as its own file)
-# > #
-# > # Changes in this version (9 Nov 2026):
-# > #  - Within-panel income Gini (income_gini.csv) no longer used.
-# > #    Life satisfaction comparison plots use WID Top 10 / Bottom 50
-# > #    ratios (income and wealth) from wid_inequality.csv, built by
-# > #    cleaning Section 5b (wid_cleaning_091126.R).
-# > #  - Elite polarisation plots include CHES general left-right
-# > #    (lrgen), the main series, alongside lrecon and galtan.
-# > #  - Comparison plots come in several versions:
-# > #      Version 1  = paradox plots (Section 10, saved in 11.10)
-# > #      Version 2a = WID income and wealth, separate panels (10c)
-# > #      Version 2b = WID income and wealth, same panel (10c)
-# > #      Elite E1-E3 standalone versions + singles (10d)
-# > #  - New: volatility with No Controls and Model 5 on one panel (10e).
-# > #  - Points removed from all volatility plots and WID plots (kept for
-# > #    elite polarisation). WID wealth: Germany on its own y-axis.
-# > #    Swiss political x-axis runs to 2023 (was clipped at 2020).
-# > #  - WID 2a (indexed): country-specific secondary axes with the raw ratio.
-# > #  - Swiss paradox plots stop at the last CHES wave (2019); Swiss
-# > #    hidden-divergence (V-LINE) plots run to the end of the SHP data.
-# > #  - Left-right elite line back to normal width (darker colour only).
-# > #
-# > # Structure:
-# > # 0)  Paths, Load Pre-Computed Data
-# > # 1)  Setup & Specifications
-# > # 2)  Core Plotting Functions
-# > # 3)  Volatility Plots (Life Satisfaction)
-# > # 4)  Volatility Plots (Political)
-# > # 5)  V-LINE Plots (Life Satisfaction, incl. COVID V-LINE)
-# > # 6)  V-LINE Plots (Political)
-# > # 7a)  Robustness Comparison Plots (UK: pre/across-election vs yearly)
-# > # 7b) Nominal Stats and Distributions
-# > # 8)  Income Category Validation
-# > # 9)  Linearity/Non-Linearity Robustness
-# > # 10) Paradox Plots -- Comparison Version 1 (WID + lrgen)
-# > # 10b) Placebo Test (Health Status)
-# > # 10c) WID Standalone -- Comparison Versions 2a / 2b
-# > # 10d) Elite Polarisation Standalone (E1-E3, singles)
-# > # 10e) Volatility Overlay (No Controls vs Model 5)
-# > # 11) Saving All Plots
-# > # ============================================================
-# > # ============================================================
-#
-# > # remotes::install_version("ggplot2", version = "3.5.2")
 
 # ============================================================================
-# PART B — figure construction (verbatim extract; no writes)
+# PART A — figure construction (verbatim extract; no writes)
 # ============================================================================
 
 .vline_defer_saves <- TRUE   # safe_save() is inert for the rest of Part B
@@ -160,20 +99,20 @@ plot_specs <- tribble(
   1,
   
   # POLITICAL - Switzerland (SHP)  [x-axis extended to 2023, 9 Nov 2026: SHP runs past 2020]
-  #                                [y-axes harmonised 10 Nov 2026: 50-125 in 25s, limit 130]
+  #                                [vol axis 60-140; V-LINE SD axis labelled 60-120, limit 130]
   "Switzerland (SHP)", "Political", "lrself", "year", "volatility_political.csv",
   seq(2000, 2020, 5), c(1999, 2023), "Switzerland",
-  seq(50, 125, 25), c(50, 130),
-  seq(50, 125, 25), c(50, 130),
+  seq(60, 140, 20), c(60, 140),
+  seq(60, 120, 20), c(60, 130),
   NA, NA,
   1999, 2000,
   2,
   
-  # POLITICAL - UK (BES) - By Election  [y-axes harmonised 10 Nov 2026: 50-125 in 25s, limit 130]
+  # POLITICAL - UK (BES) - By Election  [vol axis 60-140; V-LINE SD axis labelled 60-120, limit 130]
   "UK (BES Elections)", "Political", "lr", "election", "volatility_political.csv",
   1:5, c(0.5, 5.5), "Britain",
-  seq(50, 125, 25), c(50, 130),
-  seq(50, 125, 25), c(50, 130),
+  seq(60, 140, 20), c(60, 140),
+  seq(60, 120, 20), c(60, 130),
   NA, NA,
   1, 1,
   2,
@@ -227,6 +166,20 @@ model_labels <- c(
 
 # UK Election labels
 uk_election_labels <- c("GE '15", "Brexit '16", "GE '17", "GE '19", "GE '24")
+
+# ---- Series labels: one definition, read by every builder ----
+VLINE_LABELS <- list(
+  "Political" = list(
+    sd   = c(nominal = "sd(Left-Right)",        vline = "sd(Left-Right, V-LINE)"),
+    mean = c(nominal = "Mean(Left-Right)",      vline = "Mean(Left-Right, V-LINE)")
+  ),
+  "Life Satisfaction" = list(
+    sd   = c(nominal = "sd(Life Satisfaction)", vline = "sd(Life Satisfaction, V-LINE)"),
+    mean = c(nominal = "Mean(Life Satisfaction)", vline = "Mean(Life Satisfaction, V-LINE)")
+  )
+)
+
+series_labels <- function(domain, metric) VLINE_LABELS[[domain]][[metric]]
 
 # ============================================================
 # HELPER FUNCTIONS
@@ -312,8 +265,20 @@ create_volatility_plot <- function(data,
   # Scale factor: since indexed = 100 * (raw / base_raw), then raw = indexed * (base_raw / 100)
   scale_factor <- base_raw / 100
   
+  y_breaks <- specs$vol_y_breaks
+  y_limits <- specs$vol_y_limits
+
+  # Balanced-panel volatility (Model 7) for Britain bottoms out at 57.0, below
+  # the floor of 60 that the other political models share, so its last point
+  # was being dropped. Only this model needs the extra room; the floor is
+  # lowered here rather than in plot_specs so no other figure moves. Tick
+  # labels are unchanged -- the axis just extends 5 points further down.
+  if (specs$domain == "Political" && model_id == "model_7") {
+    y_limits <- c(55, y_limits[2])
+  }
+
   # Secondary axis breaks = primary breaks * scale_factor
-  secondary_values <- specs$vol_y_breaks * scale_factor
+  secondary_values <- y_breaks * scale_factor
   
   plot_title <- specs$title
   legend_label <- if (specs$domain == "Political") "Left-Right Ideology" else "Life Satisfaction"
@@ -333,12 +298,14 @@ create_volatility_plot <- function(data,
       values = setNames(line_color, legend_label)
     ) +
     labs(title = plot_title, x = "") +
-    theme_minimal(base_size = 14) +
+    theme_minimal(base_size = 18) +
     theme(
       panel.border = element_rect(color = "black", fill = NA),
       panel.grid.minor = element_blank(),
-      plot.title = element_text(size = 16, hjust = 0.5),
-      legend.position = if (show_legend) "bottom" else "none"
+      plot.title = element_text(size = 21, hjust = 0.5),
+      legend.position = if (show_legend) "bottom" else "none",
+      legend.text = element_text(size = 16),
+      axis.text.x = element_text(size = 12)
     )
   
   if (!is.null(custom_x_labels)) {
@@ -350,8 +317,8 @@ create_volatility_plot <- function(data,
   if (show_secondary_axis) {
     p <- p + scale_y_continuous(
       name = if (show_primary_label) "Indexed Volatility" else "",
-      breaks = specs$vol_y_breaks,
-      limits = specs$vol_y_limits,
+      breaks = y_breaks,
+      limits = y_limits,
       sec.axis = sec_axis(
         trans = ~ . * scale_factor,
         name = if (show_secondary_label) "Absolute Volatility" else "",
@@ -362,8 +329,8 @@ create_volatility_plot <- function(data,
   } else {
     p <- p + scale_y_continuous(
       name = if (show_primary_label) "Indexed Volatility" else "",
-      breaks = specs$vol_y_breaks,
-      limits = specs$vol_y_limits
+      breaks = y_breaks,
+      limits = y_limits
     )
   }
   
@@ -409,8 +376,8 @@ create_vline_plot <- function(data,
     indexed_adj <- "indexed_adjusted_sd"
     raw_nom <- "sd_level"
     raw_adj <- "adjusted_sd"
-    label_nom <- if (specs$domain == "Political") "sd(Left-Right)" else "sd(Life Satisfaction)"
-    label_adj <- "sd(V-LINE)"
+    label_nom <- series_labels(specs$domain, "sd")[["nominal"]]
+    label_adj <- series_labels(specs$domain, "sd")[["vline"]]
     y_label <- "Indexed Inequality (SD)"
     y_label_sec <- "Absolute Inequality (SD)"
     y_breaks <- specs$vline_sd_y_breaks
@@ -420,8 +387,8 @@ create_vline_plot <- function(data,
     indexed_adj <- "indexed_adjusted_mean"
     raw_nom <- "mean_level"
     raw_adj <- "adjusted_mean"
-    label_nom <- if (specs$domain == "Political") "Mean Position" else "Life Satisfaction"
-    label_adj <- "V-LINE"
+    label_nom <- series_labels(specs$domain, "mean")[["nominal"]]
+    label_adj <- series_labels(specs$domain, "mean")[["vline"]]
     y_label <- "Indexed Happiness"
     y_label_sec <- "Absolute Happiness"
     y_breaks <- specs$vline_mean_y_breaks
@@ -475,12 +442,14 @@ create_vline_plot <- function(data,
     #   values = setNames(c(16, 18), c(label_nom, label_adj))
     # ) +
     labs(title = plot_title, x = "") +
-    theme_minimal(base_size = 14) +
+    theme_minimal(base_size = 18) +
     theme(
       panel.border = element_rect(color = "black", fill = NA),
       panel.grid.minor = element_blank(),
-      plot.title = element_text(size = 16, hjust = 0.5),
-      legend.position = "bottom"
+      plot.title = element_text(size = 21, hjust = 0.5),
+      legend.position = "bottom",
+      legend.text = element_text(size = 16),
+      axis.text.x = element_text(size = 12)
     )
   
   if (!is.null(custom_x_labels)) {
@@ -534,8 +503,8 @@ create_grouping_comparison_plot <- function(data,
     indexed_nom <- "indexed_sd"
     indexed_adj <- "indexed_adjusted_sd"
     raw_nom <- "sd_level"
-    label_nom <- "sd(Nominal)"
-    label_adj <- "sd(V-LINE)"
+    label_nom <- series_labels(specs$domain, "sd")[["nominal"]]
+    label_adj <- series_labels(specs$domain, "sd")[["vline"]]
     y_label <- "Indexed Inequality (SD)"
     y_label_sec <- "Absolute Inequality (SD)"
     y_breaks <- specs$vline_sd_y_breaks
@@ -544,8 +513,8 @@ create_grouping_comparison_plot <- function(data,
     indexed_nom <- "indexed_mean"
     indexed_adj <- "indexed_adjusted_mean"
     raw_nom <- "mean_level"
-    label_nom <- "Nominal"
-    label_adj <- "V-LINE"
+    label_nom <- series_labels(specs$domain, "mean")[["nominal"]]
+    label_adj <- series_labels(specs$domain, "mean")[["vline"]]
     y_label <- "Indexed Happiness"
     y_label_sec <- "Absolute Happiness"
     y_breaks <- specs$vline_mean_y_breaks
@@ -587,13 +556,15 @@ create_grouping_comparison_plot <- function(data,
     scale_linetype_manual(name = "", values = linetypes, breaks = line_ids) +
     scale_x_continuous(breaks = specs$x_breaks, limits = specs$x_limits) +
     labs(title = plot_title, x = "") +
-    theme_minimal(base_size = 14) +
+    theme_minimal(base_size = 18) +
     theme(
       panel.border = element_rect(color = "black", fill = NA),
       panel.grid.minor = element_blank(),
-      plot.title = element_text(size = 16, hjust = 0.5),
+      plot.title = element_text(size = 21, hjust = 0.5),
       legend.position = "bottom",
-      legend.key.width = unit(1.5, "cm")
+      legend.key.width = unit(1.5, "cm"),
+      legend.text = element_text(size = 16),
+      axis.text.x = element_text(size = 12)
     ) +
     guides(color = guide_legend(nrow = 2), linetype = guide_legend(nrow = 2))
 
@@ -975,12 +946,14 @@ create_bes_robustness_comparison <- function(vol_data) {
     labs(title = "Election Volatility",
          x = "",
          y = "Indexed Volatility") +
-    theme_minimal(base_size = 14) +
+    theme_minimal(base_size = 18) +
     theme(
       panel.border = element_rect(color = "black", fill = NA),
       panel.grid.minor = element_blank(),
-      plot.title = element_text(size = 16, hjust = 0.5),
-      legend.position = "bottom"
+      plot.title = element_text(size = 21, hjust = 0.5),
+      legend.position = "bottom",
+      legend.text = element_text(size = 16),
+      axis.text.x = element_text(size = 12)
     )
   
   # ============================================================
@@ -1032,12 +1005,14 @@ create_bes_robustness_comparison <- function(vol_data) {
       )
     ) +
     labs(title = "Quasi-Yearly Volatility", x = "") +
-    theme_minimal(base_size = 14) +
+    theme_minimal(base_size = 18) +
     theme(
       panel.border = element_rect(color = "black", fill = NA),
       panel.grid.minor = element_blank(),
-      plot.title = element_text(size = 16, hjust = 0.5),
-      legend.position = "bottom"
+      plot.title = element_text(size = 21, hjust = 0.5),
+      legend.position = "bottom",
+      legend.text = element_text(size = 16),
+      axis.text.x = element_text(size = 12)
     )
   
   # ============================================================
@@ -1102,11 +1077,7 @@ create_nominal_stats_plot <- function(data,
   if (metric_type == "sd") {
     indexed_var <- "indexed_sd"
     raw_var <- "sd_level"
-    if (specs$domain == "Political") {
-      legend_label <- "sd(Left-Right)"
-    } else {
-      legend_label <- "sd(Life Satisfaction)"
-    }
+    legend_label <- series_labels(specs$domain, "sd")[["nominal"]]
     y_label <- "Indexed Inequality (SD)"
     y_label_sec <- "Absolute Inequality (SD)"
     y_breaks <- specs$vline_sd_y_breaks
@@ -1114,11 +1085,7 @@ create_nominal_stats_plot <- function(data,
   } else {
     indexed_var <- "indexed_mean"
     raw_var <- "mean_level"
-    if (specs$domain == "Political") {
-      legend_label <- "Mean Position"
-    } else {
-      legend_label <- "Life Satisfaction"
-    }
+    legend_label <- series_labels(specs$domain, "mean")[["nominal"]]
     y_label <- "Indexed Happiness"
     y_label_sec <- "Absolute Happiness"
     y_breaks <- specs$vline_mean_y_breaks
@@ -1159,12 +1126,14 @@ create_nominal_stats_plot <- function(data,
       values = setNames(line_color, legend_label)
     ) +
     labs(title = plot_title, x = "") +
-    theme_minimal(base_size = 14) +
+    theme_minimal(base_size = 18) +
     theme(
       panel.border = element_rect(color = "black", fill = NA),
       panel.grid.minor = element_blank(),
-      plot.title = element_text(size = 16, hjust = 0.5),
-      legend.position = "bottom"
+      plot.title = element_text(size = 21, hjust = 0.5),
+      legend.position = "bottom",
+      legend.text = element_text(size = 16),
+      axis.text.x = element_text(size = 12)
     )
   
   if (!is.null(custom_x_labels)) {
@@ -1209,8 +1178,8 @@ create_publication_lsat_nominal_sd <- function(vline_data) {
     labs(
       subtitle = "SD(Life Satisfaction)") +
     theme(
-      plot.title = element_text(size = 18, face = "bold", hjust = 0.5),
-      plot.subtitle = element_text(size = 14, face = "italic", hjust = 0.5)
+      plot.title = element_text(size = 21, face = "bold", hjust = 0.5),
+      plot.subtitle = element_text(size = 16, face = "italic", hjust = 0.5)
     )
   
   return(p)
@@ -1228,8 +1197,8 @@ create_publication_lsat_nominal_mean <- function(vline_data) {
     labs(
       subtitle = "Mean Life Satisfaction") +
     theme(
-      plot.title = element_text(size = 18, face = "bold", hjust = 0.5),
-      plot.subtitle = element_text(size = 14, face = "italic", hjust = 0.5)
+      plot.title = element_text(size = 21, face = "bold", hjust = 0.5),
+      plot.subtitle = element_text(size = 16, face = "italic", hjust = 0.5)
     )
   
   return(p)
@@ -1251,8 +1220,8 @@ create_publication_political_nominal_sd <- function(vline_data) {
     labs(
       subtitle = "SD(Left-Right Self-Placement)") +
     theme(
-      plot.title = element_text(size = 18, face = "bold", hjust = 0.5),
-      plot.subtitle = element_text(size = 14, face = "italic", hjust = 0.5)
+      plot.title = element_text(size = 21, face = "bold", hjust = 0.5),
+      plot.subtitle = element_text(size = 16, face = "italic", hjust = 0.5)
     )
   
   return(p)
@@ -1344,7 +1313,7 @@ create_mechanism_panel <- function(vol_data, vline_data, country_name, variable_
   
   specs  <- get_plot_specs(country_name, variable_name)
   prefix <- if (specs$domain == "Political") "LR" else "LS"
-  nom_label  <- paste0("Nominal SD(", prefix, ")")
+  nom_label  <- series_labels(specs$domain, "sd")[["nominal"]]
   vol_labels <- paste0(prefix, " Volatility (", model_display[model_ids], ")")
   level_order <- c(nom_label, vol_labels)
   
@@ -1397,15 +1366,17 @@ create_mechanism_panel <- function(vol_data, vline_data, country_name, variable_
     ) +
     labs(title = specs$title, x = "",
          y = if (show_primary_label) "Index (First Period = 100)" else "") +
-    theme_minimal(base_size = 14) +
+    theme_minimal(base_size = 18) +
     theme(
       panel.border = element_rect(color = "black", fill = NA),
       panel.grid.minor = element_blank(),
-      plot.title = element_text(size = 16, hjust = 0.5),
+      plot.title = element_text(size = 21, hjust = 0.5),
       legend.position = "bottom",
+      legend.text = element_text(size = 16),
       legend.key.width = unit(1.5, "cm"),
       axis.text.y.right  = element_text(colour = "white"),
-      axis.title.y.right = element_text(colour = "white")
+      axis.title.y.right = element_text(colour = "white"),
+      axis.text.x = element_text(size = 12)
     )
 }
 
@@ -1533,12 +1504,14 @@ create_distribution_plot <- function(dist_data,
       x = "",
       y = if (show_primary_label) "Weighted Share of Respondents" else ""
     ) +
-    theme_minimal(base_size = 14) +
+    theme_minimal(base_size = 18) +
     theme(
       panel.border = element_rect(color = "black", fill = NA),
       panel.grid.minor = element_blank(),
-      plot.title = element_text(size = 16, hjust = 0.5),
-      legend.position = if (show_legend) "bottom" else "none"
+      plot.title = element_text(size = 21, hjust = 0.5),
+      legend.position = if (show_legend) "bottom" else "none",
+      legend.text = element_text(size = 16),
+      axis.text.x = element_text(size = 12)
     )
 }
 
@@ -1683,14 +1656,15 @@ plot_lincat_volatilities <- function(vline_data, country_name, add_stretching = 
     scale_x_continuous(breaks = layout$x_breaks, limits = layout$x_limits) +
     scale_y_continuous(breaks = axis_params$breaks, limits = axis_params$limits) +
     labs(title = layout$plot_title, x = "", y = if (layout$show_y_label) "Indexed Volatility" else "") +
-    theme_minimal(base_size = 14) +
+    theme_minimal(base_size = 18) +
     theme(
       panel.border = element_rect(color = "black", fill = NA),
       panel.grid.minor = element_blank(),
       legend.position = "bottom",
-      legend.text = element_text(size = 12),
-      plot.title = element_text(size = 16, hjust = 0.5),
-      axis.title.y = element_text(size = 14)
+      legend.text = element_text(size = 16),
+      plot.title = element_text(size = 21, hjust = 0.5),
+      axis.title.y = element_text(size = 18),
+      axis.text.x = element_text(size = 12)
     )
 }
 
@@ -1732,14 +1706,15 @@ plot_lincat_inequality_validation <- function(vline_data, country_name, show_vli
     scale_x_continuous(breaks = layout$x_breaks, limits = layout$x_limits) +
     scale_y_continuous(breaks = axis_params$breaks, limits = axis_params$limits) +
     labs(title = layout$plot_title, x = "", y = if (layout$show_y_label) "Indexed Income Inequality" else "") +
-    theme_minimal(base_size = 14) +
+    theme_minimal(base_size = 18) +
     theme(
       panel.border = element_rect(color = "black", fill = NA),
       panel.grid.minor = element_blank(),
       legend.position = "bottom",
-      legend.text = element_text(size = 12),
-      plot.title = element_text(size = 16, hjust = 0.5),
-      axis.title.y = element_text(size = 14)
+      legend.text = element_text(size = 16),
+      plot.title = element_text(size = 21, hjust = 0.5),
+      axis.title.y = element_text(size = 18),
+      axis.text.x = element_text(size = 12)
     )
 }
 
@@ -1788,14 +1763,15 @@ create_income_homoskedasticity_plot <- function(country_name, show_primary_label
     scale_x_continuous(breaks = layout$x_breaks, limits = layout$x_limits) +
     scale_y_continuous(breaks = axis_params$breaks, limits = axis_params$limits) +
     labs(title = layout$plot_title, x = "", y = if (show_primary_label) "Indexed Income Inequality" else "") +
-    theme_minimal(base_size = 14) +
+    theme_minimal(base_size = 18) +
     theme(
       panel.border = element_rect(color = "black", fill = NA),
       panel.grid.minor = element_blank(),
       legend.position = if (show_legend) "bottom" else "none",
-      legend.text = element_text(size = 12),
-      plot.title = element_text(size = 16, hjust = 0.5),
-      axis.title.y = element_text(size = 14)
+      legend.text = element_text(size = 16),
+      plot.title = element_text(size = 21, hjust = 0.5),
+      axis.title.y = element_text(size = 18),
+      axis.text.x = element_text(size = 12)
     )
 }
 
@@ -1842,7 +1818,7 @@ create_income_homoskedasticity_plot <- function(country_name, show_primary_label
 #       panel.border = element_rect(color = "black", fill = NA),
 #       panel.grid.minor = element_blank(),
 #       legend.position = if (show_legend) "bottom" else "none",
-#       legend.text = element_text(size = 12),
+#       legend.text = element_text(size = 14),
 #       plot.title = element_text(size = 16, hjust = 0.5),
 #       axis.title.y = element_text(size = 14)
 #     )
@@ -1886,14 +1862,15 @@ plot_lincat_mean_validation <- function(vline_data, country_name, show_vline = T
     scale_x_continuous(breaks = layout$x_breaks, limits = layout$x_limits) +
     scale_y_continuous(breaks = axis_params$breaks, limits = axis_params$limits) +
     labs(title = layout$plot_title, x = "", y = if (layout$show_y_label) "Indexed Income Level" else "") +
-    theme_minimal(base_size = 14) +
+    theme_minimal(base_size = 18) +
     theme(
       panel.border = element_rect(color = "black", fill = NA),
       panel.grid.minor = element_blank(),
       legend.position = "bottom",
-      legend.text = element_text(size = 12),
-      plot.title = element_text(size = 16, hjust = 0.5),
-      axis.title.y = element_text(size = 14)
+      legend.text = element_text(size = 16),
+      plot.title = element_text(size = 21, hjust = 0.5),
+      axis.title.y = element_text(size = 18),
+      axis.text.x = element_text(size = 12)
     )
 }
 
@@ -2085,13 +2062,14 @@ create_transform_gradient_plot <- function(data,
       x = "Year",
       y = y_label
     ) +
-    theme_minimal(base_size = 14) +
+    theme_minimal(base_size = 18) +
     theme(
       panel.grid.minor = element_blank(),
       panel.border = element_rect(colour = "black", fill = NA),
-      plot.title = element_text(hjust = 0.5, size = 16),
+      plot.title = element_text(hjust = 0.5, size = 21),
       legend.position = "bottom",
-      legend.text = element_text(size = 10)
+      legend.text = element_text(size = 16),
+      axis.text.x = element_text(size = 12)
     )
   
   return(p)
@@ -2249,12 +2227,14 @@ create_summary_plot <- function(data,
       x = "Year",
       y = y_label
     ) +
-    theme_minimal(base_size = 14) +
+    theme_minimal(base_size = 18) +
     theme(
       panel.grid.minor = element_blank(),
       panel.border = element_rect(colour = "black", fill = NA),
-      plot.title = element_text(hjust = 0.5, size = 16),
-      legend.position = "bottom"
+      plot.title = element_text(hjust = 0.5, size = 21),
+      legend.text = element_text(size = 16),
+      legend.position = "bottom",
+      axis.text.x = element_text(size = 12)
     ) +
     guides(colour = guide_legend(nrow = 1))
   
@@ -2382,13 +2362,14 @@ create_transform_gradient_plot_uk <- function(data, transform_type_filter, colou
     scale_x_continuous(breaks = 1:5, labels = uk_election_labels, limits = c(0.5, 5.5)) +
     scale_y_continuous(limits = y_limits) +
     labs(title = "UK (BES Elections)", x = "", y = y_label) +
-    theme_minimal(base_size = 14) +
+    theme_minimal(base_size = 18) +
     theme(
       panel.grid.minor = element_blank(),
       panel.border = element_rect(colour = "black", fill = NA),
-      plot.title = element_text(hjust = 0.5, size = 16),
+      plot.title = element_text(hjust = 0.5, size = 21),
       legend.position = "bottom",
-      legend.text = element_text(size = 10)
+      legend.text = element_text(size = 16),
+      axis.text.x = element_text(size = 12)
     )
 }
 
@@ -2444,12 +2425,14 @@ create_summary_plot_uk <- function(data, y_limits = c(80, 130)) {
     scale_x_continuous(breaks = 1:5, labels = uk_election_labels, limits = c(0.5, 5.5)) +
     scale_y_continuous(limits = y_limits) +
     labs(title = "UK (BES Elections)", x = "", y = "Indexed Inequality (SD)") +
-    theme_minimal(base_size = 14) +
+    theme_minimal(base_size = 18) +
     theme(
       panel.grid.minor = element_blank(),
       panel.border = element_rect(colour = "black", fill = NA),
-      plot.title = element_text(hjust = 0.5, size = 16),
-      legend.position = "bottom"
+      plot.title = element_text(hjust = 0.5, size = 21),
+      legend.position = "bottom",
+      legend.text = element_text(size = 16),
+      axis.text.x = element_text(size = 12)
     ) +
     guides(colour = guide_legend(nrow = 1))
 }
@@ -2482,8 +2465,8 @@ create_summary_plot_uk <- function(data, y_limits = c(80, 130)) {
 # model_display <- c(model_1 = "No Controls", model_5 = "Model 5")
 #
 # paradox_colors <- c(
-#   "Nominal SD(LS)" = "blue",
-#   "Nominal SD(LR)" = "blue",
+#   "sd(Life Satisfaction)" = "blue",
+#   "sd(Left-Right)" = "blue",
 #   "Household Income Gini" = "limegreen",
 #   "Elite Cultural Polarisation" = "#2E9E3F",   # bright mid green
 #   "Elite Economic Polarisation" = "#6FCF73",   # bright pale green
@@ -2496,8 +2479,8 @@ create_summary_plot_uk <- function(data, y_limits = c(80, 130)) {
 # )
 #
 # paradox_linetypes <- c(
-#   "Nominal SD(LS)" = "solid",
-#   "Nominal SD(LR)" = "solid",
+#   "sd(Life Satisfaction)" = "solid",
+#   "sd(Left-Right)" = "solid",
 #   "Household Income Gini" = "solid",
 #   "Elite Cultural Polarisation" = "solid",
 #   "Elite Economic Polarisation" = "solid",
@@ -2535,7 +2518,7 @@ create_summary_plot_uk <- function(data, y_limits = c(80, 130)) {
 #
 #   nominal <- vline_lsat %>%
 #     filter(country == country_name, variable == variable_name, grouping == "natural") %>%
-#     transmute(x = period_numeric, value = indexed_sd, series = "Nominal SD(LS)")
+#     transmute(x = period_numeric, value = indexed_sd, series = "sd(Life Satisfaction)")
 #
 #   vol_lines <- lapply(model_ids, function(mid) {
 #     label <- paste0("LS Volatility (", model_display[[mid]], ")")
@@ -2553,7 +2536,7 @@ create_summary_plot_uk <- function(data, y_limits = c(80, 130)) {
 #     filter(country == country_name, time_period >= mass_range[1], time_period <= mass_range[2]) %>%
 #     transmute(x = time_period, value = indexed_gini, series = "Household Income Gini")
 #
-#   level_order <- c("Nominal SD(LS)", paste0("LS Volatility (", model_display[model_ids], ")"), "Household Income Gini")
+#   level_order <- c("sd(Life Satisfaction)", paste0("LS Volatility (", model_display[model_ids], ")"), "Household Income Gini")
 #
 #   bind_rows(nominal, vol_lines, gini) %>%
 #     mutate(series = factor(series, levels = level_order))
@@ -2682,7 +2665,7 @@ create_summary_plot_uk <- function(data, y_limits = c(80, 130)) {
 #
 #   nominal <- vline_pol %>%
 #     filter(country == "UK (BES Elections)", variable == "lr", grouping == "election_cycle") %>%
-#     transmute(x = period_numeric, value = indexed_sd, series = "Nominal SD(LR)")
+#     transmute(x = period_numeric, value = indexed_sd, series = "sd(Left-Right)")
 #
 #   vol_lines <- lapply(model_ids, function(mid) {
 #     label <- paste0("LR Volatility (", model_display[[mid]], ")")
@@ -2724,7 +2707,7 @@ create_summary_plot_uk <- function(data, y_limits = c(80, 130)) {
 #   base_sd <- base$sd_level[base$period_numeric == 2010]
 #
 #   nominal <- base %>%
-#     transmute(x = period_numeric, value = 100 * sd_level / base_sd, series = "Nominal SD(LR)")
+#     transmute(x = period_numeric, value = 100 * sd_level / base_sd, series = "sd(Left-Right)")
 #
 #   vol_lines <- lapply(model_ids, function(mid) {
 #     label <- paste0("LR Volatility (", model_display[[mid]], ")")
@@ -2835,7 +2818,7 @@ create_summary_plot_uk <- function(data, y_limits = c(80, 130)) {
 # create_publication_political_paradox_plot1 <- function(model_ids = "model_5") {
 #
 #   vol_labels <- paste0("LR Volatility (", model_display[model_ids], ")")
-#   level_order <- c("Nominal SD(LR)", vol_labels, "Elite Economic Polarisation", "Elite Cultural Polarisation")
+#   level_order <- c("sd(Left-Right)", vol_labels, "Elite Economic Polarisation", "Elite Cultural Polarisation")
 #
 #   p_uk <- create_uk_political_paradox_panel(
 #     mass_data = build_uk_paradox_mass_series(model_ids),
@@ -2899,7 +2882,7 @@ create_summary_plot_uk <- function(data, y_limits = c(80, 130)) {
 # # ============================================================
 #
 # SWISS_ALLTIME_LEVELS <- c(
-#   "Nominal SD(LR)",
+#   "sd(Left-Right)",
 #   "Latent Mass Polarisation (V-LINE)",
 #   "LR Volatility (Model 5)",
 #   "LR Volatility (No Controls)"
@@ -2909,7 +2892,7 @@ create_summary_plot_uk <- function(data, y_limits = c(80, 130)) {
 #
 #   nominal <- vline_pol %>%
 #     filter(country == "Switzerland (SHP)", variable == "lrself", grouping == "natural") %>%
-#     transmute(x = period_numeric, value = indexed_sd, series = "Nominal SD(LR)")
+#     transmute(x = period_numeric, value = indexed_sd, series = "sd(Left-Right)")
 #
 #   latent <- vline_pol %>%
 #     filter(country == "Switzerland (SHP)", variable == "lrself", grouping == "natural") %>%
@@ -3041,8 +3024,8 @@ ELITE_SETS <- list(
 )
 
 paradox_colors <- c(
-  "Nominal SD(LS)" = "blue",
-  "Nominal SD(LR)" = "blue",
+  "sd(Life Satisfaction)" = "blue",
+  "sd(Left-Right)" = "blue",
   "Top10/Bottom50 Income (WID)" = "limegreen",
   "Top10/Bottom50 Wealth (WID)" = "#006D2C",   # dark green
   "Elite Left-Right Polarisation" = "#0B3D0B", # very dark green (main series)
@@ -3057,8 +3040,8 @@ paradox_colors <- c(
 )
 
 paradox_linetypes <- c(
-  "Nominal SD(LS)" = "solid",
-  "Nominal SD(LR)" = "solid",
+  "sd(Life Satisfaction)" = "solid",
+  "sd(Left-Right)" = "solid",
   "Top10/Bottom50 Income (WID)" = "solid",
   "Top10/Bottom50 Wealth (WID)" = "solid",   # own panel row now; no need to dash
   "Elite Left-Right Polarisation" = "solid",
@@ -3157,7 +3140,7 @@ build_lsat_paradox_series <- function(country_name, variable_name, model_ids = "
   
   nominal <- vline_lsat %>%
     filter(country == country_name, variable == variable_name, grouping == "natural") %>%
-    transmute(x = period_numeric, value = indexed_sd, series = "Nominal SD(LS)")
+    transmute(x = period_numeric, value = indexed_sd, series = "sd(Life Satisfaction)")
   
   vol_lines <- lapply(model_ids, function(mid) {
     label <- paste0("LS Volatility (", model_display[[mid]], ")")
@@ -3174,7 +3157,7 @@ build_lsat_paradox_series <- function(country_name, variable_name, model_ids = "
   wid <- build_wid_series(country_name, wid_concepts, x_range = mass_range) %>%
     select(x, value, series)
   
-  level_order <- c("Nominal SD(LS)", paste0("LS Volatility (", model_display[model_ids], ")"),
+  level_order <- c("sd(Life Satisfaction)", paste0("LS Volatility (", model_display[model_ids], ")"),
                    unname(WID_LABELS[wid_concepts]))
   
   bind_rows(nominal, vol_lines, wid) %>%
@@ -3190,7 +3173,7 @@ build_lsat_latent_series <- function(country_name, variable_name, wid_concepts =
     filter(country == country_name, variable == variable_name, grouping == "natural")
   
   nominal <- vline_rows %>%
-    transmute(x = period_numeric, value = indexed_sd, series = "Nominal SD(LS)")
+    transmute(x = period_numeric, value = indexed_sd, series = "sd(Life Satisfaction)")
   
   latent <- vline_rows %>%
     transmute(x = period_numeric, value = indexed_adjusted_sd, series = "Latent Happiness Inequality (V-LINE)")
@@ -3200,7 +3183,7 @@ build_lsat_latent_series <- function(country_name, variable_name, wid_concepts =
   wid <- build_wid_series(country_name, wid_concepts, x_range = latent_range) %>%
     select(x, value, series)
   
-  level_order <- c("Nominal SD(LS)", "Latent Happiness Inequality (V-LINE)",
+  level_order <- c("sd(Life Satisfaction)", "Latent Happiness Inequality (V-LINE)",
                    unname(WID_LABELS[wid_concepts]))
   
   bind_rows(nominal, latent, wid) %>%
@@ -3225,12 +3208,14 @@ create_lsat_paradox_panel <- function(plot_data, country_name, variable_name, y_
     scale_x_continuous(breaks = specs$x_breaks, limits = x_limits) +
     scale_y_continuous(breaks = y_scale$breaks, limits = y_scale$limits) +
     labs(title = specs$title, x = "", y = if (show_primary_label) "Index (First Period = 100)" else "") +
-    theme_minimal(base_size = 14) +
+    theme_minimal(base_size = 18) +
     theme(
       panel.border = element_rect(color = "black", fill = NA),
       panel.grid.minor = element_blank(),
-      plot.title = element_text(size = 16, hjust = 0.5),
-      legend.position = if (show_legend) "bottom" else "none"
+      plot.title = element_text(size = 21, hjust = 0.5),
+      legend.position = if (show_legend) "bottom" else "none",
+      legend.text = element_text(size = 16),
+      axis.text.x = element_text(size = 12)
     )
 }
 
@@ -3342,7 +3327,7 @@ build_uk_paradox_mass_series <- function(model_ids = "model_5") {
   
   nominal <- vline_pol %>%
     filter(country == "UK (BES Elections)", variable == "lr", grouping == "election_cycle") %>%
-    transmute(x = period_numeric, value = indexed_sd, series = "Nominal SD(LR)")
+    transmute(x = period_numeric, value = indexed_sd, series = "sd(Left-Right)")
   
   vol_lines <- lapply(model_ids, function(mid) {
     label <- paste0("LR Volatility (", model_display[[mid]], ")")
@@ -3361,7 +3346,7 @@ build_uk_paradox_latent_series <- function() {
   
   bind_rows(
     vline_rows %>%
-      transmute(x = period_numeric, value = indexed_sd, series = "Nominal SD(LR)"),
+      transmute(x = period_numeric, value = indexed_sd, series = "sd(Left-Right)"),
     vline_rows %>%
       transmute(x = period_numeric, value = indexed_adjusted_sd, series = "Latent Mass Polarisation (V-LINE)")
   )
@@ -3382,7 +3367,7 @@ build_swiss_paradox_mass_series <- function(model_ids = "model_5") {
   base_sd <- base$sd_level[base$period_numeric == 2010]
   
   nominal <- base %>%
-    transmute(x = period_numeric, value = 100 * sd_level / base_sd, series = "Nominal SD(LR)")
+    transmute(x = period_numeric, value = 100 * sd_level / base_sd, series = "sd(Left-Right)")
   
   vol_lines <- lapply(model_ids, function(mid) {
     label <- paste0("LR Volatility (", model_display[[mid]], ")")
@@ -3422,7 +3407,7 @@ build_swiss_paradox_latent_series <- function() {
   bind_rows(
     base %>%
       transmute(x = period_numeric, value = 100 * sd_level / base_sd,
-                series = "Nominal SD(LR)"),
+                series = "sd(Left-Right)"),
     base %>%
       transmute(x = period_numeric, value = 100 * adjusted_sd / base_adj_sd,
                 series = "Latent Mass Polarisation (V-LINE)")
@@ -3446,12 +3431,14 @@ create_uk_political_paradox_panel <- function(mass_data, elite_data, level_order
     scale_x_continuous(breaks = uk_election_lookup$election, labels = uk_election_lookup$label, limits = c(0.5, 5.5)) +
     scale_y_continuous(breaks = y_breaks, limits = y_limits) +
     labs(title = "Britain", x = "", y = if (show_primary_label) "Index (First Period = 100)" else "") +
-    theme_minimal(base_size = 14) +
+    theme_minimal(base_size = 18) +
     theme(
       panel.border = element_rect(color = "black", fill = NA),
       panel.grid.minor = element_blank(),
-      plot.title = element_text(size = 16, hjust = 0.5),
-      legend.position = "bottom"
+      plot.title = element_text(size = 21, hjust = 0.5),
+      legend.position = "bottom",
+      legend.text = element_text(size = 16),
+      axis.text.x = element_text(size = 12)
     )
 }
 
@@ -3470,12 +3457,14 @@ create_swiss_political_paradox_panel <- function(mass_data, elite_data, level_or
     scale_x_continuous(breaks = SWISS_CHES_X_BREAKS, limits = SWISS_CHES_X_LIMITS) +
     scale_y_continuous(breaks = y_breaks, limits = y_limits) +
     labs(title = "Switzerland", x = "", y = if (show_primary_label) "Index (First Period = 100)" else "") +
-    theme_minimal(base_size = 14) +
+    theme_minimal(base_size = 18) +
     theme(
       panel.border = element_rect(color = "black", fill = NA),
       panel.grid.minor = element_blank(),
-      plot.title = element_text(size = 16, hjust = 0.5),
-      legend.position = "bottom"
+      plot.title = element_text(size = 21, hjust = 0.5),
+      legend.position = "bottom",
+      legend.text = element_text(size = 16),
+      axis.text.x = element_text(size = 12)
     )
 }
 
@@ -3514,7 +3503,7 @@ combine_political_paradox <- function(uk_mass, che_mass, elite_vars, level_order
 create_publication_political_paradox_plot1 <- function(model_ids = "model_5", elite_vars = ELITE_SETS$lrgen) {
   
   vol_labels <- paste0("LR Volatility (", model_display[model_ids], ")")
-  level_order <- c("Nominal SD(LR)", vol_labels, unname(ELITE_LABELS[elite_vars]))
+  level_order <- c("sd(Left-Right)", vol_labels, unname(ELITE_LABELS[elite_vars]))
   
   combine_political_paradox(build_uk_paradox_mass_series(model_ids),
                             build_swiss_paradox_mass_series(model_ids),
@@ -3526,7 +3515,7 @@ create_publication_political_paradox_plot1 <- function(model_ids = "model_5", el
 
 create_publication_political_paradox_plot2 <- function(elite_vars = ELITE_SETS$lrgen) {
   
-  level_order <- c("Nominal SD(LR)", "Latent Mass Polarisation (V-LINE)", unname(ELITE_LABELS[elite_vars]))
+  level_order <- c("sd(Left-Right)", "Latent Mass Polarisation (V-LINE)", unname(ELITE_LABELS[elite_vars]))
   
   combine_political_paradox(build_uk_paradox_latent_series(),
                             build_swiss_paradox_latent_series(),
@@ -3544,7 +3533,7 @@ create_publication_political_paradox_plot2 <- function(elite_vars = ELITE_SETS$l
 # ============================================================
 
 SWISS_ALLTIME_LEVELS <- c(
-  "Nominal SD(LR)",
+  "sd(Left-Right)",
   "Latent Mass Polarisation (V-LINE)",
   "LR Volatility (Model 5)",
   "LR Volatility (No Controls)"
@@ -3554,7 +3543,7 @@ build_swiss_alltime_political_series <- function() {
   
   nominal <- vline_pol %>%
     filter(country == "Switzerland (SHP)", variable == "lrself", grouping == "natural") %>%
-    transmute(x = period_numeric, value = indexed_sd, series = "Nominal SD(LR)")
+    transmute(x = period_numeric, value = indexed_sd, series = "sd(Left-Right)")
   
   latent <- vline_pol %>%
     filter(country == "Switzerland (SHP)", variable == "lrself", grouping == "natural") %>%
@@ -3586,12 +3575,14 @@ create_swiss_alltime_political_plot <- function() {
     scale_y_continuous(breaks = POL_PARADOX_Y_BREAKS, limits = POL_PARADOX_Y_LIMITS) +
     labs(title = paste0("Switzerland (SHP, ", min(plot_data$x), "-", max(plot_data$x), ")"),
          x = "", y = "Index (First Period = 100)") +
-    theme_minimal(base_size = 14) +
+    theme_minimal(base_size = 18) +
     theme(
       panel.border = element_rect(color = "black", fill = NA),
       panel.grid.minor = element_blank(),
-      plot.title = element_text(size = 16, hjust = 0.5),
-      legend.position = "bottom"
+      plot.title = element_text(size = 21, hjust = 0.5),
+      legend.position = "bottom",
+      legend.text = element_text(size = 16),
+      axis.text.x = element_text(size = 12)
     ) +
     guides(color = guide_legend(nrow = 2), linetype = guide_legend(nrow = 2))
 }
@@ -3625,12 +3616,14 @@ create_input_volatility_plot <- function(vol_data, country_name,
     scale_y_continuous(breaks = y_breaks, limits = y_limits) +
     scale_color_manual(values = input_colors, guide = "none") +
     labs(title = country_name, x = "", y = "Indexed Volatility") +
-    theme_minimal(base_size = 14) +
+    theme_minimal(base_size = 18) +
     theme(
       panel.border = element_rect(color = "black", fill = NA),
       panel.grid.minor = element_blank(),
-      plot.title = element_text(size = 16, hjust = 0.5),
-      legend.position = "none"
+      plot.title = element_text(size = 21, hjust = 0.5),
+      legend.position = "none",
+      legend.text = element_text(size = 16),
+      axis.text.x = element_text(size = 12)
     )
 }
 
@@ -3708,12 +3701,14 @@ create_wid_panel <- function(plot_data, country_name, y_scale, y_label = "",
     scale_x_continuous(breaks = layout$x_breaks, limits = layout$x_limits) +
     wid_y_axis(y_scale, sec_base, sec_label) +
     labs(title = if (is.null(title)) country_name else title, x = "", y = y_label) +
-    theme_minimal(base_size = 14) +
+    theme_minimal(base_size = 18) +
     theme(
       panel.border = element_rect(color = "black", fill = NA),
       panel.grid.minor = element_blank(),
-      plot.title = element_text(size = 16, hjust = 0.5),
-      legend.position = "bottom"
+      plot.title = element_text(size = 21, hjust = 0.5),
+      legend.position = "bottom",
+      legend.text = element_text(size = 16),
+      axis.text.x = element_text(size = 12)
     )
 }
 
@@ -3887,12 +3882,14 @@ create_elite_panel <- function(country_name, elite_vars, measure, y_scale,
     scale_y_continuous(breaks = y_scale$breaks, limits = y_scale$limits) +
     labs(title = if (is.null(title)) default_title else title, x = "",
          y = if (show_primary_label) elite_y_label(measure) else "") +
-    theme_minimal(base_size = 14) +
+    theme_minimal(base_size = 18) +
     theme(
       panel.border = element_rect(color = "black", fill = NA),
       panel.grid.minor = element_blank(),
-      plot.title = element_text(size = 16, hjust = 0.5),
-      legend.position = "bottom"
+      plot.title = element_text(size = 21, hjust = 0.5),
+      legend.position = "bottom",
+      legend.text = element_text(size = 16),
+      axis.text.x = element_text(size = 12)
     )
 }
 
@@ -3932,18 +3929,19 @@ create_elite_separate_panels <- function(elite_vars = ELITE_SETS$all3, measure =
                 build_elite_series("Switzerland", elite_vars, measure)$value)
   y_scale <- elite_scale(all_vals, measure)
   
-  rows <- lapply(c("UK", "Switzerland"), function(cn) {
-    row_name <- if (cn == "UK") "Britain" else "Switzerland"
-    panels <- lapply(seq_along(elite_vars), function(j) {
-      v <- elite_vars[j]
+  # One row per CHES dimension; Britain in the left column, Switzerland in
+  # the right. The y-axis title appears on the left column only.
+  rows <- lapply(elite_vars, function(v) {
+    panels <- lapply(c("UK", "Switzerland"), function(cn) {
+      col_name <- if (cn == "UK") "Britain" else "Switzerland"
       create_elite_panel(cn, v, measure, y_scale,
-                         show_primary_label = (j == 1),
-                         title = paste0(row_name, ": ", ELITE_SHORT_LABELS[[v]]))
+                         show_primary_label = (cn == "UK"),
+                         title = paste0(col_name, ": ", ELITE_SHORT_LABELS[[v]]))
     })
     wrap_plots(panels, nrow = 1)
   })
   
-  (rows[[1]] / rows[[2]]) +
+  Reduce(`/`, rows) +
     plot_layout(guides = "collect") &
     theme(legend.position = "bottom")
 }
@@ -4013,12 +4011,14 @@ create_volatility_overlay_panel <- function(vol_data, country_name, variable_nam
     scale_x_continuous(breaks = x_breaks, labels = x_labels, limits = x_limits) +
     scale_y_continuous(breaks = specs$vol_y_breaks, limits = specs$vol_y_limits) +
     labs(title = specs$title, x = "", y = if (show_primary_label) "Indexed Volatility" else "") +
-    theme_minimal(base_size = 14) +
+    theme_minimal(base_size = 18) +
     theme(
       panel.border = element_rect(color = "black", fill = NA),
       panel.grid.minor = element_blank(),
-      plot.title = element_text(size = 16, hjust = 0.5),
-      legend.position = "bottom"
+      plot.title = element_text(size = 21, hjust = 0.5),
+      legend.position = "bottom",
+      legend.text = element_text(size = 16),
+      axis.text.x = element_text(size = 12)
     )
 }
 
@@ -4046,9 +4046,9 @@ create_publication_political_volatility_overlay <- function(vol_data, model_ids 
 
 
 # ----------------------------------------------------------------------------
-# Part B continued: builders added after Section 10 in the original script
+# Part A continued: builders added after Section 10 in the original script
 # (lines 4605-4813). Their embedded save calls are inert; the objects and
-# functions they define are used in Part C.
+# functions they define are used in Part B.
 # ----------------------------------------------------------------------------
 
 
@@ -4173,12 +4173,14 @@ create_bes_election_vs_quasiyearly <- function(vol_data) {
   y_breaks <- seq(50, 125, 25)
   y_limits <- c(50, 125)
   
-  base_theme <- theme_minimal(base_size = 14) +
+  base_theme <- theme_minimal(base_size = 18) +
     theme(
       panel.border = element_rect(color = "black", fill = NA),
       panel.grid.minor = element_blank(),
-      plot.title = element_text(size = 16, hjust = 0.5),
-      legend.position = "bottom"
+      plot.title = element_text(size = 21, hjust = 0.5),
+      legend.position = "bottom",
+      legend.text = element_text(size = 16),
+      axis.text.x = element_text(size = 12)
     )
   
   # LEFT: main by-election measure (Model 5)
@@ -4256,9 +4258,9 @@ create_elite_separate_panels(ELITE_SETS$all3, "indexed")
 cat("\n--- 11.10e: Mechanism (Nominal SD + Volatility) ---\n")
 
 safe_save(create_publication_lsat_mechanism(vol_lsat, vline_lsat),
-          "mechanism_lsat_nominal_vs_volatility.png", 14, 6, Figures_for_Publication)
+          "mechanism_lsat_nominal_vs_volatility.png", 16, 5, Figures_for_Publication)
 safe_save(create_publication_political_mechanism(vol_pol, vline_pol),
-          "mechanism_political_nominal_vs_volatility.png", 10, 6, Figures_for_Publication)
+          "mechanism_political_nominal_vs_volatility.png", 12, 6, Figures_for_Publication)
 
 
 
@@ -4302,12 +4304,14 @@ create_transform_curve_panel <- function(curve_data, colour_var, colour_values, 
     coord_equal() +
     labs(title = title, x = "Reported Value (R)",
          y = if (show_primary_label) "Transformed Value f(R)" else "") +
-    theme_minimal(base_size = 14) +
+    theme_minimal(base_size = 18) +
     theme(
       panel.border = element_rect(colour = "black", fill = NA),
       panel.grid.minor = element_blank(),
-      plot.title = element_text(size = 16, hjust = 0.5),
-      legend.position = "bottom"
+      plot.title = element_text(size = 21, hjust = 0.5),
+      legend.position = "bottom",
+      legend.text = element_text(size = 16),
+      axis.text.x = element_text(size = 12)
     )
 }
 
@@ -4351,7 +4355,7 @@ create_transform_curves_by_shape <- function(curves = transform_curves) {
 .vline_defer_saves <- FALSE  # from here on, safe_save() writes to disk
 
 # ============================================================================
-# PART C — writes to disk
+# PART B — writes to disk
 #
 # The five numbered figures of the main text come first, in the order they
 # appear in it. Appendix figures follow, grouped by appendix; slide figures
@@ -4373,7 +4377,7 @@ che_inc_cat_ineq_valid_minus_VLINE <- plot_lincat_inequality_validation(lincat_v
 inc_cat_ineq_valid_minus_VLINE <- ger_inc_cat_ineq_valid_minus_VLINE + aus_inc_cat_ineq_valid_minus_VLINE + che_inc_cat_ineq_valid_minus_VLINE +
   plot_layout(widths = c(3, 2, 2), guides = "collect") &
   theme(legend.position = "bottom")
-safe_save(inc_cat_ineq_valid_minus_VLINE, "inc_cat_ineq_valid_minus_VLINE.png", 14, 6, Figures_for_Publication)
+safe_save(inc_cat_ineq_valid_minus_VLINE, "inc_cat_ineq_valid_minus_VLINE.png", 16, 5, Figures_for_Publication)
 
 # Panel (b): response volatility and the stretching parameter
 ger_inc_cat_stretching <- plot_lincat_volatilities(lincat_vline, "Germany", add_stretching = TRUE)
@@ -4382,7 +4386,7 @@ che_inc_cat_stretching <- plot_lincat_volatilities(lincat_vline, "Switzerland", 
 inc_cat_stretching <- ger_inc_cat_stretching + aus_inc_cat_stretching + che_inc_cat_stretching +
   plot_layout(widths = c(3, 2, 2), guides = "collect") &
   theme(legend.position = "bottom")
-safe_save(inc_cat_stretching, "inc_cat_stretching.png", 14, 6, Figures_for_Publication)
+safe_save(inc_cat_stretching, "inc_cat_stretching.png", 16, 5, Figures_for_Publication)
 
 # ===== Figure 2 — actual, nominal and V-LINE-adjusted income inequality =====
 cat("\nFigure 2  inc_cat_ineq_valid.png\n")
@@ -4392,29 +4396,29 @@ che_inc_cat_ineq_valid <- plot_lincat_inequality_validation(lincat_vline, "Switz
 inc_cat_ineq_valid <- ger_inc_cat_ineq_valid + aus_inc_cat_ineq_valid + che_inc_cat_ineq_valid +
   plot_layout(widths = c(3, 2, 2), guides = "collect") &
   theme(legend.position = "bottom")
-safe_save(inc_cat_ineq_valid, "inc_cat_ineq_valid.png", 14, 6, Figures_for_Publication)
+safe_save(inc_cat_ineq_valid, "inc_cat_ineq_valid.png", 16, 5, Figures_for_Publication)
 
 # ===== Figure 3 — Results: life satisfaction ================================
 cat("\nFigure 3  life satisfaction, two panels\n")
 
 # Panel (a): nominal dispersion and response volatility
 safe_save(create_publication_lsat_mechanism(vol_lsat, vline_lsat),
-          "mechanism_lsat_nominal_vs_volatility.png", 14, 6, Figures_for_Publication)
+          "mechanism_lsat_nominal_vs_volatility.png", 16, 5, Figures_for_Publication)
 
 # Panel (b): nominal and latent dispersion (V-LINE)
 pub_lsat_vline_sd <- create_publication_lsat_vline_sd(vline_lsat)
-safe_save(pub_lsat_vline_sd, "rescaling_between_natural.png", 14, 6, Figures_for_Publication)
+safe_save(pub_lsat_vline_sd, "rescaling_between_natural.png", 16, 5, Figures_for_Publication)
 
 # ===== Figure 4 — Results: left-right self-placement ========================
 cat("\nFigure 4  political, two panels\n")
 
 # Panel (a): nominal dispersion and response volatility
 safe_save(create_publication_political_mechanism(vol_pol, vline_pol),
-          "mechanism_political_nominal_vs_volatility.png", 10, 6, Figures_for_Publication)
+          "mechanism_political_nominal_vs_volatility.png", 12, 6, Figures_for_Publication)
 
 # Panel (b): nominal and latent dispersion (V-LINE)
 pub_pol_vline_sd <- create_publication_political_vline(vline_pol)
-safe_save(pub_pol_vline_sd, "VLINE_political_combined_SD.png", 10, 6, Figures_for_Publication)
+safe_save(pub_pol_vline_sd, "VLINE_political_combined_SD.png", 12, 6, Figures_for_Publication)
 
 # ===== Figure 5 — Results: placebo, self-rated health =======================
 cat("\nFigure 5  placebo_health_status_volatility.png\n")
@@ -4425,7 +4429,7 @@ plot_inputs_australia <- create_input_volatility_plot(vol_inputs, "Australia",
 plot_inputs_combined <- plot_inputs_germany + plot_inputs_australia +
   plot_layout(widths = c(3, 2), guides = "collect") &
   theme(legend.position = "bottom")
-safe_save(plot_inputs_combined, "placebo_health_status_volatility.png", 12, 6, Figures_for_Publication)
+safe_save(plot_inputs_combined, "placebo_health_status_volatility.png", 12, 5, Figures_for_Publication)
 
 cat("\n--- main text complete: 5 figures ---\n")
 
@@ -4443,15 +4447,15 @@ cat("\nAppendix A\n")
 
 # Within-person volatility, new respondents only (Model 6)
 safe_save(create_publication_lsat_volatility(vol_lsat, "model_6"),
-          "LS_overall_new_respondents.png", 12, 6, Figures_for_Publication)
+          "LS_overall_new_respondents.png", 16, 5, Figures_for_Publication)
 safe_save(create_publication_political_volatility(vol_pol, "model_6"),
-          "POL_overall_new_respondents.png", 10, 6, Figures_for_Publication)
+          "POL_overall_new_respondents.png", 12, 6, Figures_for_Publication)
 
 # Within-person volatility, balanced panels (Model 7)
 safe_save(create_publication_lsat_volatility(vol_lsat, "model_7"),
-          "LS_overall_balanced_panel.png", 12, 6, Figures_for_Publication)
+          "LS_overall_balanced_panel.png", 16, 5, Figures_for_Publication)
 safe_save(create_publication_political_volatility(vol_pol, "model_7"),
-          "POL_overall_balanced_panel.png", 10, 6, Figures_for_Publication)
+          "POL_overall_balanced_panel.png", 12, 6, Figures_for_Publication)
 
 # Sensitivity to the definition of the two-year periods: natural (t) against
 # alternate (t+1) grouping, three countries. Both groupings come from
@@ -4471,22 +4475,22 @@ make_grouping_panels <- function(metric) {
 
 pub_grouping_sd <- wrap_plots(make_grouping_panels("sd"), nrow = 1, guides = "collect") &
   theme(legend.position = "bottom")
-safe_save(pub_grouping_sd, "comparison_between_groupings.png", 14, 6, Figures_for_Publication)
+safe_save(pub_grouping_sd, "comparison_between_groupings.png", 16, 5, Figures_for_Publication)
 
 # Raw response distributions, first vs last period
 all_distributions <- all_distributions %>%
   mutate(period = factor(period, levels = c("First", "Last")))
 pub_lsat_distribution <- create_publication_lsat_distribution(all_distributions)
-safe_save(pub_lsat_distribution, "Distribution_FirstLast_LifeSatisfaction.png", 14, 6, Figures_for_Publication)
+safe_save(pub_lsat_distribution, "Distribution_FirstLast_LifeSatisfaction.png", 16, 5, Figures_for_Publication)
 pub_political_distribution <- create_publication_political_distribution(all_distributions)
-safe_save(pub_political_distribution, "Distribution_FirstLast_Political.png", 10, 6, Figures_for_Publication)
+safe_save(pub_political_distribution, "Distribution_FirstLast_Political.png", 12, 6, Figures_for_Publication)
 
 # ---- Appendix B: External Benchmarks ---------------------------------------
 cat("\nAppendix B\n")
 safe_save(create_wid_separate_panels("level"),
           "wid_2a_separate_panels_levels.png", 14, 9, Figures_for_Publication)
 safe_save(create_elite_separate_panels(ELITE_SETS$all3, "indexed"),
-          "elite_E3_separate_panels_indexed.png", 14, 9, Figures_for_Publication)
+          "elite_E3_separate_panels_indexed.png", 10, 13, Figures_for_Publication)
 
 # ---- Appendix C: BES with an alternative period definition -----------------
 cat("\nAppendix C\n")
@@ -4501,10 +4505,10 @@ che_inc_cat_mean_valid <- plot_lincat_mean_validation(lincat_vline, "Switzerland
 inc_cat_mean_valid <- ger_inc_cat_mean_valid + aus_inc_cat_mean_valid + che_inc_cat_mean_valid +
   plot_layout(widths = c(3, 2, 2), guides = "collect") &
   theme(legend.position = "bottom")
-safe_save(inc_cat_mean_valid, "inc_cat_mean_valid.png", 14, 6, Figures_for_Publication)
+safe_save(inc_cat_mean_valid, "inc_cat_mean_valid.png", 16, 5, Figures_for_Publication)
 
 pub_lsat_vline_mean <- create_publication_lsat_vline_mean(vline_lsat)
-safe_save(pub_lsat_vline_mean, "rescaling_mean_natural.png", 14, 6, Figures_for_Publication)
+safe_save(pub_lsat_vline_mean, "rescaling_mean_natural.png", 16, 5, Figures_for_Publication)
 
 covid_vline_mean <- create_covid_vline_plot(vline_lsat, "mean")
 safe_save(covid_vline_mean, "COVID_VLINE_Mean_Combined.png", 10, 5, Figures_for_Publication)
@@ -4528,10 +4532,10 @@ plot_inv_s_sd <- create_combined_transform_plot(all_vline_robustness, "Inverse-S
                                                 y_limits = c(60, 140), main_title = "V-LINE Inequality (SD): Inverse-S Transformation")
 plot_summary_sd <- create_combined_summary_plot(all_vline_robustness, "sd", y_limits = c(60, 140),
                                                 main_title = "V-LINE Inequality (SD): All Transformations at C = 0.10")
-safe_save(plot_summary_sd, "nonlinearity_summary_sd.png", 10, 6, Figures_for_Publication)
-safe_save(plot_convex_sd, "nonlinearity_convex_sd.png", 10, 6, Figures_for_Publication)
-safe_save(plot_concave_sd, "nonlinearity_concave_sd.png", 10, 6, Figures_for_Publication)
-safe_save(plot_inv_s_sd, "nonlinearity_inv_s_sd.png", 10, 6, Figures_for_Publication)
+safe_save(plot_summary_sd, "nonlinearity_summary_sd.png", 12, 6, Figures_for_Publication)
+safe_save(plot_convex_sd, "nonlinearity_convex_sd.png", 12, 6, Figures_for_Publication)
+safe_save(plot_concave_sd, "nonlinearity_concave_sd.png", 12, 6, Figures_for_Publication)
+safe_save(plot_inv_s_sd, "nonlinearity_inv_s_sd.png", 12, 6, Figures_for_Publication)
 
 plot_convex_sd_uk <- create_transform_gradient_plot_uk(all_vline_robustness_uk, "Convex", convex_colours, y_limits = c(80, 140))
 plot_concave_sd_uk <- create_transform_gradient_plot_uk(all_vline_robustness_uk, "Concave", concave_colours, y_limits = c(80, 140))
@@ -4552,7 +4556,7 @@ che_income_homoskedasticity <- create_income_homoskedasticity_plot("Switzerland"
 income_homoskedasticity <- ger_income_homoskedasticity + che_income_homoskedasticity + aus_income_homoskedasticity +
   plot_layout(widths = c(3, 2, 2), guides = "collect") &
   theme(legend.position = "bottom")
-safe_save(income_homoskedasticity, "income_homoskedasticity_appendix.png", 14, 8, Figures_for_Publication)
+safe_save(income_homoskedasticity, "income_homoskedasticity_appendix.png", 16, 5, Figures_for_Publication)
 
 
 # ============================================================================
@@ -4735,15 +4739,15 @@ if (isTRUE(GENERATE_UNUSED)) {
 
   # Volatility overlay, no controls against Model 5
   safe_save(create_publication_lsat_volatility_overlay(vol_lsat),
-            "LS_volatility_nc_vs_model5.png", 12, 6, Figures_for_Publication)
+            "LS_volatility_nc_vs_model5.png", 16, 5, Figures_for_Publication)
   safe_save(create_publication_political_volatility_overlay(vol_pol),
-            "POL_volatility_nc_vs_model5.png", 10, 6, Figures_for_Publication)
+            "POL_volatility_nc_vs_model5.png", 12, 6, Figures_for_Publication)
 
   # Nominal dispersion on its own
   safe_save(create_publication_lsat_nominal_sd_combined(vline_lsat),
-            "nominal_between_natural_combined.png", 14, 6, Figures_for_Publication)
+            "nominal_between_natural_combined.png", 16, 5, Figures_for_Publication)
   safe_save(create_publication_political_nominal_sd_combined(vline_pol),
-            "nominal_political_combined_SD.png", 10, 6, Figures_for_Publication)
+            "nominal_political_combined_SD.png", 12, 6, Figures_for_Publication)
 
   # Income category volatility without the stretching parameter
   inc_cat_volatility <- (ger_inc_cat_volatility +
@@ -4751,7 +4755,7 @@ if (isTRUE(GENERATE_UNUSED)) {
                          plot_lincat_volatilities(lincat_vline, "Switzerland", add_stretching = FALSE)) +
     plot_layout(widths = c(3, 2, 2), guides = "collect") &
     theme(legend.position = "bottom")
-  safe_save(inc_cat_volatility, "inc_cat_volatility_only.png", 14, 6, Figures_for_Publication)
+  safe_save(inc_cat_volatility, "inc_cat_volatility_only.png", 16, 5, Figures_for_Publication)
 
   # Further single-country slide variants
   slide_aus_vline_mean <- create_vline_plot(vline_lsat, "Australia", "lfsato", "mean",
@@ -4775,11 +4779,11 @@ if (isTRUE(GENERATE_UNUSED)) {
 
   # The paradox family: an earlier presentation of the central comparison
   safe_save(create_publication_lsat_paradox_plot1("model_5", "income"),
-            "paradox_lsat_plot1_model5_wid_income.png", 14, 6, Figures_for_Publication)
+            "paradox_lsat_plot1_model5_wid_income.png", 16, 5, Figures_for_Publication)
   safe_save(create_publication_lsat_paradox_plot1(c("model_5", "model_1"), "income"),
-            "paradox_lsat_plot1_model5_nc_wid_income.png", 14, 6, Figures_for_Publication)
+            "paradox_lsat_plot1_model5_nc_wid_income.png", 16, 5, Figures_for_Publication)
   safe_save(create_publication_lsat_paradox_plot2("income"),
-            "paradox_lsat_plot2_latent_vs_wid_income.png", 14, 6, Figures_for_Publication)
+            "paradox_lsat_plot2_latent_vs_wid_income.png", 16, 5, Figures_for_Publication)
 
   for (es in names(ELITE_SETS)) {
     vars <- ELITE_SETS[[es]]
@@ -4794,7 +4798,7 @@ if (isTRUE(GENERATE_UNUSED)) {
   # Mean counterpart of the period-grouping sensitivity figure
   pub_grouping_mean <- wrap_plots(make_grouping_panels("mean"), nrow = 1, guides = "collect") &
     theme(legend.position = "bottom")
-  safe_save(pub_grouping_mean, "comparison_mean_groupings.png", 14, 6, Figures_for_Publication)
+  safe_save(pub_grouping_mean, "comparison_mean_groupings.png", 16, 5, Figures_for_Publication)
 
   # Transformation curves arranged by cost rather than by shape
   safe_save(create_transform_curves_by_cost(),
@@ -4812,7 +4816,7 @@ if (isTRUE(GENERATE_UNUSED)) {
               paste0("elite_E2_all3_same_panel_", sfx, ".png"), 10, 6, Figures_for_Publication)
   }
   safe_save(create_elite_separate_panels(ELITE_SETS$all3, "level"),
-            "elite_E3_separate_panels_levels.png", 14, 9, Figures_for_Publication)
+            "elite_E3_separate_panels_levels.png", 10, 13, Figures_for_Publication)
 
 } else {
   cat("\nSkipping unused figures (GENERATE_UNUSED is FALSE). See NOT_USED.md.\n")
