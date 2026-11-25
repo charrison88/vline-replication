@@ -4258,7 +4258,7 @@ create_elite_separate_panels(ELITE_SETS$all3, "indexed")
 cat("\n--- 11.10e: Mechanism (Nominal SD + Volatility) ---\n")
 
 safe_save(create_publication_lsat_mechanism(vol_lsat, vline_lsat),
-          "mechanism_lsat_nominal_vs_volatility.png", 16, 5, Figures_for_Publication)
+          "mechanism_lsat_nominal_vs_volatility.png", 16, 8, Figures_for_Publication)
 safe_save(create_publication_political_mechanism(vol_pol, vline_pol),
           "mechanism_political_nominal_vs_volatility.png", 12, 6, Figures_for_Publication)
 
@@ -4377,7 +4377,7 @@ che_inc_cat_ineq_valid_minus_VLINE <- plot_lincat_inequality_validation(lincat_v
 inc_cat_ineq_valid_minus_VLINE <- ger_inc_cat_ineq_valid_minus_VLINE + aus_inc_cat_ineq_valid_minus_VLINE + che_inc_cat_ineq_valid_minus_VLINE +
   plot_layout(widths = c(3, 2, 2), guides = "collect") &
   theme(legend.position = "bottom")
-safe_save(inc_cat_ineq_valid_minus_VLINE, "inc_cat_ineq_valid_minus_VLINE.png", 16, 5, Figures_for_Publication)
+safe_save(inc_cat_ineq_valid_minus_VLINE, "inc_cat_ineq_valid_minus_VLINE.png", 16, 8, Figures_for_Publication)
 
 # Panel (b): response volatility and the stretching parameter
 ger_inc_cat_stretching <- plot_lincat_volatilities(lincat_vline, "Germany", add_stretching = TRUE)
@@ -4386,7 +4386,7 @@ che_inc_cat_stretching <- plot_lincat_volatilities(lincat_vline, "Switzerland", 
 inc_cat_stretching <- ger_inc_cat_stretching + aus_inc_cat_stretching + che_inc_cat_stretching +
   plot_layout(widths = c(3, 2, 2), guides = "collect") &
   theme(legend.position = "bottom")
-safe_save(inc_cat_stretching, "inc_cat_stretching.png", 16, 5, Figures_for_Publication)
+safe_save(inc_cat_stretching, "inc_cat_stretching.png", 16, 8, Figures_for_Publication)
 
 # ===== Figure 2 — actual, nominal and V-LINE-adjusted income inequality =====
 cat("\nFigure 2  inc_cat_ineq_valid.png\n")
@@ -4396,18 +4396,18 @@ che_inc_cat_ineq_valid <- plot_lincat_inequality_validation(lincat_vline, "Switz
 inc_cat_ineq_valid <- ger_inc_cat_ineq_valid + aus_inc_cat_ineq_valid + che_inc_cat_ineq_valid +
   plot_layout(widths = c(3, 2, 2), guides = "collect") &
   theme(legend.position = "bottom")
-safe_save(inc_cat_ineq_valid, "inc_cat_ineq_valid.png", 16, 5, Figures_for_Publication)
+safe_save(inc_cat_ineq_valid, "inc_cat_ineq_valid.png", 16, 8, Figures_for_Publication)
 
 # ===== Figure 3 — Results: life satisfaction ================================
 cat("\nFigure 3  life satisfaction, two panels\n")
 
 # Panel (a): nominal dispersion and response volatility
 safe_save(create_publication_lsat_mechanism(vol_lsat, vline_lsat),
-          "mechanism_lsat_nominal_vs_volatility.png", 16, 5, Figures_for_Publication)
+          "mechanism_lsat_nominal_vs_volatility.png", 16, 8, Figures_for_Publication)
 
 # Panel (b): nominal and latent dispersion (V-LINE)
 pub_lsat_vline_sd <- create_publication_lsat_vline_sd(vline_lsat)
-safe_save(pub_lsat_vline_sd, "rescaling_between_natural.png", 16, 5, Figures_for_Publication)
+safe_save(pub_lsat_vline_sd, "rescaling_between_natural.png", 16, 8, Figures_for_Publication)
 
 # ===== Figure 4 — Results: left-right self-placement ========================
 cat("\nFigure 4  political, two panels\n")
@@ -4447,13 +4447,13 @@ cat("\nAppendix A\n")
 
 # Within-person volatility, new respondents only (Model 6)
 safe_save(create_publication_lsat_volatility(vol_lsat, "model_6"),
-          "LS_overall_new_respondents.png", 16, 5, Figures_for_Publication)
+          "LS_overall_new_respondents.png", 16, 8, Figures_for_Publication)
 safe_save(create_publication_political_volatility(vol_pol, "model_6"),
           "POL_overall_new_respondents.png", 12, 6, Figures_for_Publication)
 
 # Within-person volatility, balanced panels (Model 7)
 safe_save(create_publication_lsat_volatility(vol_lsat, "model_7"),
-          "LS_overall_balanced_panel.png", 16, 5, Figures_for_Publication)
+          "LS_overall_balanced_panel.png", 16, 8, Figures_for_Publication)
 safe_save(create_publication_political_volatility(vol_pol, "model_7"),
           "POL_overall_balanced_panel.png", 12, 6, Figures_for_Publication)
 
@@ -4475,20 +4475,20 @@ make_grouping_panels <- function(metric) {
 
 pub_grouping_sd <- wrap_plots(make_grouping_panels("sd"), nrow = 1, guides = "collect") &
   theme(legend.position = "bottom")
-safe_save(pub_grouping_sd, "comparison_between_groupings.png", 16, 5, Figures_for_Publication)
+safe_save(pub_grouping_sd, "comparison_between_groupings.png", 16, 8, Figures_for_Publication)
 
 # Raw response distributions, first vs last period
 all_distributions <- all_distributions %>%
   mutate(period = factor(period, levels = c("First", "Last")))
 pub_lsat_distribution <- create_publication_lsat_distribution(all_distributions)
-safe_save(pub_lsat_distribution, "Distribution_FirstLast_LifeSatisfaction.png", 16, 5, Figures_for_Publication)
+safe_save(pub_lsat_distribution, "Distribution_FirstLast_LifeSatisfaction.png", 16, 8, Figures_for_Publication)
 pub_political_distribution <- create_publication_political_distribution(all_distributions)
 safe_save(pub_political_distribution, "Distribution_FirstLast_Political.png", 12, 6, Figures_for_Publication)
 
 # ---- Appendix B: External Benchmarks ---------------------------------------
 cat("\nAppendix B\n")
 safe_save(create_wid_separate_panels("level"),
-          "wid_2a_separate_panels_levels.png", 14, 9, Figures_for_Publication)
+          "wid_2a_separate_panels_levels.png", 16, 12, Figures_for_Publication)
 safe_save(create_elite_separate_panels(ELITE_SETS$all3, "indexed"),
           "elite_E3_separate_panels_indexed.png", 10, 13, Figures_for_Publication)
 
@@ -4505,10 +4505,10 @@ che_inc_cat_mean_valid <- plot_lincat_mean_validation(lincat_vline, "Switzerland
 inc_cat_mean_valid <- ger_inc_cat_mean_valid + aus_inc_cat_mean_valid + che_inc_cat_mean_valid +
   plot_layout(widths = c(3, 2, 2), guides = "collect") &
   theme(legend.position = "bottom")
-safe_save(inc_cat_mean_valid, "inc_cat_mean_valid.png", 16, 5, Figures_for_Publication)
+safe_save(inc_cat_mean_valid, "inc_cat_mean_valid.png", 16, 8, Figures_for_Publication)
 
 pub_lsat_vline_mean <- create_publication_lsat_vline_mean(vline_lsat)
-safe_save(pub_lsat_vline_mean, "rescaling_mean_natural.png", 16, 5, Figures_for_Publication)
+safe_save(pub_lsat_vline_mean, "rescaling_mean_natural.png", 16, 8, Figures_for_Publication)
 
 covid_vline_mean <- create_covid_vline_plot(vline_lsat, "mean")
 safe_save(covid_vline_mean, "COVID_VLINE_Mean_Combined.png", 10, 5, Figures_for_Publication)
@@ -4556,7 +4556,7 @@ che_income_homoskedasticity <- create_income_homoskedasticity_plot("Switzerland"
 income_homoskedasticity <- ger_income_homoskedasticity + che_income_homoskedasticity + aus_income_homoskedasticity +
   plot_layout(widths = c(3, 2, 2), guides = "collect") &
   theme(legend.position = "bottom")
-safe_save(income_homoskedasticity, "income_homoskedasticity_appendix.png", 16, 5, Figures_for_Publication)
+safe_save(income_homoskedasticity, "income_homoskedasticity_appendix.png", 16, 8, Figures_for_Publication)
 
 
 # ============================================================================
@@ -4739,13 +4739,13 @@ if (isTRUE(GENERATE_UNUSED)) {
 
   # Volatility overlay, no controls against Model 5
   safe_save(create_publication_lsat_volatility_overlay(vol_lsat),
-            "LS_volatility_nc_vs_model5.png", 16, 5, Figures_for_Publication)
+            "LS_volatility_nc_vs_model5.png", 16, 8, Figures_for_Publication)
   safe_save(create_publication_political_volatility_overlay(vol_pol),
             "POL_volatility_nc_vs_model5.png", 12, 6, Figures_for_Publication)
 
   # Nominal dispersion on its own
   safe_save(create_publication_lsat_nominal_sd_combined(vline_lsat),
-            "nominal_between_natural_combined.png", 16, 5, Figures_for_Publication)
+            "nominal_between_natural_combined.png", 16, 8, Figures_for_Publication)
   safe_save(create_publication_political_nominal_sd_combined(vline_pol),
             "nominal_political_combined_SD.png", 12, 6, Figures_for_Publication)
 
@@ -4755,7 +4755,7 @@ if (isTRUE(GENERATE_UNUSED)) {
                          plot_lincat_volatilities(lincat_vline, "Switzerland", add_stretching = FALSE)) +
     plot_layout(widths = c(3, 2, 2), guides = "collect") &
     theme(legend.position = "bottom")
-  safe_save(inc_cat_volatility, "inc_cat_volatility_only.png", 16, 5, Figures_for_Publication)
+  safe_save(inc_cat_volatility, "inc_cat_volatility_only.png", 16, 8, Figures_for_Publication)
 
   # Further single-country slide variants
   slide_aus_vline_mean <- create_vline_plot(vline_lsat, "Australia", "lfsato", "mean",
@@ -4779,11 +4779,11 @@ if (isTRUE(GENERATE_UNUSED)) {
 
   # The paradox family: an earlier presentation of the central comparison
   safe_save(create_publication_lsat_paradox_plot1("model_5", "income"),
-            "paradox_lsat_plot1_model5_wid_income.png", 16, 5, Figures_for_Publication)
+            "paradox_lsat_plot1_model5_wid_income.png", 16, 8, Figures_for_Publication)
   safe_save(create_publication_lsat_paradox_plot1(c("model_5", "model_1"), "income"),
-            "paradox_lsat_plot1_model5_nc_wid_income.png", 16, 5, Figures_for_Publication)
+            "paradox_lsat_plot1_model5_nc_wid_income.png", 16, 8, Figures_for_Publication)
   safe_save(create_publication_lsat_paradox_plot2("income"),
-            "paradox_lsat_plot2_latent_vs_wid_income.png", 16, 5, Figures_for_Publication)
+            "paradox_lsat_plot2_latent_vs_wid_income.png", 16, 8, Figures_for_Publication)
 
   for (es in names(ELITE_SETS)) {
     vars <- ELITE_SETS[[es]]
@@ -4798,7 +4798,7 @@ if (isTRUE(GENERATE_UNUSED)) {
   # Mean counterpart of the period-grouping sensitivity figure
   pub_grouping_mean <- wrap_plots(make_grouping_panels("mean"), nrow = 1, guides = "collect") &
     theme(legend.position = "bottom")
-  safe_save(pub_grouping_mean, "comparison_mean_groupings.png", 16, 5, Figures_for_Publication)
+  safe_save(pub_grouping_mean, "comparison_mean_groupings.png", 16, 8, Figures_for_Publication)
 
   # Transformation curves arranged by cost rather than by shape
   safe_save(create_transform_curves_by_cost(),
@@ -4806,7 +4806,7 @@ if (isTRUE(GENERATE_UNUSED)) {
 
   # Alternative cuts of the two Appendix B figures
   safe_save(create_wid_separate_panels("indexed"),
-            "wid_2a_separate_panels_indexed.png", 14, 9, Figures_for_Publication)
+            "wid_2a_separate_panels_indexed.png", 16, 12, Figures_for_Publication)
 
   for (m in c("indexed", "level")) {
     sfx <- if (m == "indexed") "indexed" else "levels"
