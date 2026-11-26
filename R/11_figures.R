@@ -3740,15 +3740,16 @@ wid_level_scale <- function(values) {
 }
 
 # ---- 2a: separate panels. Rows = income / wealth; columns = countries ----
-# Income row: one common y-axis. Wealth row: Germany on its own y-axis,
-# Australia and Switzerland sharing one (German wealth inequality rises
-# far more steeply and would otherwise flatten the other two).
+# Both rows: one common y-axis across the three countries, so levels are
+# directly comparable left to right. (Until 26 Nov 2026 the wealth row put
+# Germany on its own axis, because its ratio rises far higher than the other
+# two; sharing the axis makes that gap visible rather than hiding it.)
 # Indexed version: primary axis = index (first year = 100); each panel
 # also has a country-specific secondary axis giving the raw ratio.
 
 WID_SCALE_GROUPS <- list(
   income = list(c("Germany", "Australia", "Switzerland")),
-  wealth = list("Germany", c("Australia", "Switzerland"))
+  wealth = list(c("Germany", "Australia", "Switzerland"))
 )
 
 create_wid_separate_panels <- function(measure = c("indexed", "level"), show_points = FALSE,
